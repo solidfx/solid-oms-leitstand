@@ -1,0 +1,67 @@
+id: '16910979567190.3197366953375278'
+name: createDboUser
+nameConfigured: true
+steps:
+  - id: '16910979688470.834986633819528'
+    type: CREATE_ENTITY
+    name: create
+    params:
+      - type: datasourceId
+        value: solidoms
+        valueType: string
+      - type: resourceId
+        value: dbo.user
+        valueType: string
+      - type: entity
+        value:
+          mode: structured
+          valueByMode:
+            structured:
+              created:
+                value: new Date()
+              username:
+                value: '{{ui.dboUserTable.selectedRow.data.username}}'
+              name:
+                value: '{{ui.dboUserTable.selectedRow.data.name}}'
+              surname:
+                value: '{{ui.dboUserTable.selectedRow.data.surname}}'
+              email:
+                value: '{{ui.dboUserTable.selectedRow.data.email}}'
+            custom: '{{ui.dboUserTable.selectedRow.data.username}}'
+        valueType: custom
+      - type: customDatabaseName
+        value: ''
+        valueType: interpolatedValue
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+folder: false
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.createDboUser.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.createDboUser.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.createDboUser.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+index: 2

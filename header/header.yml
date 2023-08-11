@@ -1,0 +1,30 @@
+id: '16910890708790.7629512164353807'
+name: content
+children:
+  - id: '16910890708800.897246078428285'
+    definitionId: layoutHeader
+    parentSlotId: '16910890708790.7629512164353807'
+    styles:
+      xl:
+        backgroundColor:
+          value: danger-dark
+          dataValue: default
+          withData: false
+    properties:
+      name: layoutHeader
+      __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+        - xl
+        - xs
+      stickyHeader:
+        value: true
+        dataValue: 'false'
+        withData: false
+    index: 0
+    slots:
+      - id: '16910890708800.5284598058147412'
+        name: content
+        children:
+          - components/text.yml
+          - components/text2.yml
+          - components/image.yml
+          - components/image2.yml
