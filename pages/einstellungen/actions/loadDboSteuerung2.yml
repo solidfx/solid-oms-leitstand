@@ -46,6 +46,7 @@ steps:
     level: 0
     fallthroughError: false
     isChanged: true
+    nameConfigured: true
 singleStep: true
 mode: manual
 modeConfigured: false

@@ -1,0 +1,16 @@
+id: '16918346236870.035059257326225834'
+definitionId: step
+styles: {}
+properties:
+  name: step
+  title: Start
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '16918346236870.6047075047808916'
+index: 0
+slots:
+  - id: '16918346236870.08372207506109897'
+    name: content
+    children:
+      - dboSteuerungForm.yml
