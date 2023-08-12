@@ -1,0 +1,17 @@
+id: '16918335007320.7061073246899388'
+definitionId: tab
+styles: {}
+properties:
+  name: tab8
+  title: Steuerung
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '16918335007320.13846341654283933'
+index: 0
+slots:
+  - id: '16918335007320.10383780210408466'
+    name: content
+    children:
+      - dboSteuerungTable.yml
+      - stepper/stepper.yml

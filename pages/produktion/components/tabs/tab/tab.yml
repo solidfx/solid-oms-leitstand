@@ -1,0 +1,16 @@
+id: '16917936309860.02822723395746407'
+definitionId: tab
+styles: {}
+properties:
+  name: tab
+  title: Start
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '16917936309860.003941350322131276'
+index: 0
+slots:
+  - id: '16917936309860.09319424114984853'
+    name: content
+    children:
+      - dboAuftragTable.yml

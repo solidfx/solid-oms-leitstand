@@ -1,0 +1,16 @@
+id: '16918362331920.1479597513246742'
+definitionId: tab
+styles: {}
+properties:
+  name: tab10
+  title: Aufträge
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '16918362331920.09070868164145107'
+index: 0
+slots:
+  - id: '16918362331920.7080812210427363'
+    name: content
+    children:
+      - dboAuftragTable2.yml

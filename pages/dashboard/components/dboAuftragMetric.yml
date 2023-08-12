@@ -1,0 +1,67 @@
+id: '16918357880210.5991107962840969'
+definitionId: metric
+parentSlotId: '16917933992220.6039430218794417'
+styles:
+  xl:
+    gridItem:
+      x: 14
+      y: 0
+      w: 1
+      h: 8
+  xs:
+    gridItem:
+      x: 0
+      y: 26
+      w: 24
+      h: 8
+properties:
+  data: '{{actions.loadDboAuftrag2.data}}'
+  name: dboAuftragMetric
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Aufträge heute
+  operation: count
+  groupType: not_group
+  showLoading:
+    withData: true
+    dataValue: '{{actions.loadDboAuftrag2.loading}}'
+    value: false
+actions: {}
+index: 1
+slots:
+  - id: '16918357880210.7545350572599385'
+    name: metricField
+    children:
+      - id: '16918357880690.7493818908565839'
+        definitionId: atomicNumber
+        styles: {}
+        properties:
+          name: atomicNumber4
+          prop: AuftragID
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16918357880210.7545350572599385'
+        index: 0
+        slots: []
+  - id: '16918357880210.4953574122518265'
+    name: additionalField
+    children:
+      - id: '16918357880690.6368501129938462'
+        definitionId: atomicText
+        styles: {}
+        properties:
+          name: atomicText4
+          prop: Kunde
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16918357880210.4953574122518265'
+        index: 1
+        slots: []
+  - id: '16918357880690.34313256549496884'
+    name: groupByField
+    children: []

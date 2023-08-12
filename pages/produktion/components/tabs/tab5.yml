@@ -1,0 +1,15 @@
+id: '16917937033950.38146234072811747'
+definitionId: tab
+parentSlotId: '16917936309860.003941350322131276'
+styles: {}
+properties:
+  name: tab5
+  title: Nachdrucke
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+index: 4
+slots:
+  - id: '16917937033950.37448235911962424'
+    name: content
+    children: []

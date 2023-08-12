@@ -1,13 +1,13 @@
-id: '16910157408510.30813650505292767'
+id: '16917935411600.9092461595577135'
 definitionId: menu
-parentSlotId: '2'
+parentSlotId: '16917934204730.2942300514291405'
 styles:
   xl:
     gridItem:
       x: 0
       y: 0
       w: 2
-      h: 26
+      h: 36
     color:
       value: primary
       dataValue: basic
@@ -15,12 +15,12 @@ styles:
   xs:
     gridItem:
       x: 0
-      y: 16
+      y: 0
       w: 24
-      h: 8
+      h: 26
 properties:
   autoSyncItems: true
-  name: menu
+  name: menu4
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs

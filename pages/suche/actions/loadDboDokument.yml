@@ -1,0 +1,68 @@
+id: '16918361139490.22574607727472307'
+name: loadDboDokument
+nameConfigured: true
+steps:
+  - id: '16918361181730.07754770209631157'
+    type: LOAD_COLLECTION
+    name: load
+    params:
+      - type: datasourceId
+        value: POM_test
+        valueType: string
+      - type: resourceId
+        value: dbo.Dokument
+        valueType: string
+      - type: filters
+        value: []
+        valueType: custom
+      - type: ordering
+        value:
+          limit:
+            value: ''
+          offset:
+            value: ''
+          orderBy:
+            value: docCreated
+          orderDirection:
+            value: desc
+        valueType: custom
+      - type: additionalParams
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+      - type: customDatabaseName
+        value: ''
+        valueType: interpolatedValue
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: true
+mode: manual
+modeConfigured: false
+parentPageId: '16917934505390.26478948391555246'
+folder: false
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadDboDokument.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.loadDboDokument.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.loadDboDokument.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+index: 4

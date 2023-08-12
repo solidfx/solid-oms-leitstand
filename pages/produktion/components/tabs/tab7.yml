@@ -1,0 +1,15 @@
+id: '16917940801420.5709795152003614'
+definitionId: tab
+parentSlotId: '16917936309860.003941350322131276'
+styles: {}
+properties:
+  name: tab7
+  title: Fehler
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+index: 6
+slots:
+  - id: '16917940801420.9418076567859712'
+    name: content
+    children: []

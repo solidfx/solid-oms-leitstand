@@ -1,0 +1,30 @@
+id: '16917933992220.8299471416154705'
+name: Dashboard
+url: dashboard
+roleIds: []
+disableInMenu: false
+parentPageId: ''
+index: 1
+slots:
+  - id: '16917933992220.38657845973594385'
+    name: content
+    children:
+      - id: '16917933992220.6483859229365447'
+        definitionId: grid
+        parentSlotId: '16917933992220.38657845973594385'
+        styles: {}
+        properties:
+          name: dashboard
+          pageTitle: '{{app.name}} - {{activeRoute.name}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots:
+          - id: '16917933992220.6039430218794417'
+            name: content
+            children:
+              - components/menu2.yml
+              - components/dboAuftragMetric.yml
+              - components/card/card.yml
+              - components/dboAuftragMetric2.yml

@@ -1,0 +1,28 @@
+id: '16917934505390.26478948391555246'
+name: Suche
+url: suche
+roleIds: []
+disableInMenu: false
+parentPageId: ''
+index: 4
+slots:
+  - id: '16917934505390.30351606251617835'
+    name: content
+    children:
+      - id: '16917934505390.23141343647999046'
+        definitionId: grid
+        parentSlotId: '16917934505390.30351606251617835'
+        styles: {}
+        properties:
+          name: suche
+          pageTitle: '{{app.name}} - {{activeRoute.name}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots:
+          - id: '16917934505390.28201203024048005'
+            name: content
+            children:
+              - components/menu5.yml
+              - components/tabs3/tabs3.yml

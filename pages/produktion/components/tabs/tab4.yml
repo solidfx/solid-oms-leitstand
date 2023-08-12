@@ -1,0 +1,15 @@
+id: '16917937024290.16920894141039722'
+definitionId: tab
+parentSlotId: '16917936309860.003941350322131276'
+styles: {}
+properties:
+  name: tab4
+  title: Kuvertieren
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+index: 3
+slots:
+  - id: '16917937024290.7741100155717113'
+    name: content
+    children: []
