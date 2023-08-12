@@ -25,3 +25,4 @@ slots:
             name: content
             children:
               - components/menu5.yml
+              - components/tabs3/tabs3.yml

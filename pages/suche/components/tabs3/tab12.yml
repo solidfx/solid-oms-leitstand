@@ -1,0 +1,15 @@
+id: '16918363298050.24119540863767108'
+definitionId: tab
+parentSlotId: '16918362331920.09070868164145107'
+styles: {}
+properties:
+  name: tab12
+  title: Sendungen
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+index: 2
+slots:
+  - id: '16918363298050.5369102282619576'
+    name: content
+    children: []

@@ -1,0 +1,68 @@
+id: '16918357081440.8765393931814942'
+name: loadDboAuftrag2
+nameConfigured: true
+steps:
+  - id: '16918357280830.6974803411226358'
+    type: LOAD_COLLECTION
+    name: load
+    params:
+      - type: datasourceId
+        value: POM_test
+        valueType: string
+      - type: resourceId
+        value: dbo.Auftrag
+        valueType: string
+      - type: filters
+        value: []
+        valueType: custom
+      - type: ordering
+        value:
+          limit:
+            value: 1000
+          offset:
+            value: ''
+          orderBy:
+            value: AuftragID
+          orderDirection:
+            value: asc
+        valueType: custom
+      - type: additionalParams
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+      - type: customDatabaseName
+        value: ''
+        valueType: interpolatedValue
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: true
+mode: manual
+modeConfigured: false
+parentPageId: '16917933992220.8299471416154705'
+folder: false
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadDboAuftrag2.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.loadDboAuftrag2.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.loadDboAuftrag2.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+index: 3

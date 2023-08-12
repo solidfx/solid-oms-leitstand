@@ -1,0 +1,16 @@
+id: '16918362331920.8029694324185073'
+definitionId: tab
+styles: {}
+properties:
+  name: tab11
+  title: Dokumente
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '16918362331920.09070868164145107'
+index: 1
+slots:
+  - id: '16918362331920.7051677194464852'
+    name: content
+    children:
+      - dboDokumentTable.yml

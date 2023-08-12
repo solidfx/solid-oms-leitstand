@@ -1,0 +1,21 @@
+id: '16918358597210.4308153492565485'
+definitionId: heading
+styles:
+  xl:
+    fontSize:
+      customValue: 14
+      customUnit: px
+      themeDefaultOverridePropertyKey: baseTextFontSize
+    gridItem:
+      h: 2
+      w: 6
+properties:
+  name: heading2
+  text: Dashboard
+  verticalAlignment: middle
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '16918358597210.48139492853650423'
+index: 0
+slots: []

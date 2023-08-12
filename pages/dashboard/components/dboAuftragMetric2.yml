@@ -1,0 +1,67 @@
+id: '16918359667960.6211839514016038'
+definitionId: metric
+parentSlotId: '16917933992220.6039430218794417'
+styles:
+  xl:
+    gridItem:
+      x: 14
+      y: 8
+      w: 1
+      h: 8
+  xs:
+    gridItem:
+      x: 0
+      y: 50
+      w: 24
+      h: 8
+properties:
+  data: '{{actions.loadDboAuftrag2.data}}'
+  name: dboAuftragMetric2
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Errors
+  operation: count
+  groupType: not_group
+  showLoading:
+    withData: true
+    dataValue: '{{actions.loadDboAuftrag2.loading}}'
+    value: false
+actions: {}
+index: 3
+slots:
+  - id: '16918359667960.07225144897825087'
+    name: metricField
+    children:
+      - id: '16918359668410.26549899393048837'
+        definitionId: atomicNumber
+        styles: {}
+        properties:
+          name: atomicNumber5
+          prop: AuftragID
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16918359667960.07225144897825087'
+        index: 0
+        slots: []
+  - id: '16918359667960.26216492727599205'
+    name: additionalField
+    children:
+      - id: '16918359668410.4956588875917225'
+        definitionId: atomicText
+        styles: {}
+        properties:
+          name: atomicText5
+          prop: Kunde
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '16918359667960.26216492727599205'
+        index: 1
+        slots: []
+  - id: '16918359668430.49571631233825597'
+    name: groupByField
+    children: []

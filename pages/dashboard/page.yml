@@ -25,3 +25,6 @@ slots:
             name: content
             children:
               - components/menu2.yml
+              - components/dboAuftragMetric.yml
+              - components/card/card.yml
+              - components/dboAuftragMetric2.yml
