@@ -24,7 +24,8 @@ slots:
             name: content
             bindings: {}
             children:
-              - components/menu.yml
+              - components/MainMenu.yml
               - components/metric.yml
               - components/dboSteuerungMetric.yml
               - components/dboSteuerungMetric2.yml
+              - components/image3.yml
