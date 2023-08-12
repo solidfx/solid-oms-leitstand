@@ -1,16 +1,16 @@
-id: '16910093951260.7890106298962611'
-name: loadDboSolidUser
+id: '16918341417460.3732574320278337'
+name: loadDboSteuerung2
 nameConfigured: true
 steps:
-  - id: '16910096127080.9724316751966158'
+  - id: '16918341495750.11250667467238484'
     type: LOAD_COLLECTION
     name: load
     params:
       - type: datasourceId
-        value: solidoms
+        value: POM_test
         valueType: string
       - type: resourceId
-        value: dbo.user
+        value: dbo.Steuerung
         valueType: string
       - type: filters
         value: []
@@ -22,7 +22,7 @@ steps:
           offset:
             value: ''
           orderBy:
-            value: ''
+            value: Kunde
           orderDirection:
             value: asc
         valueType: custom
@@ -48,21 +48,23 @@ steps:
     isChanged: true
 singleStep: true
 mode: manual
-modeConfigured: true
-parentPageId: '1'
+modeConfigured: false
+parentPageId: '16917934204730.15547367989836447'
 folder: false
 config:
   shouldConfirm: false
-  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadDboSolidUser.name}}"?
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.loadDboSteuerung2.name}}"?
   showSuccessToast: false
-  successToast: Action "{{actions.loadDboSolidUser.name}}" successfully executed
+  successToast: Action "{{actions.loadDboSteuerung2.name}}" successfully executed
   successToastDuration: '3000'
   successToastHideByClick: false
   showErrorToast: true
-  errorToast: Action "{{actions.loadDboSolidUser.name}}" has failed
+  errorToast: Action "{{actions.loadDboSteuerung2.name}}" has failed
   errorToastDuration: '3000'
   errorToastHideByClick: false
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
-index: 0
+index: 2

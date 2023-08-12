@@ -1,0 +1,15 @@
+id: '16918335007320.9338947680853356'
+definitionId: tab
+styles: {}
+properties:
+  name: tab9
+  title: Listen
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '16918335007320.13846341654283933'
+index: 1
+slots:
+  - id: '16918335007320.8103942049415394'
+    name: content
+    children: []

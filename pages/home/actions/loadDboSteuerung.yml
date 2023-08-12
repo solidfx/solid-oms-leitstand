@@ -8,16 +8,13 @@ steps:
     params:
       - type: datasourceId
         value: POM_test
-        valueType: custom
-        mustSelectFirst: true
+        valueType: string
       - type: resourceId
         value: dbo.Steuerung
-        valueType: custom
-        mustSelectFirst: true
+        valueType: string
       - type: filters
         value: []
         valueType: custom
-        interpolationType: string
       - type: ordering
         value:
           limit:
@@ -25,32 +22,30 @@ steps:
           offset:
             value: ''
           orderBy:
-            value: ''
+            value: Kunde
           orderDirection:
             value: asc
         valueType: custom
-        interpolationType: string
       - type: additionalParams
-        value: []
+        value:
+          - name: ''
+            value: ''
         valueType: custom
-        interpolationType: string
       - type: customDatabaseName
         value: ''
         valueType: interpolatedValue
       - type: successMapper
         value: ''
         valueType: interpolatedValue
-        interpolationType: code
       - type: failureMapper
         value: ''
         valueType: interpolatedValue
-        interpolationType: code
       - type: mapperEnabled
         value: false
         valueType: custom
     level: 0
     fallthroughError: false
-    isChanged: false
+    isChanged: true
 singleStep: false
 mode: manual
 modeConfigured: false
@@ -71,4 +66,4 @@ config:
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
-index: 3
+index: 0
