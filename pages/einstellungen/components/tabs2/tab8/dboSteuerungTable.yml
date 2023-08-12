@@ -5,8 +5,8 @@ styles:
   xl:
     gridItem:
       x: 0
-      y: 1
-      w: 14
+      y: 0
+      w: 13
       h: 31
   xs:
     gridItem:
@@ -44,7 +44,7 @@ properties:
     dataValue: 'false'
     withData: false
   showEditAction:
-    value: true
+    value: false
     dataValue: 'false'
     withData: false
   showExportAction:
@@ -55,7 +55,28 @@ properties:
     value: true
     dataValue: 'false'
     withData: false
-actions: {}
+  rowVariation: dense
+  showFilter: true
+actions:
+  init:
+    - action: '16918341417460.3732574320278337'
+      paramCode: ''
+      blockPageLoad: false
+      index: 0
+  smartTableCreate: []
+  smartTableEdit: []
+  smartTableBulkEdit: []
+  smartTableDelete: []
+  smartTableRowSelect: []
+  smartTableRowClick:
+    - action: '16918341417460.3732574320278337'
+      paramCode: ''
+      blockPageLoad: false
+      index: 1
+  smartTablePageSelect: []
+  smartTableFilterChange: []
+  smartTableSortChange: []
+  smartTableReload: []
 index: 0
 slots:
   - id: '16918341123740.29146518349659556'
@@ -67,6 +88,10 @@ slots:
         styles:
           xl:
             visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
         properties:
           name: atomicString2
           prop: Kunde
@@ -84,6 +109,10 @@ slots:
         styles:
           xl:
             visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
         properties:
           name: atomicString3
           prop: Mandant
@@ -101,6 +130,10 @@ slots:
         styles:
           xl:
             visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
         properties:
           name: atomicString4
           prop: Auftragsart
@@ -118,6 +151,10 @@ slots:
         styles:
           xl:
             visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
         properties:
           name: atomicString5
           prop: jobstartTyp
@@ -134,7 +171,7 @@ slots:
         parentSlotId: '16918341123740.29146518349659556'
         styles:
           xl:
-            visible: false
+            visible: true
         properties:
           name: atomicString6
           prop: jobstartScheduler
@@ -151,7 +188,11 @@ slots:
         parentSlotId: '16918341123740.29146518349659556'
         styles:
           xl:
-            visible: true
+            visible: false
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
         properties:
           name: atomicString7
           prop: inputTyp
@@ -185,7 +226,7 @@ slots:
         parentSlotId: '16918341123740.29146518349659556'
         styles:
           xl:
-            visible: true
+            visible: false
         properties:
           name: atomicBoolean
           prop: inputArchive
@@ -195,6 +236,8 @@ slots:
             - xs
           width: 60
           filter: true
+          title: Input archivieren
+          display: icon
         index: 7
         slots: []
       - id: '16918341695570.9608566151540157'
@@ -219,7 +262,7 @@ slots:
         parentSlotId: '16918341123740.29146518349659556'
         styles:
           xl:
-            visible: true
+            visible: false
         properties:
           name: atomicBoolean2
           prop: inputUnzipFiles
@@ -229,6 +272,8 @@ slots:
             - xs
           width: 60
           filter: true
+          title: Enpacke ZIPs
+          display: icon
         index: 9
         slots: []
       - id: '16918341695570.05536866364840298'
@@ -236,7 +281,7 @@ slots:
         parentSlotId: '16918341123740.29146518349659556'
         styles:
           xl:
-            visible: true
+            visible: false
         properties:
           name: atomicString10
           prop: preprodTyp
@@ -253,7 +298,7 @@ slots:
         parentSlotId: '16918341123740.29146518349659556'
         styles:
           xl:
-            visible: true
+            visible: false
         properties:
           name: atomicBoolean3
           prop: preprodGroupSendungen
@@ -285,7 +330,9 @@ slots:
       - id: '16918344401390.6865056302490764'
         definitionId: atomicString
         parentSlotId: '16918341123740.29146518349659556'
-        styles: {}
+        styles:
+          xl:
+            visible: false
         properties:
           name: atomicString12
           prop: Kunde
