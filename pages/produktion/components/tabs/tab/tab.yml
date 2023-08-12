@@ -13,4 +13,4 @@ slots:
   - id: '16917936309860.09319424114984853'
     name: content
     children:
-      - dboAuftragTable.yml
+      - AuftragsartenStart.yml

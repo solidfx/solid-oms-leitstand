@@ -32,7 +32,7 @@ slots:
     name: tabs
     children:
       - tab/tab.yml
-      - tab2.yml
+      - tab2/tab2.yml
       - tab3.yml
       - tab4.yml
       - tab5.yml
