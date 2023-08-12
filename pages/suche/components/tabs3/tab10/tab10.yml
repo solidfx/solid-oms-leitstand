@@ -12,4 +12,5 @@ index: 0
 slots:
   - id: '16918362331920.7080812210427363'
     name: content
-    children: []
+    children:
+      - dboAuftragTable2.yml

@@ -35,6 +35,7 @@ properties:
     withData: true
     dataValue: '{{actions.loadDboDokument.loading}}'
     value: false
+  showFilter: true
 actions: {}
 index: 0
 slots:

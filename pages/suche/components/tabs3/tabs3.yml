@@ -25,6 +25,6 @@ slots:
   - id: '16918362331920.09070868164145107'
     name: tabs
     children:
-      - tab10.yml
+      - tab10/tab10.yml
       - tab11/tab11.yml
       - tab12.yml
