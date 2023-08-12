@@ -58,7 +58,23 @@ properties:
     withData: false
   rowVariation: dense
   rowBackgroundColor: '{{index % 2 === 0 ? ''#f9f9f9'' :''#fefefe''}}'
-actions: {}
+  resetActivePageOnNewData: true
+actions:
+  init:
+    - action: '16917942175960.7681327962608866'
+      paramCode: ''
+      blockPageLoad: false
+      index: 0
+  smartTableCreate: []
+  smartTableEdit: []
+  smartTableBulkEdit: []
+  smartTableDelete: []
+  smartTableRowSelect: []
+  smartTableRowClick: []
+  smartTablePageSelect: []
+  smartTableFilterChange: []
+  smartTableSortChange: []
+  smartTableReload: []
 index: 0
 slots:
   - id: '16918787464550.549343410340108'
@@ -100,7 +116,7 @@ slots:
           xl:
             visible: true
             fontSize:
-              customValue: 10
+              customValue: 12
               customUnit: px
               themeDefaultOverridePropertyKey: baseTextFontSize
         properties:
