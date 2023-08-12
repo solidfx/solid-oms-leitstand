@@ -25,13 +25,15 @@ properties:
         { prop: 'email', type: 'link' },
       ]
     withData: false
-  entity: ''
+  entity: '{{ui.dboSteuerungTable.selectedRow.data}}'
   name: dboSteuerungForm
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
   title: Steuerdatei Start
   columns: '3'
+  submitBtnTitle: Speichern
+  showSuccessMessage: true
 actions: {}
 index: 0
 slots:
