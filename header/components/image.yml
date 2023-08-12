@@ -7,7 +7,16 @@ styles:
       x: 23
       y: 0
       w: 1
-      h: 3
+      h: 4
+    src:
+      url: https://solfx.de/images/SolidFX_Logo_824x833.jpg
+      uploadUrl: ''
+      name: ''
+      active: url
+    radius:
+      customValue: 0
+      customUnit: px
+    fit: contain
   xs:
     gridItem:
       x: 0

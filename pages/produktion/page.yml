@@ -1,0 +1,28 @@
+id: '16917934644660.913036060840761'
+name: Produktion
+url: produktion
+roleIds: []
+disableInMenu: false
+parentPageId: ''
+index: 2
+slots:
+  - id: '16917934644660.1835139465836051'
+    name: content
+    children:
+      - id: '16917934644660.8816211753594345'
+        definitionId: grid
+        parentSlotId: '16917934644660.1835139465836051'
+        styles: {}
+        properties:
+          name: produktion
+          pageTitle: '{{app.name}} - {{activeRoute.name}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots:
+          - id: '16917934644660.34751435742319825'
+            name: content
+            children:
+              - components/menu3.yml
+              - components/tabs/tabs.yml

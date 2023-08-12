@@ -8,6 +8,15 @@ styles:
       y: 0
       w: 3
       h: 4
+    src:
+      url: https://solfx.de/images/postfactory_logo2.png
+      uploadUrl: ''
+      name: ''
+      active: url
+    fit: contain
+    radius:
+      customValue: 0
+      customUnit: px
   xs:
     gridItem:
       x: 0

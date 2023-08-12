@@ -1,0 +1,15 @@
+id: '16917937047730.3473353746441974'
+definitionId: tab
+parentSlotId: '16917936309860.003941350322131276'
+styles: {}
+properties:
+  name: tab6
+  title: Archivieren
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+index: 5
+slots:
+  - id: '16917937047730.14099231435482484'
+    name: content
+    children: []

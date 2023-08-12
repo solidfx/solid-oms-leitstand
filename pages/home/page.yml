@@ -24,5 +24,4 @@ slots:
             name: content
             bindings: {}
             children:
-              - components/dboUserTable.yml
               - components/menu.yml

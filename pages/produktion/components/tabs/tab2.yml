@@ -1,0 +1,15 @@
+id: '16917936309860.2653722939633598'
+definitionId: tab
+styles: {}
+properties:
+  name: tab2
+  title: Vorverarbeitung
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '16917936309860.003941350322131276'
+index: 1
+slots:
+  - id: '16917936309860.20728413308884597'
+    name: content
+    children: []

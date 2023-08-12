@@ -1,0 +1,15 @@
+id: '16917937011770.22435053769216617'
+definitionId: tab
+parentSlotId: '16917936309860.003941350322131276'
+styles: {}
+properties:
+  name: tab3
+  title: Drucken
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+index: 2
+slots:
+  - id: '16917937011770.6074689975713488'
+    name: content
+    children: []
