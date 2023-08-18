@@ -1,0 +1,111 @@
+id: '16918807528290.8724292158445'
+name: reqPOSTstartBatch
+nameConfigured: true
+steps:
+  - id: '16923934976030.3650427144568489'
+    type: httpRequest
+    name: request
+    params:
+      - type: datasourceId
+        value: ScalerAPI
+        valueType: string
+        mustSelectFirst: true
+      - type: method
+        value: POST
+        valueType: string
+      - type: url
+        value: startBatch
+        valueType: interpolatedValue
+        interpolationType: string
+      - type: headers
+        value:
+          - name: Content-Type
+            value: application/json
+        valueType: custom
+        interpolationType: string
+      - type: queryParams
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+        interpolationType: string
+      - type: body
+        value: "{\n\t\"key\": {\n\t\t\t\"kunde\": {{ui.AuftragVorverarbeitung.selectedRow.data.Kunde}},\n\t\t\t\"mandant\": {{ui.AuftragVorverarbeitung.selectedRow.data.Mandant}},\n\t\t\t\"auftragsart\": {{ui.AuftragVorverarbeitung.selectedRow.data.Auftragsart}}\n\t},\t\n    \"runmode\": \"test\"\n}"
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: structuredBody
+        value: []
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: bodyType
+        value: object
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+  - id: '16923949930940.5815136167203814'
+    type: showToast
+    name: notification
+    params:
+      - type: message
+        value: >-
+          Verarbeitung gestartet für
+          {{ui.AuftragsartenStart.selectedRow.data.Kunde}} -
+          {{ui.AuftragsartenStart.selectedRow.data.Mandant}} -
+          {{ui.AuftragsartenStart.selectedRow.data.Auftragsart}}.
+        valueType: interpolatedValue
+      - type: type
+        value: success
+        valueType: string
+      - type: icon
+        value: checkmark-circle-2
+        valueType: string
+      - type: duration
+        value: '3000'
+        valueType: interpolatedValue
+      - type: position
+        value: top-end
+        valueType: string
+      - type: hideOnClick
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: true
+mode: manual
+modeConfigured: false
+parentPageId: '16917934644660.913036060840761'
+folder: false
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.reqPOSTstartBatch.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.reqPOSTstartBatch.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.reqPOSTstartBatch.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: false
+selected: true
+configured: true
+index: 3

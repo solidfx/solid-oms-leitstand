@@ -30,7 +30,10 @@ properties:
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
-  title: Steuerdatei Start
+  title: >-
+    Steuerdatei Start - {{ui.dboSteuerungTable.selectedRow.data.Kunde}} -
+    {{ui.dboSteuerungTable.selectedRow.data.Mandant}} -
+    {{ui.dboSteuerungTable.selectedRow.data.Auftragsart}}
   columns: '3'
   submitBtnTitle: Speichern
   showSuccessMessage: true
