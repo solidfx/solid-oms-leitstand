@@ -25,12 +25,15 @@ properties:
         { prop: 'email', type: 'link' },
       ]
     withData: false
-  entity: ''
+  entity: '{{ui.dboSteuerungTable.selectedRow.data}}'
   name: dboSteuerungForm2
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
-  title: Steuerdatei Input
+  title: >-
+    Steuerdatei Input - {{ui.dboSteuerungTable.selectedRow.data.Kunde}} -
+    {{ui.dboSteuerungTable.selectedRow.data.Mandant}} -
+    {{ui.dboSteuerungTable.selectedRow.data.Auftragsart}}
   columns: '3'
 actions: {}
 index: 0

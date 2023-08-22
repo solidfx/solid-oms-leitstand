@@ -25,6 +25,10 @@ properties:
     value: true
     dataValue: 'false'
     withData: false
+  prevButtonStatus:
+    value: basic
+    dataValue: basic
+    withData: false
 actions: {}
 index: 1
 slots:
@@ -34,8 +38,8 @@ slots:
       - step/step.yml
       - step2/step2.yml
       - step3/step3.yml
-      - step5.yml
-      - step6.yml
+      - step5/step5.yml
+      - step6/step6.yml
   - id: '16918346236870.8760230479802946'
     name: completedStep
     children:

@@ -25,13 +25,17 @@ properties:
         { prop: 'email', type: 'link' },
       ]
     withData: false
-  entity: ''
+  entity: '{{ui.dboSteuerungTable.selectedRow.data}}'
   name: dboSteuerungForm3
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
-  title: Steuerdatei Preprod
-  columns: '2'
+  title: >-
+    Steuerdatei VORVERARBEITUNG -
+    {{ui.dboSteuerungTable.selectedRow.data.Kunde}} -
+    {{ui.dboSteuerungTable.selectedRow.data.Mandant}} -
+    {{ui.dboSteuerungTable.selectedRow.data.Auftragsart}}
+  columns: '3'
 actions: {}
 index: 0
 slots:
@@ -42,7 +46,7 @@ slots:
         definitionId: atomicString
         styles:
           xl:
-            visible: true
+            visible: false
         properties:
           name: atomicString33
           prop: Kunde
@@ -57,7 +61,7 @@ slots:
         definitionId: atomicString
         styles:
           xl:
-            visible: true
+            visible: false
         properties:
           name: atomicString34
           prop: Mandant
@@ -72,7 +76,7 @@ slots:
         definitionId: atomicString
         styles:
           xl:
-            visible: true
+            visible: false
         properties:
           name: atomicString35
           prop: Auftragsart
@@ -87,7 +91,7 @@ slots:
         definitionId: atomicString
         styles:
           xl:
-            visible: true
+            visible: false
         properties:
           name: atomicString36
           prop: jobstartTyp
@@ -102,7 +106,7 @@ slots:
         definitionId: atomicString
         styles:
           xl:
-            visible: true
+            visible: false
         properties:
           name: atomicString37
           prop: jobstartScheduler
@@ -192,7 +196,7 @@ slots:
         definitionId: atomicString
         styles:
           xl:
-            visible: false
+            visible: true
         properties:
           name: atomicString41
           prop: preprodTyp
@@ -207,7 +211,7 @@ slots:
         definitionId: atomicBoolean
         styles:
           xl:
-            visible: false
+            visible: true
         properties:
           name: atomicBoolean12
           prop: preprodGroupSendungen
