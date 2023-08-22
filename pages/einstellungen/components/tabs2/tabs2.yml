@@ -19,11 +19,19 @@ properties:
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
-actions: {}
+actions:
+  init:
+    - action: '16927417110230.9564663148200729'
+      paramCode: ''
+      blockPageLoad: false
+      index: 0
+  tabsChangeTab: []
 index: 1
 slots:
   - id: '16918335007320.13846341654283933'
     name: tabs
     children:
       - tab8/tab8.yml
-      - tab9.yml
+      - tab9/tab9.yml
+      - tab13/tab13.yml
+      - tab14/tab14.yml

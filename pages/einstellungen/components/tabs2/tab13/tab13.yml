@@ -1,0 +1,21 @@
+id: '16927412885590.10163575072905284'
+definitionId: tab
+parentSlotId: '16918335007320.13846341654283933'
+styles: {}
+properties:
+  name: tab13
+  title: MO Profile
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  icon:
+    value: globe
+    dataValue: ''
+    withData: false
+index: 3
+slots:
+  - id: '16927412885590.2728932627656391'
+    name: content
+    children:
+      - dboDvfConfigTable.yml
+      - stepper2/stepper2.yml

@@ -3,13 +3,18 @@ definitionId: tab
 styles: {}
 properties:
   name: tab9
-  title: Listen
+  title: Beilagen
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
+  icon:
+    value: attach-2
+    dataValue: ''
+    withData: false
 parentSlotId: '16918335007320.13846341654283933'
 index: 1
 slots:
   - id: '16918335007320.8103942049415394'
     name: content
-    children: []
+    children:
+      - dboBeilageTable.yml
