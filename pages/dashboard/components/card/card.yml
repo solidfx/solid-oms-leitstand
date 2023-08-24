@@ -29,7 +29,8 @@ slots:
       - heading2.yml
   - id: '16918358597210.12727395374580364'
     name: body
-    children: []
+    children:
+      - dboAuftragChart.yml
   - id: '16918358597210.6653882137218978'
     name: footer
     children: []

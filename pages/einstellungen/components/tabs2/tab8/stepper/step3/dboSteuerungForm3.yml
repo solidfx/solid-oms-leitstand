@@ -32,9 +32,7 @@ properties:
     - xs
   title: >-
     Steuerdatei VORVERARBEITUNG -
-    {{ui.dboSteuerungTable.selectedRow.data.Kunde}} -
-    {{ui.dboSteuerungTable.selectedRow.data.Mandant}} -
-    {{ui.dboSteuerungTable.selectedRow.data.Auftragsart}}
+    {{ui.dboSteuerungTable.selectedRow.data.Kunde}} 
   columns: '3'
 actions: {}
 index: 0
@@ -46,7 +44,15 @@ slots:
         definitionId: atomicString
         styles:
           xl:
-            visible: false
+            visible: true
+            fontSize:
+              customValue: 16
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            color:
+              value: primary
+              dataValue: basic
+              withData: false
         properties:
           name: atomicString33
           prop: Kunde
@@ -54,6 +60,11 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceView: true
+          textStyle:
+            transform: none
+            styles:
+              - bold
         parentSlotId: '16918352891400.7961829125201156'
         index: 0
         slots: []
@@ -61,7 +72,15 @@ slots:
         definitionId: atomicString
         styles:
           xl:
-            visible: false
+            visible: true
+            fontSize:
+              customValue: 16
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            color:
+              value: hint
+              dataValue: basic
+              withData: false
         properties:
           name: atomicString34
           prop: Mandant
@@ -69,6 +88,11 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceView: true
+          textStyle:
+            transform: none
+            styles:
+              - bold
         parentSlotId: '16918352891400.7961829125201156'
         index: 1
         slots: []
@@ -76,7 +100,15 @@ slots:
         definitionId: atomicString
         styles:
           xl:
-            visible: false
+            visible: true
+            fontSize:
+              customValue: 16
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            color:
+              value: danger-dark
+              dataValue: basic
+              withData: false
         properties:
           name: atomicString35
           prop: Auftragsart
@@ -84,6 +116,11 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceView: true
+          textStyle:
+            transform: none
+            styles:
+              - bold
         parentSlotId: '16918352891400.7961829125201156'
         index: 2
         slots: []

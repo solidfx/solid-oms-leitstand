@@ -1,0 +1,47 @@
+id: '16929179427200.45457652111676583'
+name: openModalDokDetails
+nameConfigured: true
+steps:
+  - id: '16929179760460.8361932087986677'
+    type: navigation
+    name: navigate
+    params:
+      - type: url
+        value: '{{ui.modalDokDetails.open()}}'
+        valueType: interpolatedValue
+        interpolationType: string
+      - type: queryParams
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+        interpolationType: string
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '16917934505390.26478948391555246'
+folder: false
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.openModalDokDetails.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.openModalDokDetails.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.openModalDokDetails.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: false
+selected: true
+configured: true
+index: 20
