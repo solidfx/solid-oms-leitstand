@@ -30,11 +30,11 @@ properties:
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
-  title: >-
-    Steuerdatei Input - {{ui.dboSteuerungTable.selectedRow.data.Kunde}} -
-    {{ui.dboSteuerungTable.selectedRow.data.Mandant}} -
-    {{ui.dboSteuerungTable.selectedRow.data.Auftragsart}}
+  title: 'Auftragssteuerung INPUT - {{ui.dboSteuerungTable.selectedRow.data.Kunde}} '
   columns: '3'
+  submitBtnTitle: Inputkonfiguration speichern
+  showSuccessMessage: true
+  successMessage: Inputkonfiguration gespeichert
 actions: {}
 index: 0
 slots:
@@ -46,6 +46,14 @@ slots:
         styles:
           xl:
             visible: true
+            fontSize:
+              customValue: 16
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            color:
+              value: primary
+              dataValue: basic
+              withData: false
         properties:
           name: atomicString23
           prop: Kunde
@@ -53,6 +61,11 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceView: true
+          textStyle:
+            transform: none
+            styles:
+              - bold
         parentSlotId: '16918352087520.4081636560629527'
         index: 0
         slots: []
@@ -61,6 +74,14 @@ slots:
         styles:
           xl:
             visible: true
+            fontSize:
+              customValue: 16
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            color:
+              value: hint
+              dataValue: basic
+              withData: false
         properties:
           name: atomicString24
           prop: Mandant
@@ -68,6 +89,11 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceView: true
+          textStyle:
+            transform: none
+            styles:
+              - bold
         parentSlotId: '16918352087520.4081636560629527'
         index: 1
         slots: []
@@ -76,6 +102,14 @@ slots:
         styles:
           xl:
             visible: true
+            fontSize:
+              customValue: 16
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            color:
+              value: danger-dark
+              dataValue: basic
+              withData: false
         properties:
           name: atomicString25
           prop: Auftragsart
@@ -83,6 +117,11 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceView: true
+          textStyle:
+            transform: none
+            styles:
+              - bold
         parentSlotId: '16918352087520.4081636560629527'
         index: 2
         slots: []

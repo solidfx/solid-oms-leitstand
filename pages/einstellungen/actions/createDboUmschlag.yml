@@ -1,35 +1,24 @@
-id: '16917932490760.3009319584251897'
-name: loadDboSteuerung
+id: '16929015714590.6651474676731557'
+name: createDboUmschlag
 nameConfigured: true
 steps:
-  - id: '16917932570400.22400511795665823'
-    type: LOAD_COLLECTION
-    name: load
+  - id: '16929015833330.5915867499909053'
+    type: CREATE_ENTITY
+    name: create
     params:
       - type: datasourceId
         value: POM_test
         valueType: string
       - type: resourceId
-        value: dbo.Steuerung
+        value: dbo.Umschlag
         valueType: string
-      - type: filters
-        value: []
-        valueType: custom
-      - type: ordering
+      - type: entity
         value:
-          limit:
-            value: 1000
-          offset:
-            value: ''
-          orderBy:
-            value: Kunde
-          orderDirection:
-            value: asc
-        valueType: custom
-      - type: additionalParams
-        value:
-          - name: ''
-            value: ''
+          mode: custom
+          valueByMode:
+            structured: {}
+            custom: >-
+              {"Bezeichnung":{{ui.dboUmschlagTable.newRow.data.Bezeichnung}},"Beschreibung":{{ui.dboUmschlagTable.newRow.data.Beschreibung}},"gewicht":{{ui.dboUmschlagTable.newRow.data.gewicht}},"laenge":{{ui.dboUmschlagTable.newRow.data.laenge}},"breite":{{ui.dboUmschlagTable.newRow.data.breite}},"hoehe":{{ui.dboUmschlagTable.newRow.data.hoehe}}}
         valueType: custom
       - type: customDatabaseName
         value: ''
@@ -49,22 +38,23 @@ steps:
 singleStep: false
 mode: manual
 modeConfigured: false
-parentPageId: '1'
+parentPageId: '16917934204730.15547367989836447'
 folder: false
 parentId: null
 config:
   shouldConfirm: false
-  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadDboSteuerung.name}}"?
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.createDboUmschlag.name}}"?
   showSuccessToast: false
-  successToast: Action "{{actions.loadDboSteuerung.name}}" successfully executed
+  successToast: Action "{{actions.createDboUmschlag.name}}" successfully executed
   successToastDuration: '3000'
   successToastHideByClick: false
   showErrorToast: true
-  errorToast: Action "{{actions.loadDboSteuerung.name}}" has failed
+  errorToast: Action "{{actions.createDboUmschlag.name}}" has failed
   errorToastDuration: '3000'
   errorToastHideByClick: false
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
-assigned: false
-index: 0
+index: 15

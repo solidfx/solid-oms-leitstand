@@ -73,4 +73,5 @@ config:
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
-index: 4
+assigned: false
+index: 6

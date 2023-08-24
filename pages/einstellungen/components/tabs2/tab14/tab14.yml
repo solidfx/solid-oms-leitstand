@@ -1,0 +1,20 @@
+id: '16927414616100.3155930521720427'
+definitionId: tab
+parentSlotId: '16918335007320.13846341654283933'
+styles: {}
+properties:
+  name: tab14
+  title: Umschläge
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  icon:
+    value: email-outline
+    dataValue: ''
+    withData: false
+index: 2
+slots:
+  - id: '16927414616100.45599213820510043'
+    name: content
+    children:
+      - dboUmschlagTable.yml

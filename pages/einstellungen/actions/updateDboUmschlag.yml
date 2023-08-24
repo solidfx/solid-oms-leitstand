@@ -1,0 +1,84 @@
+id: '16929026462400.5103209395579387'
+name: updateDboUmschlag
+nameConfigured: true
+steps:
+  - id: '16929026513010.16862525876052015'
+    type: UPDATE_ENTITY
+    name: update
+    params:
+      - type: datasourceId
+        value: POM_test
+        valueType: string
+      - type: resourceId
+        value: dbo.Umschlag
+        valueType: string
+      - type: filter
+        value:
+          - column: umschlagID
+            operation: '='
+            value:
+              value: '{{ui.dboUmschlagTable.selectedRow.data.umschlagID}}'
+        valueType: custom
+      - type: entity
+        value:
+          mode: structured
+          valueByMode:
+            structured:
+              Bezeichnung:
+                value: '{{ui.dboUmschlagTable.selectedRow.data.Bezeichnung}}'
+              Beschreibung:
+                value: '{{ui.dboUmschlagTable.selectedRow.data.Beschreibung}}'
+              gewicht:
+                value: '{{ui.dboUmschlagTable.selectedRow.data.gewicht}}'
+              laenge:
+                value: '{{ui.dboUmschlagTable.selectedRow.data.laenge}}'
+              breite:
+                value: '{{ui.dboUmschlagTable.selectedRow.data.breite}}'
+              hoehe:
+                value: '{{ui.dboUmschlagTable.selectedRow.data.hoehe}}'
+            custom: ''
+        valueType: custom
+      - type: replace
+        value: false
+        valueType: string
+      - type: bulk
+        value: false
+        valueType: string
+      - type: customDatabaseName
+        value: ''
+        valueType: interpolatedValue
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '16917934204730.15547367989836447'
+folder: false
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.updateDboUmschlag.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.updateDboUmschlag.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.updateDboUmschlag.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+index: 16

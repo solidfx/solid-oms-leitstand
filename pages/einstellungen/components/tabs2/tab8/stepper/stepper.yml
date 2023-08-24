@@ -29,6 +29,10 @@ properties:
     value: basic
     dataValue: basic
     withData: false
+  showCompletedStep:
+    value: false
+    dataValue: 'false'
+    withData: false
 actions: {}
 index: 1
 slots:

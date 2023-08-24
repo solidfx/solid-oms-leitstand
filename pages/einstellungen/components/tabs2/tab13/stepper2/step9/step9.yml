@@ -1,0 +1,16 @@
+id: '16927424223100.06519888936923346'
+definitionId: step
+styles: {}
+properties:
+  name: step9
+  title: Dialogpost national
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '16927424223100.4812959577426603'
+index: 2
+slots:
+  - id: '16927424223100.6372373577630142'
+    name: content
+    children:
+      - dbodvfconfigtableForm3.yml

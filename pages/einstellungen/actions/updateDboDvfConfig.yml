@@ -1,0 +1,99 @@
+id: '16928899495600.9645120455899796'
+name: updateDboDvfConfig
+nameConfigured: true
+steps:
+  - id: '16928899555060.410525747782688'
+    type: UPDATE_ENTITY
+    name: update
+    params:
+      - type: datasourceId
+        value: POM_test
+        valueType: string
+      - type: resourceId
+        value: dbo.dvfConfig
+        valueType: string
+      - type: filter
+        value:
+          - column: dvfConfigName
+            operation: '='
+            value:
+              value: '{{ui.dboDvfConfigTable.selectedRow.data.dvfConfigName}}'
+        valueType: custom
+      - type: entity
+        value:
+          mode: structured
+          valueByMode:
+            structured:
+              sendungsart:
+                value: '{{ui.dboDvfConfigTable.selectedRow.data.sendungsart}}'
+              optimierung:
+                value: '{{ui.dboDvfConfigTable.selectedRow.data.optimierung}}'
+              einldatum:
+                value: '{{ui.dboDvfConfigTable.selectedRow.data.einldatum}}'
+              checkplz:
+                value: '{{ui.dboDvfConfigTable.selectedRow.data.checkplz}}'
+              einlieferungplz:
+                value: '{{ui.dboDvfConfigTable.selectedRow.data.einlieferungplz}}'
+              einlieferungsstelle:
+                value: '{{ui.dboDvfConfigTable.selectedRow.data.einlieferungsstelle}}'
+              absender:
+                value: '{{ui.dboDvfConfigTable.selectedRow.data.absender}}'
+              preadrvariante:
+                value: '{{ui.dboDvfConfigTable.selectedRow.data.preadrvariante}}'
+              preadrid:
+                value: '{{ui.dboDvfConfigTable.selectedRow.data.preadrid}}'
+              kilotarif:
+                value: '{{ui.dboDvfConfigTable.selectedRow.data.kilotarif}}'
+              datamatrix:
+                value: '{{ui.dboDvfConfigTable.selectedRow.data.datamatrix}}'
+              einlieferer:
+                value: '{{ui.dboDvfConfigTable.selectedRow.data.einlieferer}}'
+            custom: ''
+        valueType: custom
+      - type: replace
+        value: false
+        valueType: string
+      - type: bulk
+        value: false
+        valueType: string
+      - type: customDatabaseName
+        value: ''
+        valueType: interpolatedValue
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '16917934204730.15547367989836447'
+folder: false
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.updateDboDvfConfig.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.updateDboDvfConfig.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.updateDboDvfConfig.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: true
+selected: true
+configured: true
+index: 11

@@ -28,7 +28,7 @@ properties:
     dataValue: '{{actions.loadDboSteuerung.loading}}'
     value: false
 actions: {}
-index: 2
+index: 1
 slots:
   - id: '16918356019730.13129852470061776'
     name: metricField

@@ -1,23 +1,20 @@
-id: '16918807236290.6680689222533096'
-name: loadDboSteuerung3
+id: '16918341417460.3732574320278337'
+name: loadDBSteuerungfull
 nameConfigured: true
 steps:
-  - id: '16918807287090.7030179100646676'
+  - id: '16918341495750.11250667467238484'
     type: LOAD_COLLECTION
     name: load
     params:
       - type: datasourceId
         value: POM_test
-        valueType: custom
-        mustSelectFirst: true
+        valueType: string
       - type: resourceId
         value: dbo.Steuerung
-        valueType: custom
-        mustSelectFirst: true
+        valueType: string
       - type: filters
         value: []
         valueType: custom
-        interpolationType: string
       - type: ordering
         value:
           limit:
@@ -25,55 +22,53 @@ steps:
           offset:
             value: ''
           orderBy:
-            value: ''
+            value: Kunde
           orderDirection:
             value: asc
         valueType: custom
-        interpolationType: string
       - type: additionalParams
-        value: []
+        value:
+          - name: ''
+            value: ''
         valueType: custom
-        interpolationType: string
       - type: customDatabaseName
         value: ''
         valueType: interpolatedValue
       - type: successMapper
         value: ''
         valueType: interpolatedValue
-        interpolationType: code
       - type: failureMapper
         value: ''
         valueType: interpolatedValue
-        interpolationType: code
       - type: mapperEnabled
         value: false
         valueType: custom
     level: 0
     fallthroughError: false
-    isChanged: false
-singleStep: false
+    isChanged: true
+    nameConfigured: true
+singleStep: true
 mode: manual
 modeConfigured: false
-parentPageId: '16917934644660.913036060840761'
+parentPageId: '16917934204730.15547367989836447'
 folder: false
-parentId: null
 config:
   shouldConfirm: false
   confirmMessage: >-
     Are you sure you'd like to proceed with
-    "{{actions.loadDboSteuerung3.name}}"?
+    "{{actions.loadDBSteuerungfull.name}}"?
   showSuccessToast: false
-  successToast: Action "{{actions.loadDboSteuerung3.name}}" successfully executed
+  successToast: Action "{{actions.loadDBSteuerungfull.name}}" successfully executed
   successToastDuration: '3000'
   successToastHideByClick: false
   showErrorToast: true
-  errorToast: Action "{{actions.loadDboSteuerung3.name}}" has failed
+  errorToast: Action "{{actions.loadDBSteuerungfull.name}}" has failed
   errorToastDuration: '3000'
   errorToastHideByClick: false
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
-assigned: false
+assigned: true
 selected: true
 configured: true
-index: 4
+index: 7

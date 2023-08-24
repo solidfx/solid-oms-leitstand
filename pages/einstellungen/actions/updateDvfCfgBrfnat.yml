@@ -1,0 +1,85 @@
+id: '16928952741070.7176114297595984'
+name: updateDvfCfgBrfnat
+nameConfigured: true
+steps:
+  - id: '16928952741070.023020496522721423'
+    type: UPDATE_ENTITY
+    name: update
+    params:
+      - type: datasourceId
+        value: POM_test
+        valueType: string
+      - type: resourceId
+        value: dbo.dvfConfig
+        valueType: string
+      - type: filter
+        value:
+          - column: dvfConfigName
+            operation: '='
+            value:
+              value: '{{ui.dboDvfConfigTable.selectedRow.data.dvfConfigName}}'
+        valueType: custom
+      - type: entity
+        value:
+          mode: structured
+          valueByMode:
+            structured:
+              brief_nat_ekp:
+                value: '{{ui.dbodvfconfigtableForm.value.brief_nat_ekp}}'
+              brief_nat_verfahren:
+                value: '{{ui.dbodvfconfigtableForm.value.brief_nat_verfahren}}'
+              brief_nat_teilnahme:
+                value: '{{ui.dbodvfconfigtableForm.value.brief_nat_teilnahme}}'
+              brief_nat_einlieferung:
+                value: '{{ui.dbodvfconfigtableForm.value.brief_nat_einlieferung}}'
+              brief_nat_buchungstext:
+                value: '{{ui.dbodvfconfigtableForm.value.brief_nat_buchungstext}}'
+            custom: ''
+        valueType: custom
+      - type: replace
+        value: false
+        valueType: string
+      - type: bulk
+        value: false
+        valueType: string
+      - type: customDatabaseName
+        value: ''
+        valueType: interpolatedValue
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '16917934204730.15547367989836447'
+folder: false
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.updateDboDvfConfig.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.updateDboDvfConfig.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.updateDboDvfConfig.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: true
+selected: true
+configured: true
+index: 12

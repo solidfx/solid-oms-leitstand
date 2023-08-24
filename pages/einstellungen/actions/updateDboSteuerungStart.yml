@@ -1,0 +1,87 @@
+id: '16928892293320.8419679056363865'
+name: updateDboSteuerungStart
+nameConfigured: true
+steps:
+  - id: '16928892451940.13920345638748843'
+    type: UPDATE_ENTITY
+    name: update
+    params:
+      - type: datasourceId
+        value: POM_test
+        valueType: string
+      - type: resourceId
+        value: dbo.Steuerung
+        valueType: string
+      - type: filter
+        value:
+          - column: Kunde
+            operation: '='
+            value:
+              value: '{{ui.dboSteuerungTable.selectedRow.data.Kunde}}'
+          - column: Mandant
+            operation: '='
+            value:
+              value: '{{ui.dboSteuerungTable.selectedRow.data.Mandant}}'
+          - column: Auftragsart
+            operation: '='
+            value:
+              value: '{{ui.dboSteuerungTable.selectedRow.data.Auftragsart}}'
+        valueType: custom
+      - type: entity
+        value:
+          mode: structured
+          valueByMode:
+            structured:
+              jobstartTyp:
+                value: '{{ui.dboSteuerungForm.value.jobstartTyp}}'
+              jobstartScheduler:
+                value: '{{ui.dboSteuerungForm.value.jobstartScheduler}}'
+            custom: ''
+        valueType: custom
+      - type: replace
+        value: false
+        valueType: string
+      - type: bulk
+        value: false
+        valueType: string
+      - type: customDatabaseName
+        value: ''
+        valueType: interpolatedValue
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '16917934204730.15547367989836447'
+folder: false
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.updateDboSteuerungStart.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.updateDboSteuerungStart.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.updateDboSteuerungStart.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: true
+selected: true
+configured: true
+index: 10

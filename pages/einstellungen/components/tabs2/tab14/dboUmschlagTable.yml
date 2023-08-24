@@ -1,0 +1,214 @@
+id: '16927418524880.9122352853391344'
+definitionId: smartTable
+parentSlotId: '16927414616100.45599213820510043'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 16
+      h: 26
+  xs:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 16
+properties:
+  dynamicColumns:
+    value: []
+    dataValue: |-
+      [
+        { prop: 'id', type: 'number', primaryKey: true },
+       'full_name',
+        { prop: 'avatar', type: 'image' },
+        { prop: 'email', type: 'link' },
+      ]
+    withData: false
+  data: '{{actions.loadDboUmschlag.data}}'
+  name: dboUmschlagTable
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Umschläge
+  showLoading:
+    withData: true
+    dataValue: '{{actions.loadDboUmschlag.loading}}'
+    value: false
+  showFilter: true
+  sortColumn:
+    value: umschlagID
+    dataValue: ''
+    withData: false
+  showAddAction:
+    value: true
+    dataValue: 'false'
+    withData: false
+  showEditAction:
+    value: true
+    dataValue: 'false'
+    withData: false
+  showDeleteAction:
+    value: true
+    dataValue: 'false'
+    withData: false
+  showExportAction:
+    value: false
+    dataValue: 'true'
+    withData: false
+  showReloadAction:
+    value: true
+    dataValue: 'false'
+    withData: false
+index: 0
+actions:
+  init:
+    - action: '16927417905170.5996200837654229'
+      paramCode: ''
+      blockPageLoad: false
+      index: 0
+  smartTableCreate:
+    - action: '16929015714590.6651474676731557'
+      paramCode: ''
+      blockPageLoad: false
+      index: 1
+  smartTableEdit:
+    - action: '16929026462400.5103209395579387'
+      paramCode: ''
+      blockPageLoad: false
+      index: 2
+  smartTableBulkEdit: []
+  smartTableDelete: []
+  smartTableRowSelect: []
+  smartTableRowClick: []
+  smartTablePageSelect: []
+  smartTableFilterChange: []
+  smartTableSortChange: []
+  smartTableReload: []
+slots:
+  - id: '16927418524880.6073850119050828'
+    name: columns
+    children:
+      - id: '16927418525710.1006451842834617'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber18
+          prop: umschlagID
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+          disableFormatting: true
+          forceView: true
+          regexpPattern: ''
+        parentSlotId: '16927418524880.6073850119050828'
+        index: 0
+        slots: []
+      - id: '16927418525720.8859616135942874'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString91
+          prop: Bezeichnung
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        parentSlotId: '16927418524880.6073850119050828'
+        index: 1
+        slots: []
+      - id: '16927418525720.11526988752245027'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString92
+          prop: Beschreibung
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        parentSlotId: '16927418524880.6073850119050828'
+        index: 2
+        slots: []
+      - id: '16927418525720.08160649782875051'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber19
+          prop: gewicht
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        parentSlotId: '16927418524880.6073850119050828'
+        index: 3
+        slots: []
+      - id: '16927418525720.31391684395683295'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber20
+          prop: laenge
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        parentSlotId: '16927418524880.6073850119050828'
+        index: 4
+        slots: []
+      - id: '16927418525720.6762543812652735'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber21
+          prop: breite
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        parentSlotId: '16927418524880.6073850119050828'
+        index: 5
+        slots: []
+      - id: '16927418525720.06371378016079765'
+        definitionId: atomicNumber
+        parentSlotId: '16927418524880.6073850119050828'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber2
+          prop: hoehe
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          primaryKey: false
+          filter: true
+          width: 60
+          disableFormatting: true
+        index: 6
+        slots: []

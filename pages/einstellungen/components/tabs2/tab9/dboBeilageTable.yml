@@ -1,0 +1,224 @@
+id: '16927417445470.644676686838803'
+definitionId: smartTable
+parentSlotId: '16918335007320.8103942049415394'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 16
+      h: 24
+  xs:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 16
+properties:
+  dynamicColumns:
+    value: []
+    dataValue: |-
+      [
+        { prop: 'id', type: 'number', primaryKey: true },
+       'full_name',
+        { prop: 'avatar', type: 'image' },
+        { prop: 'email', type: 'link' },
+      ]
+    withData: false
+  data: '{{actions.loadDboBeilage.data}}'
+  name: dboBeilageTable
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Beilagen
+  showLoading:
+    withData: true
+    dataValue: '{{actions.loadDboBeilage.loading}}'
+    value: false
+  showFilter: true
+  sortColumn:
+    value: Artikelnummer
+    dataValue: ''
+    withData: false
+  showAddAction:
+    value: true
+    dataValue: 'false'
+    withData: false
+  showEditAction:
+    value: true
+    dataValue: 'false'
+    withData: false
+  showDeleteAction:
+    value: true
+    dataValue: 'false'
+    withData: false
+  showReloadAction:
+    value: true
+    dataValue: 'false'
+    withData: false
+  showExportAction:
+    value: true
+    dataValue: 'true'
+    withData: false
+actions:
+  init:
+    - action: '16927417110230.9564663148200729'
+      paramCode: ''
+      blockPageLoad: false
+      index: 0
+  smartTableCreate: []
+  smartTableEdit: []
+  smartTableBulkEdit: []
+  smartTableDelete: []
+  smartTableRowSelect: []
+  smartTableRowClick: []
+  smartTablePageSelect: []
+  smartTableFilterChange: []
+  smartTableSortChange: []
+  smartTableReload:
+    - action: '16927417110230.9564663148200729'
+      paramCode: ''
+      blockPageLoad: false
+      index: 1
+index: 0
+slots:
+  - id: '16927417445470.5266736579620397'
+    name: columns
+    children:
+      - id: '16927417446360.5434090872388644'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber
+          prop: beilagenID
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        parentSlotId: '16927417445470.5266736579620397'
+        index: 0
+        slots: []
+      - id: '16927417446360.7298682643165766'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString89
+          prop: Bezeichnung
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        parentSlotId: '16927417445470.5266736579620397'
+        index: 2
+        slots: []
+      - id: '16927417446360.15522604362972547'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString90
+          prop: Beschreibung
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        parentSlotId: '16927417445470.5266736579620397'
+        index: 3
+        slots: []
+      - id: '16927417446360.7020843247296662'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber14
+          prop: gewicht
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        parentSlotId: '16927417445470.5266736579620397'
+        index: 4
+        slots: []
+      - id: '16927417446360.03310711518650722'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber15
+          prop: laenge
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        parentSlotId: '16927417445470.5266736579620397'
+        index: 5
+        slots: []
+      - id: '16927417446360.4623894456836062'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber16
+          prop: breite
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        parentSlotId: '16927417445470.5266736579620397'
+        index: 6
+        slots: []
+      - id: '16927417446360.20318928832895167'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber17
+          prop: hoehe
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+          disableFormatting: true
+        parentSlotId: '16927417445470.5266736579620397'
+        index: 7
+        slots: []
+      - id: '16927417446360.9495260538106762'
+        definitionId: atomicString
+        parentSlotId: '16927417445470.5266736579620397'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString197
+          prop: Artikelnummer
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          primaryKey: false
+          filter: true
+          width: 60
+        index: 1
+        slots: []
