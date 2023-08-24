@@ -33,13 +33,20 @@ properties:
     - xs
   title: Brief national (Kontraktinformationen)
   columns: '2'
+  submitBtnTitle: Brief national speichern
+  showSuccessMessage: true
+  successMessage: Kontrakt Brief national gespeichert.
 actions:
   init:
-    - action: '16927419642190.8473502571386757'
+    - action: '16928899495600.9645120455899796'
       paramCode: ''
       blockPageLoad: false
       index: 0
-  submitEvent: []
+  submitEvent:
+    - action: '16928952741070.7176114297595984'
+      paramCode: ''
+      blockPageLoad: false
+      index: 1
   formClick: []
   changeEvent: []
   customButtonClick: []
@@ -54,6 +61,14 @@ slots:
         styles:
           xl:
             visible: true
+            fontSize:
+              customValue: 16
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            color:
+              value: primary
+              dataValue: basic
+              withData: false
         properties:
           name: atomicString111
           prop: dvfConfigName
@@ -63,7 +78,12 @@ slots:
             - xs
           width: 120
           filter: true
-          title: Config Schlüssel
+          title: Config Name
+          forceView: true
+          textStyle:
+            transform: none
+            styles:
+              - bold
         index: 0
         slots: []
       - id: '16927433910440.21111368496259675'

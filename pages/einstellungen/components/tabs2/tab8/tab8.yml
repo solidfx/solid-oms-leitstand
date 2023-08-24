@@ -8,7 +8,7 @@ properties:
     - xl
     - xs
   icon:
-    value: compass
+    value: compass-outline
     dataValue: ''
     withData: false
 parentSlotId: '16918335007320.13846341654283933'

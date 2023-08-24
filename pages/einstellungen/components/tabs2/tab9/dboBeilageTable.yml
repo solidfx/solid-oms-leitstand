@@ -60,7 +60,26 @@ properties:
     value: true
     dataValue: 'true'
     withData: false
-actions: {}
+actions:
+  init:
+    - action: '16927417110230.9564663148200729'
+      paramCode: ''
+      blockPageLoad: false
+      index: 0
+  smartTableCreate: []
+  smartTableEdit: []
+  smartTableBulkEdit: []
+  smartTableDelete: []
+  smartTableRowSelect: []
+  smartTableRowClick: []
+  smartTablePageSelect: []
+  smartTableFilterChange: []
+  smartTableSortChange: []
+  smartTableReload:
+    - action: '16927417110230.9564663148200729'
+      paramCode: ''
+      blockPageLoad: false
+      index: 1
 index: 0
 slots:
   - id: '16927417445470.5266736579620397'
@@ -82,23 +101,6 @@ slots:
           filter: true
         parentSlotId: '16927417445470.5266736579620397'
         index: 0
-        slots: []
-      - id: '16927417446360.9495260538106762'
-        definitionId: atomicNumber
-        styles:
-          xl:
-            visible: true
-        properties:
-          name: atomicNumber2
-          prop: Artikelnummer
-          primaryKey: false
-          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
-            - xl
-            - xs
-          width: 60
-          filter: true
-        parentSlotId: '16927417445470.5266736579620397'
-        index: 1
         slots: []
       - id: '16927417446360.7298682643165766'
         definitionId: atomicString
@@ -189,7 +191,7 @@ slots:
         definitionId: atomicNumber
         styles:
           xl:
-            visible: false
+            visible: true
         properties:
           name: atomicNumber17
           prop: hoehe
@@ -199,6 +201,24 @@ slots:
             - xs
           width: 60
           filter: true
+          disableFormatting: true
         parentSlotId: '16927417445470.5266736579620397'
         index: 7
+        slots: []
+      - id: '16927417446360.9495260538106762'
+        definitionId: atomicString
+        parentSlotId: '16927417445470.5266736579620397'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString197
+          prop: Artikelnummer
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          primaryKey: false
+          filter: true
+          width: 60
+        index: 1
         slots: []

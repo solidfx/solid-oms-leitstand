@@ -33,13 +33,20 @@ properties:
     - xs
   title: Brief international (Kontraktinformationen)
   columns: '2'
+  submitBtnTitle: Brief int. Speichern
+  showSuccessMessage: true
+  successMessage: Kontrakt Brief international gespeichert
 actions:
   init:
-    - action: '16927419642190.8473502571386757'
+    - action: '16928899495600.9645120455899796'
       paramCode: ''
       blockPageLoad: false
       index: 0
-  submitEvent: []
+  submitEvent:
+    - action: '16928957539470.46442508510555625'
+      paramCode: ''
+      blockPageLoad: false
+      index: 1
   formClick: []
   changeEvent: []
   customButtonClick: []
@@ -53,6 +60,14 @@ slots:
         styles:
           xl:
             visible: true
+            fontSize:
+              customValue: 16
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            color:
+              value: primary
+              dataValue: basic
+              withData: false
         properties:
           name: atomicString133
           prop: dvfConfigName
@@ -62,7 +77,12 @@ slots:
             - xs
           width: 120
           filter: true
-          title: Config Schlüssel
+          title: Config Name
+          forceView: true
+          textStyle:
+            transform: none
+            styles:
+              - bold
         parentSlotId: '16927435937670.27109364172890005'
         index: 0
         slots: []
@@ -464,11 +484,11 @@ slots:
         index: 24
         slots: []
       - id: '16927436397640.19413508172659788'
-        definitionId: atomicNumber
+        definitionId: atomicString
         parentSlotId: '16927435937670.27109364172890005'
         styles: {}
         properties:
-          name: atomicNumber33
+          name: atomicString196
           prop: brief_int_buchungstext
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl

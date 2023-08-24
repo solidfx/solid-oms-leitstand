@@ -34,11 +34,7 @@ properties:
   title: Dialogpost national (Kontraktinformationen)
   columns: '2'
 actions:
-  init:
-    - action: '16927419642190.8473502571386757'
-      paramCode: ''
-      blockPageLoad: false
-      index: 0
+  init: []
   submitEvent: []
   formClick: []
   changeEvent: []
@@ -53,6 +49,14 @@ slots:
         styles:
           xl:
             visible: true
+            fontSize:
+              customValue: 16
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            color:
+              value: primary
+              dataValue: basic
+              withData: false
         properties:
           name: atomicString153
           prop: dvfConfigName
@@ -62,7 +66,12 @@ slots:
             - xs
           width: 120
           filter: true
-          title: Config Schlüssel
+          title: Config Name
+          forceView: true
+          textStyle:
+            transform: none
+            styles:
+              - bold
         parentSlotId: '16927435964590.7700493289225288'
         index: 0
         slots: []

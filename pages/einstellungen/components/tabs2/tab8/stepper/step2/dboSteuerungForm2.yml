@@ -35,6 +35,9 @@ properties:
     {{ui.dboSteuerungTable.selectedRow.data.Mandant}} -
     {{ui.dboSteuerungTable.selectedRow.data.Auftragsart}}
   columns: '3'
+  submitBtnTitle: Inputkonfiguration speichern
+  showSuccessMessage: true
+  successMessage: Inputkonfiguration gespeichert
 actions: {}
 index: 0
 slots:

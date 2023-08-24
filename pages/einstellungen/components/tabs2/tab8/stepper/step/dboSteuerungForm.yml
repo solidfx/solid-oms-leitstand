@@ -5,7 +5,7 @@ styles:
   xl:
     gridItem:
       x: 0
-      y: 0
+      y: 4
       w: 24
       h: 23
   xs:
@@ -30,14 +30,34 @@ properties:
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
-  title: >-
-    Steuerdatei Start - {{ui.dboSteuerungTable.selectedRow.data.Kunde}} -
-    {{ui.dboSteuerungTable.selectedRow.data.Mandant}} -
-    {{ui.dboSteuerungTable.selectedRow.data.Auftragsart}}
+  title: 'Steuerdatei Start -    {{ui.dboSteuerungTable.selectedRow.data.Kunde}} '
   columns: '3'
-  submitBtnTitle: Speichern
+  submitBtnTitle: Startkonfiguration speichern
   showSuccessMessage: true
-actions: {}
+  showSubmitBtn:
+    value: true
+    dataValue: 'true'
+    withData: false
+  resetOnSubmit: true
+  successMessage: >-
+    Steuerdaten - {{ui.dboSteuerungTable.selectedRow.data.Kunde}} -
+    {{ui.dboSteuerungTable.selectedRow.data.Mandant}} -
+    {{ui.dboSteuerungTable.selectedRow.data.Auftragsart}} gespeichert
+  showErrorMessage: true
+actions:
+  init: []
+  submitEvent:
+    - action: '16928892293320.8419679056363865'
+      paramCode: ''
+      blockPageLoad: false
+      index: 0
+    - action: '16918341417460.3732574320278337'
+      paramCode: ''
+      blockPageLoad: false
+      index: 1
+  formClick: []
+  changeEvent: []
+  customButtonClick: []
 index: 0
 slots:
   - id: '16918348450850.07852838576352839'
@@ -48,6 +68,14 @@ slots:
         styles:
           xl:
             visible: true
+            fontSize:
+              customValue: 16
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            color:
+              value: primary
+              dataValue: basic
+              withData: false
         properties:
           name: atomicString13
           prop: Kunde
@@ -55,6 +83,11 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceView: true
+          textStyle:
+            transform: none
+            styles:
+              - bold
         parentSlotId: '16918348450850.07852838576352839'
         index: 0
         slots: []
@@ -63,6 +96,14 @@ slots:
         styles:
           xl:
             visible: true
+            fontSize:
+              customValue: 16
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            color:
+              value: hint
+              dataValue: basic
+              withData: false
         properties:
           name: atomicString14
           prop: Mandant
@@ -70,6 +111,11 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceView: true
+          textStyle:
+            transform: none
+            styles:
+              - bold
         parentSlotId: '16918348450850.07852838576352839'
         index: 1
         slots: []
@@ -78,6 +124,14 @@ slots:
         styles:
           xl:
             visible: true
+            fontSize:
+              customValue: 16
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            color:
+              value: danger-dark
+              dataValue: basic
+              withData: false
         properties:
           name: atomicString15
           prop: Auftragsart
@@ -85,38 +139,13 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          forceView: true
+          textStyle:
+            transform: none
+            styles:
+              - bold
         parentSlotId: '16918348450850.07852838576352839'
         index: 2
-        slots: []
-      - id: '16918348451820.7711803591567417'
-        definitionId: atomicString
-        styles:
-          xl:
-            visible: true
-        properties:
-          name: atomicString16
-          prop: jobstartTyp
-          primaryKey: false
-          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
-            - xl
-            - xs
-        parentSlotId: '16918348450850.07852838576352839'
-        index: 3
-        slots: []
-      - id: '16918348451820.3495319311688616'
-        definitionId: atomicString
-        styles:
-          xl:
-            visible: true
-        properties:
-          name: atomicString17
-          prop: jobstartScheduler
-          primaryKey: false
-          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
-            - xl
-            - xs
-        parentSlotId: '16918348450850.07852838576352839'
-        index: 4
         slots: []
       - id: '16918348451820.7443337601618623'
         definitionId: atomicString
@@ -237,4 +266,59 @@ slots:
             - xs
         parentSlotId: '16918348450850.07852838576352839'
         index: 12
+        slots: []
+      - id: '16918348451820.3495319311688616'
+        definitionId: atomicString
+        parentSlotId: '16918348450850.07852838576352839'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString17
+          prop: jobstartScheduler
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          __UIBAKERY__SHOW__CONDITION__CODE__: '{{ui.dboSteuerungForm.value.jobstartTyp}} == "zeitgesteuert"'
+        index: 4
+        slots: []
+      - id: '16918348451820.7711803591567417'
+        definitionId: atomicSelect
+        parentSlotId: '16918348450850.07852838576352839'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString16
+          prop: jobstartTyp
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          required: true
+          primaryKey: false
+          width: 120
+          filter: true
+          options:
+            value:
+              - value: manuell
+                color: primary
+                __UIBAKERY__SYSTEM_ID__: '1'
+                title: manuell
+              - value: zeitgesteuert
+                color: primary-light
+                __UIBAKERY__SYSTEM_ID__: '2'
+                title: zeitgesteuert
+            dataValue: |-
+              [
+                {
+                  value: 'active',
+                  color: 'success'
+                },
+                {
+                  value: 'not_active',
+                  color: 'danger'
+                }
+              ]
+            withData: false
+        index: 3
         slots: []

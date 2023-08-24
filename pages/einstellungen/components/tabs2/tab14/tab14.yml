@@ -9,7 +9,7 @@ properties:
     - xl
     - xs
   icon:
-    value: email
+    value: email-outline
     dataValue: ''
     withData: false
 index: 2
