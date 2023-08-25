@@ -1,0 +1,65 @@
+id: '16929988457530.7734385039084912'
+definitionId: modal
+parentSlotId: '16918362331920.7051677194464852'
+styles:
+  xl:
+    gridItem:
+      x: 23
+      y: 25
+      w: 1
+      h: 2
+      maxH: 2
+    buttonIconPlacement: none
+    modalSize:
+      widthValue: 60
+      widthUnit: '%'
+      heightValue: 60
+      heightUnit: '%'
+      minWidthValue: 0
+      minWidthUnit: px
+      minHeightValue: 0
+      minHeightUnit: px
+      maxWidthValue: none
+      maxWidthUnit: null
+      maxHeightValue: none
+      maxHeightUnit: null
+  xs:
+    gridItem:
+      x: 0
+      y: 30
+      w: 24
+      h: 1
+      maxH: 2
+properties:
+  name: modalDokDetails
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  buttonHidden:
+    value: false
+    dataValue: 'false'
+    withData: false
+  closeOnBackdrop: true
+  closeOnEsc: true
+  buttonDisabled:
+    value: true
+    dataValue: 'false'
+    withData: false
+  showFooter: false
+  __UIBAKERY__SHOW__CONDITION__CODE__: '{{actions.modalDokDClose.loading}}'
+actions:
+  close: []
+  open: []
+index: 1
+slots:
+  - id: '16929988457530.0626433515013034'
+    name: header
+    children:
+      - heading4.yml
+  - id: '16929988457530.5378879449013356'
+    name: body
+    children:
+      - dbodokumenttableDetail.yml
+  - id: '16929988457530.1892969531527513'
+    name: footer
+    children: []

@@ -12,4 +12,6 @@ index: 2
 slots:
   - id: '16918363298050.5369102282619576'
     name: content
-    children: []
+    children:
+      - dboSendungTable.yml
+      - modalSdgDetails/modalSdgDetails.yml

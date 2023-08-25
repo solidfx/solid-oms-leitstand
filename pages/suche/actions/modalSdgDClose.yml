@@ -1,0 +1,39 @@
+id: '16930022025160.18944968773017412'
+name: modalSdgDClose
+nameConfigured: true
+steps:
+  - id: '16930022025160.45887266379775515'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: '{{ui.modalSdgDetails.close()}}'
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '16917934505390.26478948391555246'
+folder: false
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.modalDokDClose.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.modalDokDClose.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.modalDokDClose.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: false
+selected: true
+configured: true
+index: 22

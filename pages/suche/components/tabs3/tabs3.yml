@@ -27,4 +27,4 @@ slots:
     children:
       - tab10/tab10.yml
       - tab11/tab11.yml
-      - tab12.yml
+      - tab12/tab12.yml

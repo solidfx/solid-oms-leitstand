@@ -1,8 +1,8 @@
-id: '16927417905170.5996200837654229'
-name: loadDboUmschlag
+id: '16929202712020.22260702972023205'
+name: loadDboSendung
 nameConfigured: true
 steps:
-  - id: '16927418041800.22998130953635254'
+  - id: '16929202755360.47579529803314613'
     type: LOAD_COLLECTION
     name: load
     params:
@@ -11,7 +11,7 @@ steps:
         valueType: custom
         mustSelectFirst: true
       - type: resourceId
-        value: dbo.Umschlag
+        value: dbo.Sendung
         valueType: custom
         mustSelectFirst: true
       - type: filters
@@ -54,22 +54,22 @@ steps:
 singleStep: false
 mode: manual
 modeConfigured: false
-parentPageId: '16917934204730.15547367989836447'
+parentPageId: '16917934505390.26478948391555246'
 folder: false
 parentId: null
 config:
   shouldConfirm: false
-  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadDboUmschlag.name}}"?
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadDboSendung.name}}"?
   showSuccessToast: false
-  successToast: Action "{{actions.loadDboUmschlag.name}}" successfully executed
+  successToast: Action "{{actions.loadDboSendung.name}}" successfully executed
   successToastDuration: '3000'
   successToastHideByClick: false
   showErrorToast: true
-  errorToast: Action "{{actions.loadDboUmschlag.name}}" has failed
+  errorToast: Action "{{actions.loadDboSendung.name}}" has failed
   errorToastDuration: '3000'
   errorToastHideByClick: false
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
-assigned: true
-index: 9
+assigned: false
+index: 20

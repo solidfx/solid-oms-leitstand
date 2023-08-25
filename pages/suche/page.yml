@@ -26,4 +26,3 @@ slots:
             children:
               - components/menu5.yml
               - components/tabs3/tabs3.yml
-              - components/modalDokDetails/modalDokDetails.yml
