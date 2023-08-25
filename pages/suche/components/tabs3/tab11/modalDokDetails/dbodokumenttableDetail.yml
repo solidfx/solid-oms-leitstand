@@ -385,3 +385,22 @@ slots:
         parentSlotId: '16929988457530.36277295947603183'
         index: 14
         slots: []
+      - id: '16930036483790.11702252150918757'
+        definitionId: atomicButton
+        parentSlotId: '16929988457530.36277295947603183'
+        styles:
+          xl:
+            status:
+              value: success
+              dataValue: primary
+              withData: false
+            iconPlacement: center
+        properties:
+          name: atomicButton6
+          text: '{{value}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          prop: DokumentID
+        index: 15
+        slots: []
