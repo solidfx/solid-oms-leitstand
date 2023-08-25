@@ -22,11 +22,12 @@ properties:
     - xs
   title: Aufträge
   operation: count
-  groupType: not_group
+  groupType: week
   showLoading:
     withData: false
     dataValue: 'false'
     value: false
+  additionalOperation: show_last
 actions:
   init:
     - action: '16929147906020.21587430641012562'

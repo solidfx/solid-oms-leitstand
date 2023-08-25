@@ -1,0 +1,29 @@
+id: '16929988457530.6828811800150691'
+definitionId: heading
+styles:
+  xl:
+    fontSize:
+      customValue: 18
+      customUnit: px
+      themeDefaultOverridePropertyKey: baseTextFontSize
+    gridItem:
+      x: 0
+      y: 0
+      w: 4
+      h: 2
+    color:
+      value: primary
+      dataValue: basic
+      withData: false
+properties:
+  name: heading4
+  text: Dokument Details
+  verticalAlignment: middle
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  alignment: center
+parentSlotId: '16929988457530.0626433515013034'
+index: 0
+actions: {}
+slots: []

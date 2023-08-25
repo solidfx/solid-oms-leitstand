@@ -1,7 +1,9 @@
 id: '16917934204730.15547367989836447'
 name: Einstellungen
 url: einstellungen
-roleIds: []
+roleIds:
+  - uuyxYy3hy5
+  - CIkhX6NEY8
 disableInMenu: false
 parentPageId: ''
 index: 3

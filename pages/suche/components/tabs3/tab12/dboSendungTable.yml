@@ -1,0 +1,456 @@
+id: '16929203514970.6951348342016839'
+definitionId: smartTable
+parentSlotId: '16918363298050.5369102282619576'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 25
+  xs:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 16
+properties:
+  dynamicColumns:
+    value: []
+    dataValue: |-
+      [
+        { prop: 'id', type: 'number', primaryKey: true },
+       'full_name',
+        { prop: 'avatar', type: 'image' },
+        { prop: 'email', type: 'link' },
+      ]
+    withData: false
+  data: '{{actions.loadDboSendung.data}}'
+  name: dboSendungTable
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Sendungen
+  showLoading:
+    withData: true
+    dataValue: '{{actions.loadDboSendung.loading}}'
+    value: false
+  showFilter: true
+actions: {}
+index: 0
+slots:
+  - id: '16929203514970.04016125770592738'
+    name: columns
+    children:
+      - id: '16929203514970.20717270141383848'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+            color:
+              value: warning-dark
+              dataValue: basic
+              withData: false
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicString209
+          prop: SendungID
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '60'
+          filter: true
+          title: SendungID
+          alignment: left
+        parentSlotId: '16929203514970.04016125770592738'
+        index: 0
+        slots: []
+      - id: '16929203514970.2069988434819603'
+        definitionId: atomicDateTime
+        styles:
+          xl:
+            visible: true
+            color:
+              value: info-dark
+              dataValue: basic
+              withData: false
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicDateTime
+          prop: sdgCreated
+          primaryKey: false
+          timeFormat:
+            value: HH:mm:ss
+            dataValue: HH:mm
+            withData: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '60'
+          filter: true
+          title: Sendung erstellt
+          dateFormat:
+            value: dd.MM.yyyy
+            dataValue: MMM dd, yyyy
+            withData: false
+        parentSlotId: '16929203514970.04016125770592738'
+        index: 2
+        slots: []
+      - id: '16929203514970.8615670901493018'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString211
+          prop: Land
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '40'
+          filter: true
+        parentSlotId: '16929203514970.04016125770592738'
+        index: 5
+        slots: []
+      - id: '16929203514970.3297108052438078'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString212
+          prop: ISO2
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '20'
+          filter: true
+          title: LKZ ISO2
+        parentSlotId: '16929203514970.04016125770592738'
+        index: 6
+        slots: []
+      - id: '16929203514970.5382289458715015'
+        definitionId: atomicText
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicText
+          prop: Adresse
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 200
+          filter: true
+        parentSlotId: '16929203514970.04016125770592738'
+        index: 7
+        slots: []
+      - id: '16929203514970.9424813844335209'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString213
+          prop: Absender
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        parentSlotId: '16929203514970.04016125770592738'
+        index: 8
+        slots: []
+      - id: '16929203514970.7022629757337324'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber23
+          prop: gewicht
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        parentSlotId: '16929203514970.04016125770592738'
+        index: 9
+        slots: []
+      - id: '16929203514970.3067333746989671'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber24
+          prop: laenge
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        parentSlotId: '16929203514970.04016125770592738'
+        index: 10
+        slots: []
+      - id: '16929203514970.7480903026319188'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber33
+          prop: breite
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        parentSlotId: '16929203514970.04016125770592738'
+        index: 11
+        slots: []
+      - id: '16929203514970.3478482062912931'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber34
+          prop: hoehe
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        parentSlotId: '16929203514970.04016125770592738'
+        index: 12
+        slots: []
+      - id: '16929203514970.015811004963286246'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber35
+          prop: AnzahlBlatt
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        parentSlotId: '16929203514970.04016125770592738'
+        index: 13
+        slots: []
+      - id: '16929203514970.09509378279528446'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString214
+          prop: beilagenIdList
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        parentSlotId: '16929203514970.04016125770592738'
+        index: 14
+        slots: []
+      - id: '16929203514970.9556557182308416'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber36
+          prop: umschlagID
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        parentSlotId: '16929203514970.04016125770592738'
+        index: 15
+        slots: []
+      - id: '16929203514970.28923136833257046'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicNumber37
+          prop: AnzahlReprints
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        parentSlotId: '16929203514970.04016125770592738'
+        index: 16
+        slots: []
+      - id: '16929203514970.8392329067716537'
+        definitionId: atomicSelect
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicSelect
+          prop: sdg
+          primaryKey: false
+          options:
+            value:
+              - value: created
+                color: primary
+                __UIBAKERY__SYSTEM_ID__: '16929203382210.050931622785693964'
+            dataValue: |-
+              [
+                {
+                  value: 'created',
+                  color: 'primary'
+                }
+              ]
+            withData: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        parentSlotId: '16929203514970.04016125770592738'
+        index: 18
+        slots: []
+      - id: '16929203514970.10259382529326255'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString215
+          prop: sdgLifeTime
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        parentSlotId: '16929203514970.04016125770592738'
+        index: 17
+        slots: []
+      - id: '16929203514970.4271921647988055'
+        definitionId: atomicString
+        parentSlotId: '16929203514970.04016125770592738'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString210
+          prop: AnzahlDokumente
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          primaryKey: false
+          filter: true
+          width: '30'
+          title: Doks in Sendung
+          alignment: center
+        index: 3
+        slots: []
+      - id: '16929203514970.24118948710282972'
+        definitionId: atomicString
+        parentSlotId: '16929203514970.04016125770592738'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString216
+          prop: PLZ
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          title: PLZ
+          primaryKey: false
+          filter: true
+          width: 60
+        index: 4
+        slots: []
+      - id: '16929203514970.6684295286092508'
+        definitionId: atomicString
+        parentSlotId: '16929203514970.04016125770592738'
+        styles:
+          xl:
+            color:
+              value: danger-dark
+              dataValue: basic
+              withData: false
+            visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicString217
+          prop: AuftragID
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          title: AuftragID
+          primaryKey: false
+          filter: true
+          width: '40'
+          alignment: center
+        index: 1
+        slots: []
+      - id: '16930016056280.044537215502031824'
+        definitionId: atomicButton
+        parentSlotId: '16929203514970.04016125770592738'
+        styles:
+          xl:
+            status:
+              value: warning-dark
+              dataValue: primary
+              withData: false
+            iconPlacement: center
+        properties:
+          name: atomicButton5
+          text: '{{value}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          prop: openModal
+          width: '20'
+          icon:
+            value: clipboard
+            dataValue: star-outline
+            withData: false
+          title: Details
+          linkInfo:
+            active: externalPath
+            internalPath: ''
+            externalPath: ''
+        actions:
+          buttonClick:
+            - action: '16930022339300.8445129424092477'
+              paramCode: ''
+              blockPageLoad: false
+              index: 0
+        index: 19
+        slots: []
