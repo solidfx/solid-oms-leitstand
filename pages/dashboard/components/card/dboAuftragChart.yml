@@ -26,10 +26,10 @@ properties:
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
-  title: Dbo /auftrag
+  title: ''
   type: barChart
   structure:
-    - title: Dbo /auftrag
+    - title: Aufträge
       data: []
       color: primary
       xProp: Created

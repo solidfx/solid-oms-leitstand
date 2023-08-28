@@ -285,7 +285,7 @@ slots:
             dataValue: MMM dd, yyyy
             withData: false
           title: Vorverarbeitung Start
-          alignment: center
+          alignment: left
         index: 8
         slots: []
       - id: '16932400096930.5818304440124102'
