@@ -84,36 +84,6 @@ slots:
   - id: '16918787464550.549343410340108'
     name: columns
     children:
-      - id: '16918787464550.2992329425621727'
-        definitionId: atomicNumber
-        styles:
-          xl:
-            visible: true
-            fontSize:
-              customValue: 12
-              customUnit: px
-              themeDefaultOverridePropertyKey: baseTextFontSize
-            color:
-              value: basic
-              dataValue: basic
-              withData: false
-        properties:
-          name: atomicNumber12
-          prop: AuftragID
-          primaryKey: true
-          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
-            - xl
-            - xs
-          width: '30'
-          filter: true
-          title: AuftragID
-          locale:
-            value: de
-            dataValue: en-US
-            withData: false
-        parentSlotId: '16918787464550.549343410340108'
-        index: 0
-        slots: []
       - id: '16918787464550.7501079536225057'
         definitionId: atomicText
         styles:
@@ -130,7 +100,7 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: '50'
+          width: '30'
           filter: true
         parentSlotId: '16918787464550.549343410340108'
         index: 1
@@ -151,7 +121,7 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: '50'
+          width: '30'
           filter: true
         parentSlotId: '16918787464550.549343410340108'
         index: 2
@@ -228,13 +198,14 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: 120
+          width: '60'
           filter: true
           dateFormat:
             value: dd.MM.yyyy
             dataValue: MMM dd, yyyy
             withData: false
           alignment: center
+          title: Input-Daten kopiert
         parentSlotId: '16918787464550.549343410340108'
         index: 5
         slots: []
@@ -295,6 +266,10 @@ slots:
         styles:
           xl:
             visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
         properties:
           name: atomicDateTime31
           prop: PreProcessFinished
@@ -306,7 +281,7 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: 120
+          width: '60'
           filter: true
           dateFormat:
             value: dd.MM.yyyy
@@ -440,7 +415,7 @@ slots:
           width: 120
           filter: true
         parentSlotId: '16918787464550.549343410340108'
-        index: 14
+        index: 15
         slots: []
       - id: '16918787464550.38075336430119866'
         definitionId: atomicNumber
@@ -457,7 +432,7 @@ slots:
           width: 60
           filter: true
         parentSlotId: '16918787464550.549343410340108'
-        index: 15
+        index: 16
         slots: []
       - id: '16918787464550.06762453444655514'
         definitionId: atomicDateTime
@@ -478,13 +453,13 @@ slots:
           width: 120
           filter: true
         parentSlotId: '16918787464550.549343410340108'
-        index: 16
+        index: 17
         slots: []
       - id: '16918787464550.9777399261625668'
         definitionId: atomicString
         styles:
           xl:
-            visible: true
+            visible: false
             fontSize:
               customValue: 12
               customUnit: px
@@ -500,7 +475,7 @@ slots:
           filter: true
           title: Fehler
         parentSlotId: '16918787464550.549343410340108'
-        index: 17
+        index: 18
         slots: []
       - id: '16918787464550.9731824495224888'
         definitionId: atomicButton
@@ -524,34 +499,84 @@ slots:
             value: clipboard
             dataValue: star-outline
             withData: false
+          fieldTooltip: Auftragsdetails
         parentSlotId: '16918787464550.549343410340108'
-        index: 18
+        index: 19
+        actions:
+          buttonClick:
+            - action: '16932396185290.5407912308785228'
+              paramCode: ''
+              blockPageLoad: false
+              index: 0
         slots: []
-      - id: '16918792887090.06314619544759514'
-        definitionId: atomicButton
+      - id: '16932388467740.7721843604506733'
+        definitionId: atomicSelect
         parentSlotId: '16918787464550.549343410340108'
-        styles:
-          xl:
-            status:
-              value: danger
-              dataValue: primary
-              withData: false
-            iconPlacement: center
+        styles: {}
         properties:
-          name: atomicButton3
-          text: Rollback
+          name: atomicSelect3
+          prop: currentStatus
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          prop: Rollback
-          width: '10'
-          appearance:
-            value: filled
-            dataValue: filled
+          options:
+            value:
+              - value: inputDataCopied
+                color: primary
+                __UIBAKERY__SYSTEM_ID__: '16932388468060.18130894953597676'
+                title: InputDataCopied
+              - value: PreProcessStarted
+                color: warning
+                __UIBAKERY__SYSTEM_ID__: '16932388468060.4996906059541637'
+                title: Preprod started
+              - value: PreProcessFinished
+                color: success
+                __UIBAKERY__SYSTEM_ID__: '16932388468060.46721782074431495'
+                title: Preprod finished
+            dataValue: |-
+              [
+                {
+                  value: 'inputDataCopied',
+                  color: 'primary'
+                },
+                {
+                  value: 'PreProcessStarted',
+                  color: 'success'
+                },
+                {
+                  value: 'PreProcessFinished',
+                  color: 'warning'
+                }
+              ]
             withData: false
-          icon:
-            value: backspace
-            dataValue: star-outline
-            withData: false
-        index: 19
+          width: '60'
+          title: Status
+        index: 14
+        slots: []
+      - id: '16918787464550.2992329425621727'
+        definitionId: atomicString
+        parentSlotId: '16918787464550.549343410340108'
+        styles:
+          xl:
+            color:
+              value: basic
+              dataValue: basic
+              withData: false
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            visible: true
+        properties:
+          name: atomicString228
+          prop: AuftragID
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          title: AuftragID
+          primaryKey: true
+          filter: true
+          width: '30'
+          alignment: left
+        index: 0
         slots: []

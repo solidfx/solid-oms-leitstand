@@ -1,13 +1,13 @@
-id: '16930022339300.8445129424092477'
-name: modalSdgDOpen
+id: '16932396185290.5407912308785228'
+name: openAuftragModal
 nameConfigured: true
 steps:
-  - id: '16930022339300.3859971718384674'
+  - id: '16932396218740.5286074726099008'
     type: customAsyncCode
     name: code
     params:
       - type: asyncCode
-        value: '{{ui.modalSdgDetails.open()}}'
+        value: '{{ui.modal.open()}};'
         valueType: interpolatedValue
         interpolationType: code
     level: 0
@@ -16,24 +16,24 @@ steps:
 singleStep: false
 mode: manual
 modeConfigured: false
-parentPageId: '16917934505390.26478948391555246'
+parentPageId: '16917934644660.913036060840761'
 folder: false
 parentId: null
 config:
   shouldConfirm: false
-  confirmMessage: Are you sure you'd like to proceed with "{{actions.modalDokDOpen.name}}"?
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.openAuftragModal.name}}"?
   showSuccessToast: false
-  successToast: Action "{{actions.modalDokDOpen.name}}" successfully executed
+  successToast: Action "{{actions.openAuftragModal.name}}" successfully executed
   successToastDuration: '3000'
   successToastHideByClick: false
   showErrorToast: true
-  errorToast: Action "{{actions.modalDokDOpen.name}}" has failed
+  errorToast: Action "{{actions.openAuftragModal.name}}" has failed
   errorToastDuration: '3000'
   errorToastHideByClick: false
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
-assigned: true
+assigned: false
 selected: true
 configured: true
-index: 24
+index: 6

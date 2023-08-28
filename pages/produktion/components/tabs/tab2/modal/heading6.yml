@@ -1,0 +1,25 @@
+id: '16932394782200.1633417038990299'
+definitionId: heading
+styles:
+  xl:
+    fontSize:
+      customValue: 16
+      customUnit: px
+      themeDefaultOverridePropertyKey: baseTextFontSize
+    gridItem:
+      h: 2
+      w: 6
+    color:
+      value: primary
+      dataValue: basic
+      withData: false
+properties:
+  name: heading6
+  text: Details Auftrag {{ui.AuftragVorverarbeitung.selectedRow.data.AuftragID}}
+  verticalAlignment: middle
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '16932394782200.1530138902907896'
+index: 0
+slots: []

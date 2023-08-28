@@ -14,3 +14,4 @@ slots:
     name: content
     children:
       - AuftragVorverarbeitung.yml
+      - modal/modal.yml
