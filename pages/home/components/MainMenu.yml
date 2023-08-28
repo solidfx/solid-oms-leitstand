@@ -45,6 +45,10 @@ properties:
       {
         title: 'Suche',
         link: '/suche'
+      },
+      {
+        title: 'Abrechnung',
+        link: '/abrechnung'
       }
     ]
   cssClasses:

@@ -3,7 +3,7 @@ definitionId: tab
 styles: {}
 properties:
   name: tab
-  title: Start
+  title: manueller Start
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs

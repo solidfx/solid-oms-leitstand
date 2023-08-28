@@ -1,0 +1,28 @@
+id: '16932418322570.8001022518222478'
+name: Abrechnung
+url: abrechnung
+roleIds: []
+disableInMenu: false
+parentPageId: ''
+index: 5
+slots:
+  - id: '16932418322570.019214646164752658'
+    name: content
+    children:
+      - id: '16932418322570.3675413606833007'
+        definitionId: grid
+        parentSlotId: '16932418322570.019214646164752658'
+        styles: {}
+        properties:
+          name: abrechnung
+          pageTitle: '{{app.name}} - {{activeRoute.name}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots:
+          - id: '16932418322570.571470719486701'
+            name: content
+            children:
+              - components/menu6.yml
+              - components/dboAuftragTable3.yml
