@@ -7,8 +7,9 @@ styles:
       customUnit: px
       themeDefaultOverridePropertyKey: baseTextFontSize
     gridItem:
-      h: 2
+      h: 10
       w: 6
+      y: null
     color:
       value: warning-dark
       dataValue: basic

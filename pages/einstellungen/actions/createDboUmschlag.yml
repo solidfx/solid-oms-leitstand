@@ -21,7 +21,7 @@ steps:
               {"Bezeichnung":{{ui.dboUmschlagTable.newRow.data.Bezeichnung}},"Beschreibung":{{ui.dboUmschlagTable.newRow.data.Beschreibung}},"gewicht":{{ui.dboUmschlagTable.newRow.data.gewicht}},"laenge":{{ui.dboUmschlagTable.newRow.data.laenge}},"breite":{{ui.dboUmschlagTable.newRow.data.breite}},"hoehe":{{ui.dboUmschlagTable.newRow.data.hoehe}}}
         valueType: custom
       - type: customDatabaseName
-        value: ''
+        value: '{{app.env == "prod" ? ''POM_prod'' : ''POM_test''}}'
         valueType: interpolatedValue
       - type: successMapper
         value: ''
@@ -58,4 +58,4 @@ config:
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
 assigned: true
-index: 15
+index: 16

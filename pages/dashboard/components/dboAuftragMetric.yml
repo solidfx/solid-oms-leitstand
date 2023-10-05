@@ -7,13 +7,13 @@ styles:
       x: 14
       y: 0
       w: 2
-      h: 8
+      h: 40
   xs:
     gridItem:
       x: 0
-      y: 26
+      y: 130
       w: 24
-      h: 8
+      h: 40
 properties:
   data: '{{actions.loadDboAuftrag2.data}}'
   name: dboAuftragMetric

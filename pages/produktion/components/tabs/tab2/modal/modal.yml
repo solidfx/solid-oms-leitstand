@@ -5,16 +5,16 @@ styles:
   xl:
     gridItem:
       x: 21
-      y: 25
+      y: 125
       w: 3
-      h: 2
+      h: 10
       maxH: 2
   xs:
     gridItem:
       x: 0
-      y: 25
+      y: 125
       w: 24
-      h: 2
+      h: 10
       maxH: 2
 properties:
   name: modal

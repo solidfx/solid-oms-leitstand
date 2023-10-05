@@ -5,9 +5,9 @@ styles:
   xl:
     gridItem:
       x: 23
-      y: 25
+      y: 125
       w: 1
-      h: 2
+      h: 10
       maxH: 2
     modalSize:
       widthValue: 60
@@ -25,9 +25,9 @@ styles:
   xs:
     gridItem:
       x: 0
-      y: 16
+      y: 80
       w: 24
-      h: 2
+      h: 10
       maxH: 2
 properties:
   name: modalSdgDetails

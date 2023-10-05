@@ -43,7 +43,7 @@ steps:
         value: false
         valueType: string
       - type: customDatabaseName
-        value: ''
+        value: '{{app.env == "prod" ? ''POM_prod'' : ''POM_test''}}'
         valueType: interpolatedValue
       - type: successMapper
         value: ''
@@ -82,4 +82,4 @@ config:
 assigned: true
 selected: true
 configured: true
-index: 12
+index: 13

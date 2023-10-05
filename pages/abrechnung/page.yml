@@ -25,4 +25,4 @@ slots:
             name: content
             children:
               - components/menu6.yml
-              - components/dboAuftragTable3.yml
+              - components/text2.yml

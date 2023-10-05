@@ -32,7 +32,7 @@ steps:
             value: ''
         valueType: custom
       - type: customDatabaseName
-        value: ''
+        value: '{{app.env == "prod" ? ''POM_prod'' : ''POM_test''}}'
         valueType: interpolatedValue
       - type: successMapper
         value: ''
@@ -66,4 +66,4 @@ config:
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
 assigned: false
-index: 18
+index: 19
