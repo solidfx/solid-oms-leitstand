@@ -8,16 +8,13 @@ steps:
     params:
       - type: datasourceId
         value: POM_test
-        valueType: custom
-        mustSelectFirst: true
+        valueType: string
       - type: resourceId
         value: dbo.Beilage
-        valueType: custom
-        mustSelectFirst: true
+        valueType: string
       - type: filters
         value: []
         valueType: custom
-        interpolationType: string
       - type: ordering
         value:
           limit:
@@ -29,28 +26,26 @@ steps:
           orderDirection:
             value: asc
         valueType: custom
-        interpolationType: string
       - type: additionalParams
-        value: []
+        value:
+          - name: ''
+            value: ''
         valueType: custom
-        interpolationType: string
       - type: customDatabaseName
-        value: ''
+        value: '{{app.env == "prod" ? ''POM_prod'' : ''POM_test''}}'
         valueType: interpolatedValue
       - type: successMapper
         value: ''
         valueType: interpolatedValue
-        interpolationType: code
       - type: failureMapper
         value: ''
         valueType: interpolatedValue
-        interpolationType: code
       - type: mapperEnabled
         value: false
         valueType: custom
     level: 0
     fallthroughError: false
-    isChanged: false
+    isChanged: true
 singleStep: false
 mode: manual
 modeConfigured: false

@@ -7,7 +7,7 @@ styles:
       x: 0
       y: 0
       w: 2
-      h: 26
+      h: 130
     color:
       value: primary
       dataValue: basic
@@ -15,9 +15,9 @@ styles:
   xs:
     gridItem:
       x: 0
-      y: 16
+      y: 80
       w: 24
-      h: 8
+      h: 40
 properties:
   autoSyncItems: true
   name: MainMenu

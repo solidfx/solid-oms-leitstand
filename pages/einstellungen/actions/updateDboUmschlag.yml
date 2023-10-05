@@ -45,7 +45,7 @@ steps:
         value: false
         valueType: string
       - type: customDatabaseName
-        value: ''
+        value: '{{app.env == "prod" ? ''POM_prod'' : ''POM_test''}}'
         valueType: interpolatedValue
       - type: successMapper
         value: ''

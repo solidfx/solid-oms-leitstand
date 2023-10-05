@@ -7,8 +7,9 @@ styles:
       customUnit: px
       themeDefaultOverridePropertyKey: baseTextFontSize
     gridItem:
-      h: 2
+      h: 10
       w: 24
+      y: null
 properties:
   name: heading
   text: Wizard completed!

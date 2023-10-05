@@ -2,12 +2,12 @@ id: '16918807528290.8724292158445'
 name: reqPOSTstartBatch
 nameConfigured: true
 steps:
-  - id: '16923934976030.3650427144568489'
+  - id: '16965179604250.4375742469577495'
     type: httpRequest
     name: request
     params:
       - type: datasourceId
-        value: ScalerAPI
+        value: Scaler
         valueType: string
         mustSelectFirst: true
       - type: method
@@ -30,7 +30,7 @@ steps:
         valueType: custom
         interpolationType: string
       - type: body
-        value: "{\n\t\"key\": {\n\t\t\t\"kunde\": {{ui.AuftragVorverarbeitung.selectedRow.data.Kunde}},\n\t\t\t\"mandant\": {{ui.AuftragVorverarbeitung.selectedRow.data.Mandant}},\n\t\t\t\"auftragsart\": {{ui.AuftragVorverarbeitung.selectedRow.data.Auftragsart}}\n\t},\t\n    \"runmode\": \"test\"\n}"
+        value: "{\n\t\"key\": {\n\t\t\t\"kunde\": {{ui.AuftragVorverarbeitung.selectedRow.data.Kunde}},\n\t\t\t\"mandant\": {{ui.AuftragVorverarbeitung.selectedRow.data.Mandant}},\n\t\t\t\"auftragsart\": {{ui.AuftragVorverarbeitung.selectedRow.data.Auftragsart}}\n\t},\t\n    \"runmode\": {{app.env == \"prod\" ? 'prod' : 'test'}}\n}"
         valueType: interpolatedValue
         interpolationType: code
       - type: structuredBody
@@ -86,7 +86,7 @@ steps:
     isChanged: true
 singleStep: true
 mode: manual
-modeConfigured: false
+modeConfigured: true
 parentPageId: '16917934644660.913036060840761'
 folder: false
 config:

@@ -7,7 +7,7 @@ styles:
       x: 0
       y: 0
       w: 2
-      h: 26
+      h: 130
     color:
       value: primary
       dataValue: basic
@@ -17,7 +17,7 @@ styles:
       x: 0
       y: 0
       w: 24
-      h: 36
+      h: 180
 properties:
   autoSyncItems: true
   name: menu6

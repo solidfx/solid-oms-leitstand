@@ -18,7 +18,7 @@ steps:
       - type: ordering
         value:
           limit:
-            value: ''
+            value: '1000000'
           offset:
             value: ''
           orderBy:
@@ -32,7 +32,7 @@ steps:
             value: ''
         valueType: custom
       - type: customDatabaseName
-        value: ''
+        value: '{{app.env == "prod" ? ''POM_prod'' : ''POM_test''}}'
         valueType: interpolatedValue
       - type: successMapper
         value: ''

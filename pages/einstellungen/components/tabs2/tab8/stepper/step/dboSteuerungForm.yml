@@ -7,13 +7,13 @@ styles:
       x: 0
       y: 0
       w: 24
-      h: 23
+      h: 115
   xs:
     gridItem:
       x: 0
       y: 0
       w: 24
-      h: 16
+      h: 80
 properties:
   dynamicFields:
     value: []

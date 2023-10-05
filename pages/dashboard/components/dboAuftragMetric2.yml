@@ -5,15 +5,15 @@ styles:
   xl:
     gridItem:
       x: 14
-      y: 8
+      y: 40
       w: 2
-      h: 8
+      h: 40
   xs:
     gridItem:
       x: 0
-      y: 50
+      y: 250
       w: 24
-      h: 8
+      h: 40
 properties:
   data: '{{actions.loadDboAuftrag2.data}}'
   name: dboAuftragMetric2

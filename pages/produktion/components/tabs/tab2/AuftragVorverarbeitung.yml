@@ -7,13 +7,13 @@ styles:
       x: 0
       y: 0
       w: 24
-      h: 25
+      h: 125
   xs:
     gridItem:
       x: 0
       y: 0
       w: 24
-      h: 25
+      h: 125
 properties:
   dynamicColumns:
     value: []
@@ -524,15 +524,15 @@ slots:
               - value: inputDataCopied
                 color: primary
                 __UIBAKERY__SYSTEM_ID__: '16932388468060.18130894953597676'
-                title: InputDataCopied
+                title: Inputdaten geholt
               - value: PreProcessStarted
                 color: warning
                 __UIBAKERY__SYSTEM_ID__: '16932388468060.4996906059541637'
-                title: Preprod started
+                title: Vorverarbeitung läuft
               - value: PreProcessFinished
                 color: success
                 __UIBAKERY__SYSTEM_ID__: '16932388468060.46721782074431495'
-                title: Preprod finished
+                title: Vorverarbeitung fertig
             dataValue: |-
               [
                 {
