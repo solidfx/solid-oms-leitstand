@@ -67,4 +67,4 @@ config:
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
 assigned: true
-index: 10
+index: 9
