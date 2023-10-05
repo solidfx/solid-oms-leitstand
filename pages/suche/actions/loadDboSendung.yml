@@ -18,7 +18,7 @@ steps:
       - type: ordering
         value:
           limit:
-            value: '10000000'
+            value: '1000000'
           offset:
             value: ''
           orderBy:
