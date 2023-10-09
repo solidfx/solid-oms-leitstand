@@ -59,6 +59,32 @@ steps:
     level: 0
     fallthroughError: false
     isChanged: true
+  - id: '16968711691550.7136603936594124'
+    type: executeAction
+    name: loadDboSteuerung
+    params:
+      - type: action
+        value: '16918341417460.3732574320278337'
+        valueType: string
+      - type: isActionsLibraryCall
+        value: false
+        valueType: string
+      - type: customParams
+        value: return {{data}};
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
 singleStep: false
 mode: manual
 modeConfigured: false
