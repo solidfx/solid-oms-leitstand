@@ -1,0 +1,16 @@
+id: '16970600389680.8396835887368321'
+definitionId: step
+styles: {}
+properties:
+  name: step9
+  title: Brief international
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '16970600389680.8720675857359887'
+index: 1
+slots:
+  - id: '16970600389680.11601073564266162'
+    name: content
+    children:
+      - dbodvfconfigtableForm3.yml

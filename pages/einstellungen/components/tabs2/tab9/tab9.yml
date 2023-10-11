@@ -1,4 +1,4 @@
-id: '16918335007320.9338947680853356'
+id: '16970600389660.5782207549474392'
 definitionId: tab
 styles: {}
 properties:
@@ -11,10 +11,10 @@ properties:
     value: attach-2
     dataValue: ''
     withData: false
-parentSlotId: '16918335007320.13846341654283933'
+parentSlotId: '16970600389630.7045862767551765'
 index: 1
 slots:
-  - id: '16918335007320.8103942049415394'
+  - id: '16970600389660.7941720452667551'
     name: content
     children:
-      - dboBeilageTable.yml
+      - dboBeilageTable3.yml

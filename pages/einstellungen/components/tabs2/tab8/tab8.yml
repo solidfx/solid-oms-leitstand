@@ -1,4 +1,4 @@
-id: '16918335007320.7061073246899388'
+id: '16970600389640.3332992765856768'
 definitionId: tab
 styles: {}
 properties:
@@ -11,11 +11,11 @@ properties:
     value: compass-outline
     dataValue: ''
     withData: false
-parentSlotId: '16918335007320.13846341654283933'
+parentSlotId: '16970600389630.7045862767551765'
 index: 0
 slots:
-  - id: '16918335007320.10383780210408466'
+  - id: '16970600389640.0324227371204282'
     name: content
     children:
-      - dboSteuerungTable.yml
-      - stepper/stepper.yml
+      - dboSteuerungTable3.yml
+      - stepper2/stepper2.yml

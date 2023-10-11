@@ -1,0 +1,21 @@
+id: '16970590271870.8042460665013238'
+definitionId: tab
+styles: {}
+properties:
+  name: tab15
+  title: Steuerung
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  icon:
+    value: compass-outline
+    dataValue: ''
+    withData: false
+parentSlotId: '16970590271870.6163118613214482'
+index: 0
+slots:
+  - id: '16970590271870.9501390024559813'
+    name: content
+    children:
+      - dboSteuerungTable2.yml
+      - stepper3/stepper3.yml

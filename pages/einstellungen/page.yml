@@ -1,30 +1,28 @@
-id: '16917934204730.15547367989836447'
+id: '16970600071930.3468845352422827'
 name: Einstellungen
 url: einstellungen
-roleIds:
-  - uuyxYy3hy5
-  - CIkhX6NEY8
+roleIds: []
 disableInMenu: false
 parentPageId: ''
-index: 3
+index: 5
 slots:
-  - id: '16917934204730.45574279185204336'
+  - id: '16970600071930.5026535696256789'
     name: content
     children:
-      - id: '16917934204730.14949581052745065'
+      - id: '16970600071930.47045565658227084'
         definitionId: grid
-        parentSlotId: '16917934204730.45574279185204336'
+        parentSlotId: '16970600071930.5026535696256789'
         styles: {}
         properties:
-          name: einstellungen
+          name: einstellungen3
           pageTitle: '{{app.name}} - {{activeRoute.name}}'
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
         index: 0
         slots:
-          - id: '16917934204730.2942300514291405'
+          - id: '16970600071950.05833084750681805'
             name: content
             children:
-              - components/menu4.yml
               - components/tabs2/tabs2.yml
+              - components/menu4.yml

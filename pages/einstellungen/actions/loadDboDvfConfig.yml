@@ -1,8 +1,8 @@
-id: '16928916247050.05979563868510285'
+id: '16970609483000.2081887314926849'
 name: loadDboDvfConfig
 nameConfigured: true
 steps:
-  - id: '16928916310940.9069030049648095'
+  - id: '16970609664360.9276434014594908'
     type: LOAD_COLLECTION
     name: load
     params:
@@ -46,11 +46,10 @@ steps:
     level: 0
     fallthroughError: false
     isChanged: true
-    nameConfigured: true
 singleStep: false
 mode: manual
 modeConfigured: false
-parentPageId: '16917934204730.15547367989836447'
+parentPageId: '16970600071930.3468845352422827'
 folder: false
 parentId: null
 config:
@@ -67,5 +66,4 @@ config:
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
-assigned: false
-index: 14
+index: 28

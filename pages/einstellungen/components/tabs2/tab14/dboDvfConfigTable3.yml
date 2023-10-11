@@ -1,0 +1,490 @@
+id: '16970600389670.4304701766714423'
+definitionId: smartTable
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 16
+      h: 130
+  xs:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 80
+properties:
+  dynamicColumns:
+    value: []
+    dataValue: |-
+      [
+        { prop: 'id', type: 'number', primaryKey: true },
+       'full_name',
+        { prop: 'avatar', type: 'image' },
+        { prop: 'email', type: 'link' },
+      ]
+    withData: false
+  data: '{{actions.loadDboDvfConfig.data}}'
+  name: dboDvfConfigTable3
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: 'Konfiguration Freimachung '
+  showLoading:
+    withData: true
+    dataValue: '{{actions.loadDboDvfConfig2.loading}}'
+    value: false
+  showAddAction:
+    value: true
+    dataValue: 'false'
+    withData: false
+  showEditAction:
+    value: true
+    dataValue: 'false'
+    withData: false
+  showExportAction:
+    value: false
+    dataValue: 'true'
+    withData: false
+  showReloadAction:
+    value: true
+    dataValue: 'false'
+    withData: false
+  resetActivePageOnNewData: true
+  rowVariation: dense
+  showFilter: true
+parentSlotId: '16970600389670.6296020073622597'
+index: 0
+actions:
+  init: []
+  smartTableCreate: []
+  smartTableEdit:
+    - action: '16970590271900.6701403336771616'
+      paramCode: ''
+      blockPageLoad: false
+      index: 1
+  smartTableBulkEdit: []
+  smartTableDelete: []
+  smartTableRowSelect: []
+  smartTableRowClick: []
+  smartTablePageSelect: []
+  smartTableFilterChange: []
+  smartTableSortChange: []
+  smartTableReload: []
+slots:
+  - id: '16970600389670.7192284766045229'
+    name: columns
+    children:
+      - id: '16970600389670.6184270224604689'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicString21
+          prop: dvfConfigName
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '120'
+          filter: true
+          title: Config Name
+          decoration: null
+          pinColumn: left
+        parentSlotId: '16970600389670.7192284766045229'
+        index: 0
+        slots: []
+      - id: '16970600389670.4560106865312197'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString22
+          prop: kundenid
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        parentSlotId: '16970600389670.7192284766045229'
+        index: 1
+        slots: []
+      - id: '16970600389670.9065283429503834'
+        definitionId: atomicString
+        styles:
+          xl:
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            visible: true
+        properties:
+          name: atomicString23
+          prop: einldatum
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          title: Einl-Datum
+          primaryKey: false
+          filter: true
+          width: '80'
+          alignment: center
+        parentSlotId: '16970600389670.7192284766045229'
+        index: 2
+        slots: []
+      - id: '16970600389670.06478317273906442'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicString24
+          prop: sendungsart
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+          alignment: center
+        parentSlotId: '16970600389670.7192284766045229'
+        index: 3
+        slots: []
+      - id: '16970600389670.6520181159183587'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicString25
+          prop: einlieferungplz
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '80'
+          filter: true
+          title: Einl-PLZ
+          alignment: center
+        parentSlotId: '16970600389670.7192284766045229'
+        index: 4
+        slots: []
+      - id: '16970600389670.5536089908236974'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 11
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicString26
+          prop: einlieferungsstelle
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '80'
+          filter: true
+          title: Einl-Stelle
+        parentSlotId: '16970600389670.7192284766045229'
+        index: 5
+        slots: []
+      - id: '16970600389670.11974441149645498'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicString27
+          prop: absender
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '100'
+          filter: true
+          alignment: center
+        parentSlotId: '16970600389670.7192284766045229'
+        index: 6
+        slots: []
+      - id: '16970600389670.2512656262606501'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicString28
+          prop: einlieferer
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '100'
+          filter: true
+          alignment: center
+        parentSlotId: '16970600389670.7192284766045229'
+        index: 7
+        slots: []
+      - id: '16970600389670.07270731619192006'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicString29
+          prop: kilotarif
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '80'
+          filter: true
+          title: Kilotarif
+          alignment: center
+        parentSlotId: '16970600389670.7192284766045229'
+        index: 8
+        slots: []
+      - id: '16970600389670.9293040781973787'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicString30
+          prop: optimierung
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '80'
+          filter: true
+          title: brutto/netto
+          sortable: false
+          alignment: center
+        parentSlotId: '16970600389670.7192284766045229'
+        index: 9
+        slots: []
+      - id: '16970600389670.9876313571603148'
+        definitionId: atomicString
+        styles:
+          xl:
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            visible: true
+        properties:
+          name: atomicString31
+          prop: checkplz
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          title: Check PLZ
+          primaryKey: false
+          filter: true
+          width: '80'
+          pinColumn: ''
+          alignment: center
+        parentSlotId: '16970600389670.7192284766045229'
+        index: 10
+        slots: []
+      - id: '16970600389670.961954528008373'
+        definitionId: atomicString
+        styles:
+          xl:
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            visible: true
+        properties:
+          name: atomicString32
+          prop: datamatrix
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          title: Datamatrix
+          primaryKey: false
+          filter: true
+          width: '40'
+          alignment: center
+        parentSlotId: '16970600389670.7192284766045229'
+        index: 11
+        slots: []
+      - id: '16970600389670.5641625089834752'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString33
+          prop: image
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '40'
+          filter: true
+        parentSlotId: '16970600389670.7192284766045229'
+        index: 12
+        slots: []
+      - id: '16970600389670.7461100479760159'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString34
+          prop: labelout
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '40'
+          filter: true
+        parentSlotId: '16970600389670.7192284766045229'
+        index: 13
+        slots: []
+      - id: '16970600389670.6144161653544371'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString35
+          prop: kuinfofestepos
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '40'
+          filter: true
+        parentSlotId: '16970600389670.7192284766045229'
+        index: 14
+        slots: []
+      - id: '16970600389670.6453279325319572'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+            fontSize:
+              customValue: 10
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicString36
+          prop: preadrid
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '40'
+          filter: true
+        parentSlotId: '16970600389670.7192284766045229'
+        index: 15
+        slots: []
+      - id: '16970600389670.9999183410625763'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+            fontSize:
+              customValue: 10
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicString37
+          prop: preadrvariante
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '60'
+          filter: true
+        parentSlotId: '16970600389670.7192284766045229'
+        index: 16
+        slots: []
+      - id: '16970600389670.28598449146369265'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString38
+          prop: brief_nat_ekp
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        parentSlotId: '16970600389670.7192284766045229'
+        index: 17
+        slots: []
+      - id: '16970600389670.44425074971406553'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString39
+          prop: brief_nat_verfahren
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        parentSlotId: '16970600389670.7192284766045229'
+        index: 18
+        slots: []
+      - id: '16970600389670.4683468173462493'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString40
+          prop: brief_nat_teilnahme
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        parentSlotId: '16970600389670.7192284766045229'
+        index: 19
+        slots: []

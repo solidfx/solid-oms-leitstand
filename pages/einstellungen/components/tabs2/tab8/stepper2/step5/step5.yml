@@ -1,0 +1,16 @@
+id: '16970600389650.7464709325151828'
+definitionId: step
+styles: {}
+properties:
+  name: step5
+  title: DV-Freimachung
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '16970600389650.5912772742542576'
+index: 3
+slots:
+  - id: '16970600389650.6467765459361317'
+    name: content
+    children:
+      - dboSteuerungForm5.yml
