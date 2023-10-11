@@ -1,7 +1,7 @@
 storeItemList: []
 metadata:
   favicon: ''
-  code: var dbname = "POM_test";
+  code: ''
   title: Solid OMS
   description: ''
 appSettings:

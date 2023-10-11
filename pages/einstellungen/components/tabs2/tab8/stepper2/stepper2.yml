@@ -1,0 +1,50 @@
+id: '16970600389650.4954076758477006'
+definitionId: stepper
+styles:
+  xl:
+    gridItem:
+      x: 13
+      y: 0
+      w: 11
+      h: 155
+  xs:
+    gridItem:
+      x: 0
+      y: 80
+      w: 24
+      h: 80
+properties:
+  name: stepper2
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  prevButtonText: zurück
+  nextButtonText: weiter
+  prevButtonDisabled:
+    value: true
+    dataValue: 'false'
+    withData: false
+  prevButtonStatus:
+    value: basic
+    dataValue: basic
+    withData: false
+  showCompletedStep:
+    value: false
+    dataValue: 'false'
+    withData: false
+parentSlotId: '16970600389640.0324227371204282'
+index: 1
+actions: {}
+slots:
+  - id: '16970600389650.5912772742542576'
+    name: steps
+    children:
+      - step2/step2.yml
+      - step3/step3.yml
+      - step4/step4.yml
+      - step5/step5.yml
+      - step6/step6.yml
+  - id: '16970600389660.7704847193017392'
+    name: completedStep
+    children:
+      - step7/step7.yml

@@ -1,0 +1,16 @@
+id: '16970590271880.7417320026567191'
+definitionId: step
+styles: {}
+properties:
+  name: step14
+  title: Vorverarbeitung
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '16970590271880.7198935540211537'
+index: 2
+slots:
+  - id: '16970590271880.9779047732030108'
+    name: content
+    children:
+      - dboSteuerungForm8.yml

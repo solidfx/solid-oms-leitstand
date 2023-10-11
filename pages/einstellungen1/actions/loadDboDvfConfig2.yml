@@ -1,0 +1,73 @@
+id: '16970590271910.6981719522651411'
+name: loadDboDvfConfig2
+nameConfigured: true
+steps:
+  - id: '16970590271910.4699386712397966'
+    type: LOAD_COLLECTION
+    name: load
+    params:
+      - type: datasourceId
+        value: POM_test
+        valueType: string
+      - type: resourceId
+        value: dbo.dvfConfig
+        valueType: string
+      - type: filters
+        value: []
+        valueType: custom
+      - type: ordering
+        value:
+          limit:
+            value: 1000
+          offset:
+            value: ''
+          orderBy:
+            value: ''
+          orderDirection:
+            value: asc
+        valueType: custom
+      - type: additionalParams
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+      - type: customDatabaseName
+        value: '{{app.env == "prod" ? ''POM_prod'' : ''POM_test''}}'
+        valueType: interpolatedValue
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '16970590271810.8513444696254675'
+folder: false
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.loadDboDvfConfig2.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.loadDboDvfConfig2.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.loadDboDvfConfig2.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: false
+index: 22

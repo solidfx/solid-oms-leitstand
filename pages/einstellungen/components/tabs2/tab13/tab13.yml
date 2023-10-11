@@ -1,21 +1,20 @@
-id: '16927412885590.10163575072905284'
+id: '16970600389660.4132493801080239'
 definitionId: tab
-parentSlotId: '16918335007320.13846341654283933'
 styles: {}
 properties:
   name: tab13
-  title: MO Profile
+  title: Umschläge
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
   icon:
-    value: globe
+    value: email-outline
     dataValue: ''
     withData: false
-index: 3
+parentSlotId: '16970600389630.7045862767551765'
+index: 2
 slots:
-  - id: '16927412885590.2728932627656391'
+  - id: '16970600389660.17212674975966658'
     name: content
     children:
-      - dboDvfConfigTable.yml
-      - stepper2/stepper2.yml
+      - dboUmschlagTable3.yml

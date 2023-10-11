@@ -1,6 +1,6 @@
-id: '16917935411600.9092461595577135'
+id: '16970600619510.6523958951033682'
 definitionId: menu
-parentSlotId: '16917934204730.2942300514291405'
+parentSlotId: '16970600071950.05833084750681805'
 styles:
   xl:
     gridItem:
@@ -15,9 +15,9 @@ styles:
   xs:
     gridItem:
       x: 0
-      y: 0
+      y: 180
       w: 24
-      h: 130
+      h: 180
 properties:
   autoSyncItems: true
   name: menu4
@@ -39,12 +39,16 @@ properties:
         link: '/produktion'
       },
       {
-        title: 'Einstellungen',
-        link: '/einstellungen'
-      },
-      {
         title: 'Suche',
         link: '/suche'
+      },
+      {
+        title: 'Einstellungen1',
+        link: '/einstellungen1'
+      },
+      {
+        title: 'Einstellungen',
+        link: '/einstellungen'
       },
       {
         title: 'Abrechnung',
@@ -52,5 +56,5 @@ properties:
       }
     ]
 actions: {}
-index: 0
+index: 1
 slots: []

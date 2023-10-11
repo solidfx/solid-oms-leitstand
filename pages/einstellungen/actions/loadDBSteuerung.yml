@@ -1,0 +1,71 @@
+id: '16970602974310.5052327758792967'
+name: loadDBSteuerung
+nameConfigured: true
+steps:
+  - id: '16970603032290.031025173542602147'
+    type: LOAD_COLLECTION
+    name: load
+    params:
+      - type: datasourceId
+        value: POM_test
+        valueType: string
+      - type: resourceId
+        value: dbo.Steuerung
+        valueType: string
+      - type: filters
+        value: []
+        valueType: custom
+      - type: ordering
+        value:
+          limit:
+            value: 1000
+          offset:
+            value: ''
+          orderBy:
+            value: ''
+          orderDirection:
+            value: asc
+        valueType: custom
+      - type: additionalParams
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+      - type: customDatabaseName
+        value: '{{app.env == "prod" ? ''POM_prod'' : ''POM_test''}}'
+        valueType: interpolatedValue
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '16970600071930.3468845352422827'
+folder: false
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadDBSteuerung.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.loadDBSteuerung.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.loadDBSteuerung.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: false
+selected: true
+configured: true
+index: 25

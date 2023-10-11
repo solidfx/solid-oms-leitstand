@@ -39,12 +39,16 @@ properties:
         link: '/produktion'
       },
       {
-        title: 'Einstellungen',
-        link: '/einstellungen'
-      },
-      {
         title: 'Suche',
         link: '/suche'
+      },
+      {
+        title: 'Einstellungen1',
+        link: '/einstellungen1'
+      },
+      {
+        title: 'Einstellungen',
+        link: '/einstellungen'
       },
       {
         title: 'Abrechnung',

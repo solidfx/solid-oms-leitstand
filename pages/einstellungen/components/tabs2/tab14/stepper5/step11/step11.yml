@@ -1,0 +1,16 @@
+id: '16970600389690.4238649472377203'
+definitionId: step
+styles: {}
+properties:
+  name: step11
+  title: Fracht
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '16970600389680.8720675857359887'
+index: 3
+slots:
+  - id: '16970600389690.8493827355123211'
+    name: content
+    children:
+      - dbodvfconfigtableForm9.yml

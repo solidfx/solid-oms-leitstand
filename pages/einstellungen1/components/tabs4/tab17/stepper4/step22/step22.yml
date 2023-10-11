@@ -1,0 +1,16 @@
+id: '16970590271880.5128373166632407'
+definitionId: step
+styles: {}
+properties:
+  name: step22
+  title: __UI_BAKERY_COMPLETED_STEP__
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '16970590271880.5513119459605753'
+index: 0
+slots:
+  - id: '16970590271880.5901241112867284'
+    name: content
+    children:
+      - heading8.yml

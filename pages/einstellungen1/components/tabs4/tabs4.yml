@@ -1,0 +1,37 @@
+id: '16970590271870.6753270699346574'
+definitionId: tabs
+parentSlotId: '16970590271870.055600355759329645'
+styles:
+  xl:
+    gridItem:
+      x: 2
+      y: 0
+      w: 22
+      h: 180
+  xs:
+    gridItem:
+      x: 0
+      y: 130
+      w: 24
+      h: 80
+properties:
+  name: tabs4
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+actions:
+  init:
+    - action: '16970590271900.36552930112071813'
+      paramCode: ''
+      blockPageLoad: false
+      index: 0
+  tabsChangeTab: []
+index: 1
+slots:
+  - id: '16970590271870.6163118613214482'
+    name: tabs
+    children:
+      - tab15/tab15.yml
+      - tab16/tab16.yml
+      - tab17/tab17.yml
+      - tab18/tab18.yml

@@ -1,0 +1,29 @@
+id: '16970590271810.8513444696254675'
+name: Einstellungen1
+url: einstellungen1
+roleIds:
+  - uuyxYy3hy5
+  - CIkhX6NEY8
+disableInMenu: false
+index: 4
+slots:
+  - id: '16970590271820.1941095115511029'
+    name: content
+    children:
+      - id: '16970590271870.6615348165409185'
+        definitionId: grid
+        parentSlotId: '16970590271820.1941095115511029'
+        styles: {}
+        properties:
+          name: einstellungen2
+          pageTitle: '{{app.name}} - {{activeRoute.name}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots:
+          - id: '16970590271870.055600355759329645'
+            name: content
+            children:
+              - components/menu7.yml
+              - components/tabs4/tabs4.yml

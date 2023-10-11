@@ -4,7 +4,7 @@ url: suche
 roleIds: []
 disableInMenu: false
 parentPageId: ''
-index: 4
+index: 3
 slots:
   - id: '16917934505390.30351606251617835'
     name: content
