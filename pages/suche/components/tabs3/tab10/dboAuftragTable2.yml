@@ -429,6 +429,14 @@ slots:
               - value: PreProcessFinished
                 color: success
                 __UIBAKERY__SYSTEM_ID__: '16932607205330.20861225004826212'
+              - value: MODataGotResult
+                color: success
+                __UIBAKERY__SYSTEM_ID__: '16970438371160.024468673930913898'
+                title: MO finished
+              - value: MODataCalculated
+                color: info-dark
+                __UIBAKERY__SYSTEM_ID__: '16970440480800.7844657107108692'
+                title: MO CSV ready
             dataValue: |-
               [
                 {
