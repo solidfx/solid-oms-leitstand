@@ -49,11 +49,7 @@ parentSlotId: '16970600389650.2184214009528911'
 index: 0
 actions:
   init: []
-  submitEvent:
-    - action: '16970590271900.3032782435784016'
-      paramCode: ''
-      blockPageLoad: false
-      index: 0
+  submitEvent: []
   formClick: []
   changeEvent: []
   customButtonClick: []

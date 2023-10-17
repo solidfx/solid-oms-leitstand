@@ -72,11 +72,7 @@ actions:
       paramCode: ''
       blockPageLoad: false
       index: 1
-  smartTableEdit:
-    - action: '16970590271910.6725247001372019'
-      paramCode: ''
-      blockPageLoad: false
-      index: 2
+  smartTableEdit: []
   smartTableBulkEdit: []
   smartTableDelete: []
   smartTableRowSelect: []

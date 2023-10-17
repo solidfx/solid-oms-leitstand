@@ -4,7 +4,7 @@ url: einstellungen
 roleIds: []
 disableInMenu: false
 parentPageId: ''
-index: 5
+index: 4
 slots:
   - id: '16970600071930.5026535696256789'
     name: content

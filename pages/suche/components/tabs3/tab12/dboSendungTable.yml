@@ -107,7 +107,7 @@ slots:
         definitionId: atomicString
         styles:
           xl:
-            visible: true
+            visible: false
         properties:
           name: atomicString211
           prop: Land
@@ -184,7 +184,7 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: 60
+          width: '30'
           filter: true
         parentSlotId: '16929203514970.04016125770592738'
         index: 11
@@ -193,7 +193,7 @@ slots:
         definitionId: atomicNumber
         styles:
           xl:
-            visible: true
+            visible: false
         properties:
           name: atomicNumber24
           prop: laenge
@@ -210,7 +210,7 @@ slots:
         definitionId: atomicNumber
         styles:
           xl:
-            visible: true
+            visible: false
         properties:
           name: atomicNumber33
           prop: breite
@@ -252,8 +252,9 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: 60
+          width: '35'
           filter: true
+          title: Blattanzahl
         parentSlotId: '16929203514970.04016125770592738'
         index: 15
         slots: []
@@ -261,7 +262,7 @@ slots:
         definitionId: atomicString
         styles:
           xl:
-            visible: false
+            visible: true
         properties:
           name: atomicString214
           prop: beilagenIdList
@@ -269,33 +270,17 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: 120
+          width: '100'
           filter: true
+          title: Beilagen
         parentSlotId: '16929203514970.04016125770592738'
         index: 16
-        slots: []
-      - id: '16929203514970.9556557182308416'
-        definitionId: atomicNumber
-        styles:
-          xl:
-            visible: true
-        properties:
-          name: atomicNumber36
-          prop: umschlagID
-          primaryKey: false
-          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
-            - xl
-            - xs
-          width: 60
-          filter: true
-        parentSlotId: '16929203514970.04016125770592738'
-        index: 17
         slots: []
       - id: '16929203514970.28923136833257046'
         definitionId: atomicNumber
         styles:
           xl:
-            visible: true
+            visible: false
         properties:
           name: atomicNumber37
           prop: AnzahlReprints
@@ -389,7 +374,7 @@ slots:
           title: PLZ
           primaryKey: false
           filter: true
-          width: 60
+          width: '40'
         index: 4
         slots: []
       - id: '16929203514970.6684295286092508'
@@ -415,7 +400,7 @@ slots:
           title: AuftragID
           primaryKey: false
           filter: true
-          width: '40'
+          width: '30'
           alignment: center
         index: 1
         slots: []
@@ -476,5 +461,46 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          width: '30'
         index: 10
+        slots: []
+      - id: '16929203514970.9556557182308416'
+        definitionId: atomicSelect
+        parentSlotId: '16929203514970.04016125770592738'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicSelect6
+          prop: umschlagID
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          title: Umschlag
+          primaryKey: false
+          filter: true
+          width: '40'
+          options:
+            value:
+              - value: 2
+                color: basic
+                __UIBAKERY__SYSTEM_ID__: '16975675249200.6601823748624949'
+                title: DIN Lang
+              - value: 3
+                color: warning
+                __UIBAKERY__SYSTEM_ID__: '16975675249200.44538033802889276'
+                title: C4
+            dataValue: |-
+              [
+                {
+                  value: 2,
+                  color: 'primary'
+                },
+                {
+                  value: 3,
+                  color: 'success'
+                }
+              ]
+            withData: false
+        index: 17
         slots: []
