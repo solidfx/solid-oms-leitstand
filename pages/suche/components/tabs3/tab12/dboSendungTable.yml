@@ -252,7 +252,7 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: '35'
+          width: '30'
           filter: true
           title: Blattanzahl
         parentSlotId: '16929203514970.04016125770592738'
@@ -270,7 +270,7 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: '100'
+          width: '60'
           filter: true
           title: Beilagen
         parentSlotId: '16929203514970.04016125770592738'
@@ -431,6 +431,7 @@ slots:
             active: externalPath
             internalPath: ''
             externalPath: ''
+          fieldTooltip: Show Details
         actions:
           buttonClick:
             - action: '16930022339300.8445129424092477'
@@ -449,6 +450,7 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          width: '60'
         index: 9
         slots: []
       - id: '16970354544720.27670662338804997'
@@ -479,7 +481,7 @@ slots:
           title: Umschlag
           primaryKey: false
           filter: true
-          width: '40'
+          width: '30'
           options:
             value:
               - value: 2
