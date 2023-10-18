@@ -1,0 +1,16 @@
+id: '16976259648500.5546213777338354'
+definitionId: tab
+parentSlotId: '16917936309860.003941350322131276'
+styles: {}
+properties:
+  name: tab15
+  title: Auftrag abschließen
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+index: 7
+slots:
+  - id: '16976259648500.9448617949127351'
+    name: content
+    children:
+      - AuftragVorverarbeitung2.yml
