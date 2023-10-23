@@ -16,7 +16,7 @@ styles:
       withData: false
 properties:
   name: heading6
-  text: Details Auftrag {{ui.AuftragVorverarbeitung.selectedRow.data.AuftragID}}
+  text: Details Auftrag {{ui.AuftragVorverarbeitung2.selectedRow.data.AuftragID}}
   verticalAlignment: middle
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl

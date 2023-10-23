@@ -25,7 +25,11 @@ actions:
       paramCode: ''
       blockPageLoad: false
       index: 0
-  tabsChangeTab: []
+  tabsChangeTab:
+    - action: '16980557427680.6516493820046634'
+      paramCode: ''
+      blockPageLoad: false
+      index: 1
 index: 1
 slots:
   - id: '16917936309860.003941350322131276'
@@ -33,7 +37,7 @@ slots:
     children:
       - tab/tab.yml
       - tab2/tab2.yml
-      - tab3.yml
+      - tab3/tab3.yml
       - tab4.yml
       - tab5.yml
       - tab6.yml

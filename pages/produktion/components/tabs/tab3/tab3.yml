@@ -12,4 +12,5 @@ index: 2
 slots:
   - id: '16917937011770.6074689975713488'
     name: content
-    children: []
+    children:
+      - AuftragDrucken.yml

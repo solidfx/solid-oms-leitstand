@@ -71,7 +71,11 @@ actions:
   smartTableDelete: []
   smartTableRowSelect: []
   smartTableRowClick: []
-  smartTablePageSelect: []
+  smartTablePageSelect:
+    - action: '16917942175960.7681327962608866'
+      paramCode: ''
+      blockPageLoad: false
+      index: 2
   smartTableFilterChange: []
   smartTableSortChange: []
   smartTableReload:
@@ -446,6 +450,14 @@ slots:
                 color: success
                 __UIBAKERY__SYSTEM_ID__: '16932388468060.46721782074431495'
                 title: Vorverarbeitung fertig
+              - value: MODataGotResult
+                color: warning
+                __UIBAKERY__SYSTEM_ID__: '16980569363040.8205909190681187'
+                title: Porto berechnet
+              - value: PrintFileProdFinished
+                color: success
+                __UIBAKERY__SYSTEM_ID__: '16980569951070.355202896379641'
+                title: Druckdaten fertig
             dataValue: |-
               [
                 {
@@ -553,6 +565,7 @@ slots:
         styles:
           xl:
             iconPlacement: center
+            visible: true
         properties:
           name: atomicButton3
           text: show Details

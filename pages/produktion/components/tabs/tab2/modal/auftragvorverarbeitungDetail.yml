@@ -25,12 +25,12 @@ properties:
         { prop: 'email', type: 'link' },
       ]
     withData: false
-  entity: '{{ui.AuftragVorverarbeitung.selectedRow.data}}'
+  entity: '{{ui.AuftragVorverarbeitung2.selectedRow.data}}'
   name: auftragvorverarbeitungDetail
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
-  title: Auftragvorverarbeitung
+  title: ''
   columns: '4'
 actions: {}
 index: 0
@@ -154,6 +154,10 @@ slots:
                 color: success
                 __UIBAKERY__SYSTEM_ID__: '16932388468060.46721782074431495'
                 title: Preprod finished
+              - value: PrintFileProdFinished
+                color: success
+                __UIBAKERY__SYSTEM_ID__: '16980601088680.7963271244249137'
+                title: Druckdaten fertig
             dataValue: |-
               [
                 {
@@ -318,72 +322,12 @@ slots:
           title: Vorverarbeitung Ende
         index: 9
         slots: []
-      - id: '16932400096810.026188380336292783'
-        definitionId: atomicString
-        parentSlotId: '16932398365750.9736313438106405'
-        styles:
-          xl:
-            visible: true
-        properties:
-          name: atomicString230
-          prop: MODataCalculated
-          primaryKey: false
-          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
-            - xl
-            - xs
-        index: 10
-        slots: []
-      - id: '16932400096810.9740837017842492'
-        definitionId: atomicString
-        parentSlotId: '16932398365750.9736313438106405'
-        styles:
-          xl:
-            visible: false
-        properties:
-          name: atomicString231
-          prop: MODataGotResult
-          primaryKey: false
-          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
-            - xl
-            - xs
-        index: 11
-        slots: []
-      - id: '16932400096810.07227074234457564'
-        definitionId: atomicString
-        parentSlotId: '16932398365750.9736313438106405'
-        styles:
-          xl:
-            visible: false
-        properties:
-          name: atomicString232
-          prop: PrintFileProdStarted
-          primaryKey: false
-          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
-            - xl
-            - xs
-        index: 12
-        slots: []
-      - id: '16932400096810.13747415362045268'
-        definitionId: atomicString
-        parentSlotId: '16932398365750.9736313438106405'
-        styles:
-          xl:
-            visible: false
-        properties:
-          name: atomicString233
-          prop: PrintFileProdFinished
-          primaryKey: false
-          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
-            - xl
-            - xs
-        index: 13
-        slots: []
       - id: '16932400096930.5342401330250284'
         definitionId: atomicDateTime
         parentSlotId: '16932398365750.9736313438106405'
         styles:
           xl:
-            visible: false
+            visible: true
         properties:
           name: atomicDateTime10
           prop: Printed
@@ -397,6 +341,7 @@ slots:
             - xs
           width: 120
           filter: true
+          title: Gedruckt
         index: 14
         slots: []
       - id: '16932400096930.48427245954961706'
@@ -490,7 +435,7 @@ slots:
           prop: Fullfilled
           primaryKey: false
           timeFormat:
-            value: ''
+            value: HH:mm:ss
             dataValue: HH:mm
             withData: false
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
@@ -498,5 +443,118 @@ slots:
             - xs
           width: 120
           filter: true
+          title: Eingeliefert
+          dateFormat:
+            value: dd.MM.yyyy
+            dataValue: MMM dd, yyyy
+            withData: false
         index: 19
+        slots: []
+      - id: '16932400096810.026188380336292783'
+        definitionId: atomicDateTime
+        parentSlotId: '16932398365750.9736313438106405'
+        styles:
+          xl:
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            visible: true
+        properties:
+          name: atomicDateTime65
+          prop: MODataCalculated
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          dateFormat:
+            value: dd.MM.yyyy
+            dataValue: MMM dd, yyyy
+            withData: false
+          timeFormat:
+            value: HH:mm:ss
+            dataValue: HH:mm
+            withData: false
+          title: Portoberechnung Start
+        index: 10
+        slots: []
+      - id: '16932400096810.9740837017842492'
+        definitionId: atomicDateTime
+        parentSlotId: '16932398365750.9736313438106405'
+        styles:
+          xl:
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            visible: true
+        properties:
+          name: atomicDateTime66
+          prop: MODataGotResult
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          title: Porto berechnet
+          dateFormat:
+            value: dd.MM.yyyy
+            dataValue: MMM dd, yyyy
+            withData: false
+          timeFormat:
+            value: HH:mm:ss
+            dataValue: HH:mm
+            withData: false
+        index: 11
+        slots: []
+      - id: '16932400096810.07227074234457564'
+        definitionId: atomicDateTime
+        parentSlotId: '16932398365750.9736313438106405'
+        styles:
+          xl:
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            visible: true
+        properties:
+          name: atomicDateTime67
+          prop: PrintFileProdStarted
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          title: Druckdateien berechnen Start
+          dateFormat:
+            value: dd.MM.yyyy
+            dataValue: MMM dd, yyyy
+            withData: false
+          timeFormat:
+            value: HH:mm:ss
+            dataValue: HH:mm
+            withData: false
+        index: 12
+        slots: []
+      - id: '16932400096810.13747415362045268'
+        definitionId: atomicDateTime
+        parentSlotId: '16932398365750.9736313438106405'
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicDateTime68
+          prop: PrintFileProdFinished
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          title: Druckdateien fertig
+          dateFormat:
+            value: dd.MM.yyyy
+            dataValue: MMM dd, yyyy
+            withData: false
+          timeFormat:
+            value: HH:mm:ss
+            dataValue: HH:mm
+            withData: false
+        index: 13
         slots: []
