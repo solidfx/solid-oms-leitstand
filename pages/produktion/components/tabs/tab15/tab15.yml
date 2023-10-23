@@ -13,4 +13,4 @@ slots:
   - id: '16976259648500.9448617949127351'
     name: content
     children:
-      - AuftragVorverarbeitung2.yml
+      - AuftragWeiterverarbeitung.yml

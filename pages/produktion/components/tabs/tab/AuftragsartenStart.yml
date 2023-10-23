@@ -285,6 +285,10 @@ slots:
             dataValue: star-outline
             withData: false
           fieldTooltip: Starte Verarbeitung
+          disabled:
+            value: false
+            dataValue: '{{row.Auftragsart != "Rechnungen"}}'
+            withData: true
         index: 14
         actions:
           buttonClick:

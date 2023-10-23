@@ -30,7 +30,7 @@ steps:
         valueType: custom
         interpolationType: string
       - type: body
-        value: "{\n\t\"AuftragID\": {{ui.AuftragVorverarbeitung2.selectedRow.data.AuftragID}},\n  \"laufordner\": {{app.env == \"prod\" ? '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\prod\\\\customers' : '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\test\\\\customers'  + '\\\\' + ui.AuftragVorverarbeitung2.selectedRow.data.Kunde + \"\\\\\" + ui.AuftragVorverarbeitung2.selectedRow.data.Mandant + \"\\\\\" + ui.AuftragVorverarbeitung2.selectedRow.data.Auftragsart + \"\\\\\" + ui.AuftragVorverarbeitung2.selectedRow.data.timestampPath}},\n\t\"runMode\": {{app.env == \"prod\" ? 'prod' : 'test'}}\n}"
+        value: "{\n\t\"AuftragID\": {{ui.AuftragWeiterverarbeitung.selectedRow.data.AuftragID}},\n  \"laufordner\": {{app.env == \"prod\" ? '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\prod\\\\customers' : '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\test\\\\customers'  + '\\\\' + ui.AuftragWeiterverarbeitung.selectedRow.data.Kunde + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.Mandant + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.Auftragsart + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.timestampPath}},\n\t\"runMode\": {{app.env == \"prod\" ? 'prod' : 'test'}}\n}"
         valueType: interpolatedValue
         interpolationType: code
       - type: structuredBody
@@ -61,10 +61,9 @@ steps:
     params:
       - type: message
         value: >-
-          Verarbeitung gestartet für
-          {{ui.AuftragsartenStart.selectedRow.data.Kunde}} -
-          {{ui.AuftragsartenStart.selectedRow.data.Mandant}} -
-          {{ui.AuftragsartenStart.selectedRow.data.Auftragsart}}.
+          Auftrag {{ui.AuftragWeiterverarbeitung.selectedRow.data.AuftragID}} -
+          {{ui.AuftragWeiterverarbeitung.selectedRow.data.Kunde}} wird
+          abgeschlossen.
         valueType: interpolatedValue
       - type: type
         value: success

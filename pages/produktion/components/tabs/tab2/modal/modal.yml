@@ -52,7 +52,7 @@ slots:
   - id: '16932394782200.3313096714328232'
     name: body
     children:
-      - auftragvorverarbeitungDetail.yml
+      - ModalAuftragDetails.yml
   - id: '16932394782200.5721032542443514'
     name: footer
     children: []

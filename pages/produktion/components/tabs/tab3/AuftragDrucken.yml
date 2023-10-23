@@ -315,6 +315,7 @@ slots:
             dataValue: MMM dd, yyyy
             withData: false
           title: Vorverarbeitung Ende
+          alignment: center
         parentSlotId: '16980559026150.09963575831289995'
         index: 8
         slots: []
@@ -349,6 +350,7 @@ slots:
             value: dd.MM.yyyy
             dataValue: MMM dd, yyyy
             withData: false
+          alignment: center
         parentSlotId: '16980559026150.09963575831289995'
         index: 9
         slots: []
@@ -376,13 +378,14 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: 120
+          width: '80'
           filter: true
-          title: Druckdatenberechnung
+          title: Druckdatenberechnung Start
           dateFormat:
             value: dd.MM.yyyy
             dataValue: MMM dd, yyyy
             withData: false
+          alignment: center
         parentSlotId: '16980559026150.09963575831289995'
         index: 10
         slots: []
@@ -417,6 +420,7 @@ slots:
             value: dd.MM.yyyy
             dataValue: MMM dd, yyyy
             withData: false
+          alignment: center
         parentSlotId: '16980559026150.09963575831289995'
         index: 11
         slots: []
@@ -627,4 +631,30 @@ slots:
               paramCode: ''
               blockPageLoad: false
               index: 0
+        slots: []
+      - id: '16980987837710.834502600831341'
+        definitionId: atomicButton
+        parentSlotId: '16980559026150.09963575831289995'
+        styles:
+          xl:
+            iconPlacement: center
+        properties:
+          name: atomicButton9
+          text: '{{value}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          prop: Drucken
+          title: an Drucker senden
+          width: '40'
+          pinColumn: right
+          icon:
+            value: printer
+            dataValue: star-outline
+            withData: false
+          disabled:
+            value: false
+            dataValue: '{{row.currentStatus != ''PrintFileProdFinished''}}'
+            withData: true
+        index: 20
         slots: []
