@@ -1,8 +1,8 @@
-id: '16970590271910.6981719522651411'
-name: loadDboDvfConfig2
+id: '16980548847420.08599733364733075'
+name: loadAuftragPreProd
 nameConfigured: true
 steps:
-  - id: '16970590271910.4699386712397966'
+  - id: '16980548847410.6145526610889764'
     type: LOAD_COLLECTION
     name: load
     params:
@@ -10,10 +10,14 @@ steps:
         value: POM_test
         valueType: string
       - type: resourceId
-        value: dbo.dvfConfig
+        value: dbo.Auftrag
         valueType: string
       - type: filters
-        value: []
+        value:
+          - column: currentStatus
+            operation: in
+            value:
+              value: '"inputDataCopied","PreProcessStarted","PreProcessFinished"'
         valueType: custom
       - type: ordering
         value:
@@ -22,7 +26,7 @@ steps:
           offset:
             value: ''
           orderBy:
-            value: ''
+            value: AuftragID
           orderDirection:
             value: asc
         valueType: custom
@@ -46,28 +50,26 @@ steps:
     level: 0
     fallthroughError: false
     isChanged: true
-    nameConfigured: true
-singleStep: false
+singleStep: true
 mode: manual
 modeConfigured: false
-parentPageId: '16970590271810.8513444696254675'
+parentPageId: '16917934644660.913036060840761'
 folder: false
-parentId: null
 config:
   shouldConfirm: false
-  confirmMessage: >-
-    Are you sure you'd like to proceed with
-    "{{actions.loadDboDvfConfig2.name}}"?
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadDboAuftrag.name}}"?
   showSuccessToast: false
-  successToast: Action "{{actions.loadDboDvfConfig2.name}}" successfully executed
+  successToast: Action "{{actions.loadDboAuftrag.name}}" successfully executed
   successToastDuration: '3000'
   successToastHideByClick: false
   showErrorToast: true
-  errorToast: Action "{{actions.loadDboDvfConfig2.name}}" has failed
+  errorToast: Action "{{actions.loadDboAuftrag.name}}" has failed
   errorToastDuration: '3000'
   errorToastHideByClick: false
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
-assigned: false
-index: 22
+assigned: true
+selected: false
+configured: true
+index: 4

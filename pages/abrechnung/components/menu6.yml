@@ -43,10 +43,6 @@ properties:
         link: '/suche'
       },
       {
-        title: 'Einstellungen1',
-        link: '/einstellungen1'
-      },
-      {
         title: 'Einstellungen',
         link: '/einstellungen'
       },

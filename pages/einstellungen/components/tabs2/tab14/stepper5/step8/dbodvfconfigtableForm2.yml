@@ -43,11 +43,7 @@ actions:
       paramCode: ''
       blockPageLoad: false
       index: 0
-  submitEvent:
-    - action: '16970590271900.6360023330885893'
-      paramCode: ''
-      blockPageLoad: false
-      index: 1
+  submitEvent: []
   formClick: []
   changeEvent: []
   customButtonClick: []

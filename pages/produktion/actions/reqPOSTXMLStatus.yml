@@ -1,8 +1,8 @@
-id: '16918807528290.8724292158445'
-name: reqPOSTstartBatch
+id: '16980778355080.1797464334636132'
+name: reqPOSTXMLStatus
 nameConfigured: true
 steps:
-  - id: '16965179604250.4375742469577495'
+  - id: '16980778355080.24804360659285307'
     type: httpRequest
     name: request
     params:
@@ -14,7 +14,7 @@ steps:
         value: POST
         valueType: string
       - type: url
-        value: startBatch
+        value: swragXMLcarriedOut
         valueType: interpolatedValue
         interpolationType: string
       - type: headers
@@ -30,7 +30,7 @@ steps:
         valueType: custom
         interpolationType: string
       - type: body
-        value: "{\n\t\"key\": {\n\t\t\t\"kunde\": {{ui.AuftragVorverarbeitung.selectedRow.data.Kunde}},\n\t\t\t\"mandant\": {{ui.AuftragVorverarbeitung.selectedRow.data.Mandant}},\n\t\t\t\"auftragsart\": {{ui.AuftragVorverarbeitung.selectedRow.data.Auftragsart}}\n\t},\t\n    \"runmode\": {{app.env == \"prod\" ? 'prod' : 'test'}}\n}"
+        value: "{\n\t\"AuftragID\": {{ui.AuftragWeiterverarbeitung.selectedRow.data.AuftragID}},\n  \"laufordner\": {{app.env == \"prod\" ? '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\prod\\\\customers' : '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\test\\\\customers'  + '\\\\' + ui.AuftragWeiterverarbeitung.selectedRow.data.Kunde + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.Mandant + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.Auftragsart + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.timestampPath}},\n\t\"runMode\": {{app.env == \"prod\" ? 'prod' : 'test'}}\n}"
         valueType: interpolatedValue
         interpolationType: code
       - type: structuredBody
@@ -55,16 +55,15 @@ steps:
     fallthroughError: false
     isChanged: true
     nameConfigured: true
-  - id: '16923949930940.5815136167203814'
+  - id: '16980778355080.3119266527192539'
     type: showToast
     name: notification
     params:
       - type: message
         value: >-
-          Verarbeitung gestartet für
-          {{ui.AuftragsartenStart.selectedRow.data.Kunde}} -
-          {{ui.AuftragsartenStart.selectedRow.data.Mandant}} -
-          {{ui.AuftragsartenStart.selectedRow.data.Auftragsart}}.
+          Auftrag {{ui.AuftragWeiterverarbeitung.selectedRow.data.AuftragID}} -
+          {{ui.AuftragWeiterverarbeitung.selectedRow.data.Kunde}} wird
+          abgeschlossen.
         valueType: interpolatedValue
       - type: type
         value: success
@@ -105,7 +104,7 @@ config:
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
-assigned: true
+assigned: false
 selected: true
 configured: true
-index: 7
+index: 8

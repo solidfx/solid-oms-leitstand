@@ -76,11 +76,7 @@ actions:
   smartTablePageSelect: []
   smartTableFilterChange: []
   smartTableSortChange: []
-  smartTableReload:
-    - action: '16970590271900.36552930112071813'
-      paramCode: ''
-      blockPageLoad: false
-      index: 1
+  smartTableReload: []
 slots:
   - id: '16970600389660.712235408983739'
     name: columns

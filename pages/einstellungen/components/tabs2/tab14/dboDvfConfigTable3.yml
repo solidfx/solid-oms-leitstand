@@ -58,11 +58,7 @@ index: 0
 actions:
   init: []
   smartTableCreate: []
-  smartTableEdit:
-    - action: '16970590271900.6701403336771616'
-      paramCode: ''
-      blockPageLoad: false
-      index: 1
+  smartTableEdit: []
   smartTableBulkEdit: []
   smartTableDelete: []
   smartTableRowSelect: []

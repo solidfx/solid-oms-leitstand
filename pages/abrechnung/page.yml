@@ -4,7 +4,7 @@ url: abrechnung
 roleIds: []
 disableInMenu: false
 parentPageId: ''
-index: 6
+index: 5
 slots:
   - id: '16932418322570.019214646164752658'
     name: content
