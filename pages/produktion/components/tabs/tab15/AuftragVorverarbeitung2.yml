@@ -30,7 +30,7 @@ properties:
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
-  title: Produktion - Aufträge abschließen
+  title: Produktion - Weiterverarbeitung
   showLoading:
     withData: true
     dataValue: '{{actions.loadDboAuftrag.loading}}'
@@ -592,4 +592,24 @@ slots:
               paramCode: ''
               blockPageLoad: false
               index: 0
+        slots: []
+      - id: '16980775866350.40814656098838586'
+        definitionId: atomicButton
+        parentSlotId: '16976261564800.16912833993728893'
+        styles: {}
+        properties:
+          name: atomicButton8
+          text: '{{value}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          prop: eingeliefert
+          title: eingeliefert
+        actions:
+          buttonClick:
+            - action: '16980778355080.1797464334636132'
+              paramCode: ''
+              blockPageLoad: false
+              index: 0
+        index: 20
         slots: []

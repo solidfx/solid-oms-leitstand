@@ -1,0 +1,111 @@
+id: '16980778355080.1797464334636132'
+name: reqPOSTXMLStatus
+nameConfigured: true
+steps:
+  - id: '16980778355080.24804360659285307'
+    type: httpRequest
+    name: request
+    params:
+      - type: datasourceId
+        value: Scaler
+        valueType: string
+        mustSelectFirst: true
+      - type: method
+        value: POST
+        valueType: string
+      - type: url
+        value: swragXMLcarriedOut
+        valueType: interpolatedValue
+        interpolationType: string
+      - type: headers
+        value:
+          - name: Content-Type
+            value: application/json
+        valueType: custom
+        interpolationType: string
+      - type: queryParams
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+        interpolationType: string
+      - type: body
+        value: "{\n\t\"AuftragID\": {{ui.AuftragVorverarbeitung2.selectedRow.data.AuftragID}},\n  \"laufordner\": {{app.env == \"prod\" ? '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\prod\\\\customers' : '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\test\\\\customers'  + '\\\\' + ui.AuftragVorverarbeitung2.selectedRow.data.Kunde + \"\\\\\" + ui.AuftragVorverarbeitung2.selectedRow.data.Mandant + \"\\\\\" + ui.AuftragVorverarbeitung2.selectedRow.data.Auftragsart + \"\\\\\" + ui.AuftragVorverarbeitung2.selectedRow.data.timestampPath}},\n\t\"runMode\": {{app.env == \"prod\" ? 'prod' : 'test'}}\n}"
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: structuredBody
+        value: []
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: bodyType
+        value: object
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+  - id: '16980778355080.3119266527192539'
+    type: showToast
+    name: notification
+    params:
+      - type: message
+        value: >-
+          Verarbeitung gestartet für
+          {{ui.AuftragsartenStart.selectedRow.data.Kunde}} -
+          {{ui.AuftragsartenStart.selectedRow.data.Mandant}} -
+          {{ui.AuftragsartenStart.selectedRow.data.Auftragsart}}.
+        valueType: interpolatedValue
+      - type: type
+        value: success
+        valueType: string
+      - type: icon
+        value: checkmark-circle-2
+        valueType: string
+      - type: duration
+        value: '3000'
+        valueType: interpolatedValue
+      - type: position
+        value: top-end
+        valueType: string
+      - type: hideOnClick
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: true
+mode: manual
+modeConfigured: true
+parentPageId: '16917934644660.913036060840761'
+folder: false
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.reqPOSTstartBatch.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.reqPOSTstartBatch.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.reqPOSTstartBatch.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: false
+selected: true
+configured: true
+index: 8

@@ -412,7 +412,7 @@ slots:
             - xs
           width: '80'
           filter: true
-          title: Drucdaten fertig
+          title: Druckdaten fertig
           dateFormat:
             value: dd.MM.yyyy
             dataValue: MMM dd, yyyy
