@@ -413,10 +413,10 @@ slots:
                 color: info-light
                 __UIBAKERY__SYSTEM_ID__: '16930027072180.4508901594556658'
                 title: Kuvertieren
-              - value: Option 4
-                color: success
+              - value: FulFilled
+                color: primary
                 __UIBAKERY__SYSTEM_ID__: '16930027390120.15219438416637687'
-                title: Fulfilled
+                title: abgeschlossen
               - value: Option 5
                 color: danger
                 __UIBAKERY__SYSTEM_ID__: '16930027554260.9463511456559883'

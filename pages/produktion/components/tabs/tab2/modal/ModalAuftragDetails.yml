@@ -158,6 +158,10 @@ slots:
                 color: success
                 __UIBAKERY__SYSTEM_ID__: '16980601088680.7963271244249137'
                 title: Druckdaten fertig
+              - value: FulFilled
+                color: primary
+                __UIBAKERY__SYSTEM_ID__: '16981710958290.6615647401027203'
+                title: abgeschlossen
             dataValue: |-
               [
                 {
@@ -442,9 +446,13 @@ slots:
               customValue: 12
               customUnit: px
               themeDefaultOverridePropertyKey: baseTextFontSize
+            color:
+              value: primary
+              dataValue: basic
+              withData: false
         properties:
           name: atomicDateTime40
-          prop: Fullfilled
+          prop: Fulfilled
           primaryKey: false
           timeFormat:
             value: HH:mm:ss
@@ -499,6 +507,10 @@ slots:
               customUnit: px
               themeDefaultOverridePropertyKey: baseTextFontSize
             visible: true
+            color:
+              value: warning-dark
+              dataValue: basic
+              withData: false
         properties:
           name: atomicDateTime66
           prop: MODataGotResult
@@ -553,6 +565,10 @@ slots:
               customValue: 12
               customUnit: px
               themeDefaultOverridePropertyKey: baseTextFontSize
+            color:
+              value: success-dark
+              dataValue: basic
+              withData: false
         properties:
           name: atomicDateTime68
           prop: PrintFileProdFinished
