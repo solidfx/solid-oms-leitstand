@@ -4,8 +4,8 @@ parentSlotId: '16910890708800.5284598058147412'
 styles:
   xl:
     gridItem:
-      x: 20
-      y: 0
+      x: 19
+      y: 5
       w: 1
       h: 10
   xs:
@@ -32,7 +32,7 @@ properties:
     value: filled
     dataValue: filled
     withData: false
-  __UIBAKERY__SHOW__CONDITION__CODE__: app.env == 'staging'
+  __UIBAKERY__SHOW__CONDITION__CODE__: app.env == 'staging' && user.roles == 'admin'
 actions: {}
 index: 7
 slots: []
