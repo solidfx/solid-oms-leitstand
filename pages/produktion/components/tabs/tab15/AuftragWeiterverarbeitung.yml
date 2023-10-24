@@ -458,6 +458,10 @@ slots:
                 color: success
                 __UIBAKERY__SYSTEM_ID__: '16980569951070.355202896379641'
                 title: Druckdaten fertig
+              - value: FulFilled
+                color: primary-dark
+                __UIBAKERY__SYSTEM_ID__: '16981531557880.6998735278806507'
+                title: abgeschlossen
             dataValue: |-
               [
                 {
@@ -622,7 +626,7 @@ slots:
             Statusdateien auf den SFTP-Server geladen."}}
           disabled:
             value: false
-            dataValue: '{{row.currentStatus == "Fulfilled"}}'
+            dataValue: '{{row.currentStatus == "FulFilled"}}'
             withData: true
         actions:
           buttonClick:
