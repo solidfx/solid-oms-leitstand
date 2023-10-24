@@ -19,9 +19,9 @@ properties:
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
-  text: PROD
+  text: '> PROD'
   status:
-    value: success-dark
+    value: danger-light
     dataValue: primary
     withData: false
   linkInfo:
@@ -29,6 +29,10 @@ properties:
     internalPath: ''
     externalPath: http://192.168.10.127:3030/p-o-m/Is02dBNXWP
   __UIBAKERY__SHOW__CONDITION__CODE__: app.env == 'staging'
+  appearance:
+    value: outline
+    dataValue: filled
+    withData: false
 actions: {}
 index: 5
 slots: []

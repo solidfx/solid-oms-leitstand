@@ -8,6 +8,7 @@ styles:
       y: 5
       w: 1
       h: 10
+    iconPlacement: none
   xs:
     gridItem:
       x: 0
@@ -19,7 +20,7 @@ properties:
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
-  text: TEST
+  text: '> TEST'
   status:
     value: warning
     dataValue: primary
@@ -28,7 +29,15 @@ properties:
     active: externalPath
     internalPath: ''
     externalPath: http://192.168.10.127:3030/staging/p-o-m/Is02dBNXWP/home
-  __UIBAKERY__SHOW__CONDITION__CODE__: app.dev != 'staging'
+  __UIBAKERY__SHOW__CONDITION__CODE__: app.dev == 'prod' || app.env == 'dev'
+  icon:
+    value: checkmark-square-2
+    dataValue: star-outline
+    withData: false
+  appearance:
+    value: outline
+    dataValue: filled
+    withData: false
 actions: {}
 index: 6
 slots: []
