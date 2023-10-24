@@ -28,3 +28,7 @@ children:
           - components/image.yml
           - components/image2.yml
           - components/text3.yml
+          - components/text4.yml
+          - components/button.yml
+          - components/button2.yml
+          - components/button3.yml

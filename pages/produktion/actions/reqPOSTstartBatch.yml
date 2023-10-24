@@ -30,7 +30,7 @@ steps:
         valueType: custom
         interpolationType: string
       - type: body
-        value: "{\n\t\"key\": {\n\t\t\t\"kunde\": {{ui.AuftragVorverarbeitung.selectedRow.data.Kunde}},\n\t\t\t\"mandant\": {{ui.AuftragVorverarbeitung.selectedRow.data.Mandant}},\n\t\t\t\"auftragsart\": {{ui.AuftragVorverarbeitung.selectedRow.data.Auftragsart}}\n\t},\t\n    \"runmode\": {{app.env == \"prod\" ? 'prod' : 'test'}}\n}"
+        value: "{\n\t\"key\": {\n\t\t\t\"kunde\": {{ui.AuftragsartenStart.selectedRow.data.Kunde}},\n\t\t\t\"mandant\": {{ui.AuftragsartenStart.selectedRow.data.Mandant}},\n\t\t\t\"auftragsart\": {{ui.AuftragsartenStart.selectedRow.data.Auftragsart}}\n\t},\t\n    \"runmode\": {{app.env == \"prod\" ? 'prod' : 'test'}}\n}"
         valueType: interpolatedValue
         interpolationType: code
       - type: structuredBody
