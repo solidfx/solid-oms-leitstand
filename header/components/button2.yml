@@ -29,7 +29,7 @@ properties:
     active: externalPath
     internalPath: ''
     externalPath: http://192.168.10.127:3030/staging/p-o-m/Is02dBNXWP/home
-  __UIBAKERY__SHOW__CONDITION__CODE__: app.dev == 'prod' || app.env == 'dev'
+  __UIBAKERY__SHOW__CONDITION__CODE__: app.env == 'prod' || app.env == 'dev'
   icon:
     value: checkmark-square-2
     dataValue: star-outline
