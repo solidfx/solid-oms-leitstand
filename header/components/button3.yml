@@ -32,7 +32,7 @@ properties:
     value: filled
     dataValue: filled
     withData: false
-  __UIBAKERY__SHOW__CONDITION__CODE__: app.env != 'dev'
+  __UIBAKERY__SHOW__CONDITION__CODE__: app.env == 'staging'
 actions: {}
 index: 7
 slots: []

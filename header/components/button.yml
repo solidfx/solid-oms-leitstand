@@ -28,7 +28,7 @@ properties:
     active: externalPath
     internalPath: ''
     externalPath: http://192.168.10.127:3030/p-o-m/Is02dBNXWP
-  __UIBAKERY__SHOW__CONDITION__CODE__: app.env != 'prod'
+  __UIBAKERY__SHOW__CONDITION__CODE__: app.env == 'staging'
 actions: {}
 index: 5
 slots: []
