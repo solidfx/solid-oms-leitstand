@@ -30,7 +30,7 @@ steps:
         valueType: custom
         interpolationType: string
       - type: body
-        value: "{\n\t\"AuftragID\": {{ui.AuftragWeiterverarbeitung.selectedRow.data.AuftragID}},\n  \"laufordner\": {{app.env == \"prod\" ? '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\prod\\\\customers' : '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\test\\\\customers'  + '\\\\' + ui.AuftragWeiterverarbeitung.selectedRow.data.Kunde + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.Mandant + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.Auftragsart + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.timestampPath}},\n\t\"runMode\": {{app.env == \"prod\" ? 'prod' : 'test'}}\n}"
+        value: "{\n\t\"AuftragID\": {{ui.AuftragWeiterverarbeitung.selectedRow.data.AuftragID}},\n  \"laufordner\": {{app.env == \"prod\" ? '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\prod\\\\customers' + '\\\\' + ui.AuftragWeiterverarbeitung.selectedRow.data.Kunde + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.Mandant + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.Auftragsart + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.timestampPath : '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\test\\\\customers'  + '\\\\' + ui.AuftragWeiterverarbeitung.selectedRow.data.Kunde + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.Mandant + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.Auftragsart + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.timestampPath}},\n\t\"runMode\": {{app.env == \"prod\" ? 'prod' : 'test'}}\n}"
         valueType: interpolatedValue
         interpolationType: code
       - type: structuredBody
