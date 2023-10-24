@@ -39,6 +39,10 @@ properties:
     value: false
   showFilter: true
   rowVariation: dense
+  showExportAction:
+    value: false
+    dataValue: 'true'
+    withData: false
 actions: {}
 index: 0
 slots:
