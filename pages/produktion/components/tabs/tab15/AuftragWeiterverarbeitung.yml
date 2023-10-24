@@ -620,10 +620,17 @@ slots:
           fieldTooltip: >-
             {{"CarriedOut-XML wird erzeugt und zusammen mit den anderen
             Statusdateien auf den SFTP-Server geladen."}}
+          disabled:
+            value: false
+            dataValue: '{{row.currentStatus == "Fulfilled"}}'
+            withData: true
         actions:
           buttonClick:
             - action: '16980778355080.1797464334636132'
-              paramCode: ''
+              paramCode: |-
+                {
+                  type: 'new'
+                }
               blockPageLoad: false
               index: 0
         index: 19
