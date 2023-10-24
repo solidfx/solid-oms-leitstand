@@ -5,9 +5,9 @@ styles:
   xl:
     gridItem:
       x: 22
-      y: 10
+      y: 5
       w: 1
-      h: 8
+      h: 10
     fontSize:
       customValue: 24
       customUnit: px
