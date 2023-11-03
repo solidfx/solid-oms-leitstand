@@ -41,8 +41,20 @@ properties:
     dataValue: asc
     withData: false
   rowVariation: dense
-  limit: '11'
+  limit: '10'
   serverSidePagination: false
+  showClearSelection:
+    value: false
+    dataValue: 'true'
+    withData: false
+  showExportAction:
+    value: false
+    dataValue: 'true'
+    withData: false
+  showReloadAction:
+    value: true
+    dataValue: 'false'
+    withData: false
 actions: {}
 index: 0
 slots:
