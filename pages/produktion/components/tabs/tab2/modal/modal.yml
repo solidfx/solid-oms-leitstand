@@ -11,7 +11,7 @@ styles:
     modalSize:
       widthValue: '50'
       widthUnit: '%'
-      heightValue: 60
+      heightValue: 70
       heightUnit: '%'
       minWidthValue: 0
       minWidthUnit: px
@@ -53,6 +53,7 @@ slots:
     name: body
     children:
       - ModalAuftragDetails.yml
+      - dboAbrechnungTable.yml
   - id: '16932394782200.5721032542443514'
     name: footer
     children: []

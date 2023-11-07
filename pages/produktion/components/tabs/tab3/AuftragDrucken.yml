@@ -194,7 +194,7 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: '50'
+          width: '30'
           filter: true
           dateFormat:
             value: dd.MM.yyyy
@@ -308,7 +308,7 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: '60'
+          width: '30'
           filter: true
           dateFormat:
             value: dd.MM.yyyy
@@ -343,7 +343,7 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: '80'
+          width: '30'
           filter: true
           title: Porto berechnet
           dateFormat:
@@ -358,7 +358,7 @@ slots:
         definitionId: atomicDateTime
         styles:
           xl:
-            visible: true
+            visible: false
             fontSize:
               customValue: 12
               customUnit: px
@@ -378,7 +378,7 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: '80'
+          width: '30'
           filter: true
           title: Druckdatenberechnung Start
           dateFormat:
@@ -413,7 +413,7 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: '80'
+          width: '30'
           filter: true
           title: Druckdaten fertig
           dateFormat:
@@ -513,7 +513,7 @@ slots:
                 }
               ]
             withData: false
-          width: '60'
+          width: '30'
           title: Status
         parentSlotId: '16980559026150.09963575831289995'
         index: 14
@@ -646,7 +646,7 @@ slots:
             - xs
           prop: Drucken
           title: an Drucker senden
-          width: '40'
+          width: '30'
           pinColumn: right
           icon:
             value: printer
@@ -656,5 +656,29 @@ slots:
             value: false
             dataValue: '{{row.currentStatus != ''PrintFileProdFinished''}}'
             withData: true
+          sortable: false
+        index: 21
+        actions:
+          buttonClick:
+            - action: '16932396185290.5407912308785228'
+              paramCode: ''
+              blockPageLoad: false
+              index: 0
+        slots: []
+      - id: '16993781131050.07623018400811743'
+        definitionId: atomicString
+        parentSlotId: '16980559026150.09963575831289995'
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicString240
+          prop: Error
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          title: Druckerauswahl
+          primaryKey: false
+          width: '60'
         index: 20
         slots: []
