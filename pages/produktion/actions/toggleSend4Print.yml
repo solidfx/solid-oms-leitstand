@@ -1,33 +1,35 @@
-id: '16932396185290.5407912308785228'
-name: openAuftragModal
+id: '16994534483310.49890997634185363'
+name: toggleSend4Print
 nameConfigured: true
 steps:
-  - id: '16932396218740.5286074726099008'
+  - id: '16994534599840.1515446976111836'
     type: customAsyncCode
     name: code
     params:
       - type: asyncCode
-        value: '{{ui.modal.open()}};'
+        value: >-
+          {{ui.getjdfsTable.selectedRow.data.markiert}} == 'false' ?
+          {{ui.getjdfsTable.selectedRow.data.markiert}} = 'true' :
+          {{ui.getjdfsTable.selectedRow.data.markiert}} = 'false'
         valueType: interpolatedValue
         interpolationType: code
     level: 0
     fallthroughError: false
     isChanged: true
-singleStep: false
+singleStep: true
 mode: manual
-modeConfigured: false
+modeConfigured: true
 parentPageId: '16917934644660.913036060840761'
 folder: false
-parentId: null
 config:
   shouldConfirm: false
-  confirmMessage: Are you sure you'd like to proceed with "{{actions.openAuftragModal.name}}"?
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.toggleSend4Print.name}}"?
   showSuccessToast: false
-  successToast: Action "{{actions.openAuftragModal.name}}" successfully executed
+  successToast: Action "{{actions.toggleSend4Print.name}}" successfully executed
   successToastDuration: '3000'
   successToastHideByClick: false
   showErrorToast: true
-  errorToast: Action "{{actions.openAuftragModal.name}}" has failed
+  errorToast: Action "{{actions.toggleSend4Print.name}}" has failed
   errorToastDuration: '3000'
   errorToastHideByClick: false
   delay: '0'
@@ -36,4 +38,4 @@ config:
 assigned: true
 selected: true
 configured: true
-index: 7
+index: 10
