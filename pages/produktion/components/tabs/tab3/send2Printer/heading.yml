@@ -17,12 +17,12 @@ styles:
       withData: false
 properties:
   name: heading
-  text: An Drucker senden
+  text: '   An Drucker senden'
   verticalAlignment: middle
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
-  alignment: center
+  alignment: left
 parentSlotId: '16994409817800.4416824702548572'
 index: 0
 actions: {}

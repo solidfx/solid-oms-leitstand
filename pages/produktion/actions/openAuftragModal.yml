@@ -7,7 +7,7 @@ steps:
     name: code
     params:
       - type: asyncCode
-        value: '{{ui.modal.open()}};'
+        value: '{{ui.AuftragModal.open()}};'
         valueType: interpolatedValue
         interpolationType: code
     level: 0

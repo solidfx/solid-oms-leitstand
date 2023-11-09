@@ -36,7 +36,39 @@ properties:
     dataValue: '{{actions.reqGetJDFs.loading}}'
     value: false
   rowVariation: dense
-actions: {}
+  showClearSelection:
+    value: false
+    dataValue: 'true'
+    withData: false
+  showExportAction:
+    value: false
+    dataValue: 'true'
+    withData: false
+  putEmptyValuesAtTheEnd: true
+  showReloadAction:
+    value: true
+    dataValue: 'false'
+    withData: false
+actions:
+  init:
+    - action: '16994427726590.4019477024320457'
+      paramCode: ''
+      blockPageLoad: false
+      index: 0
+  smartTableCreate: []
+  smartTableEdit: []
+  smartTableBulkEdit: []
+  smartTableDelete: []
+  smartTableRowSelect: []
+  smartTableRowClick: []
+  smartTablePageSelect: []
+  smartTableFilterChange: []
+  smartTableSortChange: []
+  smartTableReload:
+    - action: '16994427726590.4019477024320457'
+      paramCode: ''
+      blockPageLoad: false
+      index: 1
 index: 2
 slots:
   - id: '16994523176240.143469469902207'
@@ -76,7 +108,7 @@ slots:
         properties:
           name: atomicText27
           prop: name
-          primaryKey: false
+          primaryKey: true
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs

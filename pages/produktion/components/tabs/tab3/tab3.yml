@@ -14,3 +14,4 @@ slots:
     name: content
     children:
       - AuftragDrucken.yml
+      - send2Printer/send2Printer.yml

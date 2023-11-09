@@ -26,12 +26,12 @@ properties:
     dataValue: |-
       [
         {
-          "value": "Drucker links",
-          "title": "Drucker links"
+          "value": "KONICA Links",
+          "title": "KONICA Links"
         },
         {
-          "value": "Drucker rechts",
-          "title": "Drucker rechts"
+          "value": "KONICA Rechts",
+          "title": "KONICA Rechts"
         }
       ]
     withData: true
@@ -50,7 +50,7 @@ slots:
   - id: '16994414007900.7134831863205733'
     name: optionViewTypes
     children:
-      - id: '16994415757340.9878111230349698'
+      - id: '16995402312710.4576752199975036'
         definitionId: atomicString
         parentSlotId: '16994414007900.7134831863205733'
         styles:

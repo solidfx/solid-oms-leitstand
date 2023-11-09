@@ -1,0 +1,67 @@
+id: '16994409817800.9428479222971626'
+definitionId: modal
+parentSlotId: '16917937011770.6074689975713488'
+styles:
+  xl:
+    gridItem:
+      x: 21
+      y: 132
+      w: 2
+      h: 10
+    modalSize:
+      widthValue: '50'
+      widthUnit: '%'
+      heightValue: 50
+      heightUnit: '%'
+      minWidthValue: 0
+      minWidthUnit: px
+      minHeightValue: 0
+      minHeightUnit: px
+      maxWidthValue: none
+      maxWidthUnit: null
+      maxHeightValue: none
+      maxHeightUnit: null
+    status:
+      value: danger-dark
+      dataValue: default
+      withData: false
+  xs:
+    gridItem:
+      x: 22
+      y: 125
+      w: 2
+      h: 10
+properties:
+  name: send2Printer
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  showHeader: true
+  buttonAppearance:
+    value: ghost
+    dataValue: filled
+    withData: false
+  buttonText: ''
+  closeOnEsc: true
+index: 2
+actions:
+  open:
+    - action: '16994427726590.4019477024320457'
+      paramCode: ''
+      blockPageLoad: false
+      index: 0
+  close: []
+slots:
+  - id: '16994409817800.4416824702548572'
+    name: header
+    children:
+      - heading.yml
+  - id: '16994409817800.42468334940645813'
+    name: body
+    children:
+      - selectPrinter.yml
+      - button3.yml
+      - getjdfsTable.yml
+  - id: '16994409817800.1258638117326616'
+    name: footer
+    children: []

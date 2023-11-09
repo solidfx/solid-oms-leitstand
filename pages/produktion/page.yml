@@ -26,4 +26,3 @@ slots:
             children:
               - components/menu3.yml
               - components/tabs/tabs.yml
-              - components/send2Printer/send2Printer.yml

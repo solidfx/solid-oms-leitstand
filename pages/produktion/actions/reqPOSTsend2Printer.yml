@@ -30,7 +30,7 @@ steps:
         valueType: custom
         interpolationType: string
       - type: body
-        value: "{\n\t\"AuftragID\": {{ui.AuftragWeiterverarbeitung.selectedRow.data.AuftragID}},\n  \"laufordner\": {{app.env == \"prod\" ? '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\prod\\\\customers' + '\\\\' + ui.AuftragWeiterverarbeitung.selectedRow.data.Kunde + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.Mandant + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.Auftragsart + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.timestampPath : '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\test\\\\customers'  + '\\\\' + ui.AuftragWeiterverarbeitung.selectedRow.data.Kunde + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.Mandant + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.Auftragsart + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.timestampPath}},\n\t\"runMode\": {{app.env == \"prod\" ? 'prod' : 'test'}}\n}"
+        value: "{\n\t\"AuftragID\": {{ui.AuftragDrucken.selectedRow.data.AuftragID}},\n  \"laufordner\": {{app.env == \"prod\" ? '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\prod\\\\customers' + '\\\\' + ui.AuftragDrucken.selectedRow.data.Kunde + \"\\\\\" + ui.AuftragDrucken.selectedRow.data.Mandant + \"\\\\\" + ui.AuftragDrucken.selectedRow.data.Auftragsart + \"\\\\\" + ui.AuftragDrucken.selectedRow.data.timestampPath : '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\test\\\\customers'  + '\\\\' + ui.AuftragDrucken.selectedRow.data.Kunde + \"\\\\\" + ui.AuftragDrucken.selectedRow.data.Mandant + \"\\\\\" + ui.AuftragDrucken.selectedRow.data.Auftragsart + \"\\\\\" + ui.AuftragDrucken.selectedRow.data.timestampPath}},\n\t\"runMode\" : {{app.env == \"prod\" ? 'prod' : 'test'}},\n  \"jdfList\" : {{ui.getjdfsTable.filteredValue}},\n  \"printer\" : {{ui.selectPrinter.value}}\n}"
         valueType: interpolatedValue
         interpolationType: code
       - type: structuredBody
@@ -52,7 +52,7 @@ steps:
         value: false
         valueType: custom
     level: 0
-    fallthroughError: false
+    fallthroughError: true
     isChanged: true
     nameConfigured: true
   - id: '16994418531680.6561100873323793'
@@ -61,9 +61,8 @@ steps:
     params:
       - type: message
         value: >-
-          Dateien aus Auftrag
-          {{ui.AuftragWeiterverarbeitung.selectedRow.data.AuftragID}} -
-          {{ui.AuftragWeiterverarbeitung.selectedRow.data.Kunde}} an
+          Dateien aus Auftrag {{ui.AuftragDrucken.selectedRow.data.AuftragID}} -
+          {{ui.AuftragDrucken.selectedRow.data.Kunde}} an
           {{ui.selectPrinter.value}} gesendet.
         valueType: interpolatedValue
       - type: type
@@ -84,28 +83,14 @@ steps:
     level: 0
     fallthroughError: false
     isChanged: true
-  - id: '16994418531680.37218005874024196'
-    type: executeAction
-    name: reloadAuftrag
+  - id: '16994582265670.22025918773280861'
+    type: customAsyncCode
+    name: CloseModal
     params:
-      - type: action
-        value: '16917942175960.7681327962608866'
-        valueType: string
-      - type: isActionsLibraryCall
-        value: false
-        valueType: string
-      - type: customParams
-        value: return {{data}};
-        valueType: string
-      - type: successMapper
-        value: ''
+      - type: asyncCode
+        value: '{{ui.send2Printer.close()}}'
         valueType: interpolatedValue
-      - type: failureMapper
-        value: ''
-        valueType: interpolatedValue
-      - type: mapperEnabled
-        value: false
-        valueType: custom
+        interpolationType: code
     level: 0
     fallthroughError: false
     isChanged: true

@@ -17,7 +17,7 @@ steps:
           - column: AuftragID
             operation: '='
             value:
-              value: '{{ui.AuftragDrucken.selectedRow.data.AuftragID}}'
+              value: '{{ui.ModalAuftragDetails.value.AuftragID}}'
         valueType: custom
       - type: ordering
         value:
@@ -73,4 +73,4 @@ config:
 assigned: true
 selected: true
 configured: true
-index: 8
+index: 9

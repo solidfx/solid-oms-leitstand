@@ -645,7 +645,7 @@ slots:
             - xl
             - xs
           prop: Drucken
-          title: an Drucker senden
+          title: Drucken
           width: '30'
           pinColumn: right
           icon:
@@ -660,7 +660,7 @@ slots:
         index: 21
         actions:
           buttonClick:
-            - action: '16932396185290.5407912308785228'
+            - action: '16994568273570.37815584305413696'
               paramCode: ''
               blockPageLoad: false
               index: 0
