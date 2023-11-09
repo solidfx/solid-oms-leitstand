@@ -40,8 +40,16 @@ properties:
     value: false
     dataValue: 'true'
     withData: false
-  serverSidePagination: true
+  serverSidePagination: false
   limit: '5'
+  showReloadAction:
+    value: true
+    dataValue: 'false'
+    withData: false
+  showClearSelection:
+    value: false
+    dataValue: 'true'
+    withData: false
 actions:
   init:
     - action: '16929990651010.6500881077299856'

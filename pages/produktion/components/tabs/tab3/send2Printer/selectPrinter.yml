@@ -1,0 +1,67 @@
+id: '16994414007900.6008355156733058'
+definitionId: selectWithAtomics
+parentSlotId: '16994409817800.42468334940645813'
+styles:
+  xl:
+    gridItem:
+      x: 4
+      y: 82
+      w: 10
+      h: 10
+  xs:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 10
+properties:
+  options:
+    value:
+      - value: option_1
+        title: ''
+        __UIBAKERY__SYSTEM_ID__: '1'
+      - value: option_2
+        title: ''
+        __UIBAKERY__SYSTEM_ID__: '2'
+    dataValue: |-
+      [
+        {
+          "value": "KONICA Links",
+          "title": "KONICA Links"
+        },
+        {
+          "value": "KONICA Rechts",
+          "title": "KONICA Rechts"
+        }
+      ]
+    withData: true
+  name: selectPrinter
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  optionValueKey: value
+  labelConfig:
+    text: 'Drucker wählen:'
+    position: horizontal
+    align: left
+actions: {}
+index: 0
+slots:
+  - id: '16994414007900.7134831863205733'
+    name: optionViewTypes
+    children:
+      - id: '16995402312710.4576752199975036'
+        definitionId: atomicString
+        parentSlotId: '16994414007900.7134831863205733'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString241
+          prop: title
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots: []

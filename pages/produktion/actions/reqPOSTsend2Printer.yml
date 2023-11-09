@@ -1,0 +1,122 @@
+id: '16994418531680.09378130471076362'
+name: reqPOSTsend2Printer
+nameConfigured: true
+steps:
+  - id: '16994418531680.3737737349440786'
+    type: httpRequest
+    name: request
+    params:
+      - type: datasourceId
+        value: Scaler
+        valueType: string
+        mustSelectFirst: true
+      - type: method
+        value: POST
+        valueType: string
+      - type: url
+        value: send2Printer
+        valueType: interpolatedValue
+        interpolationType: string
+      - type: headers
+        value:
+          - name: Content-Type
+            value: application/json
+        valueType: custom
+        interpolationType: string
+      - type: queryParams
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+        interpolationType: string
+      - type: body
+        value: "{\n\t\"AuftragID\": {{ui.AuftragDrucken.selectedRow.data.AuftragID}},\n  \"laufordner\": {{app.env == \"prod\" ? '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\prod\\\\customers' + '\\\\' + ui.AuftragDrucken.selectedRow.data.Kunde + \"\\\\\" + ui.AuftragDrucken.selectedRow.data.Mandant + \"\\\\\" + ui.AuftragDrucken.selectedRow.data.Auftragsart + \"\\\\\" + ui.AuftragDrucken.selectedRow.data.timestampPath : '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\test\\\\customers'  + '\\\\' + ui.AuftragDrucken.selectedRow.data.Kunde + \"\\\\\" + ui.AuftragDrucken.selectedRow.data.Mandant + \"\\\\\" + ui.AuftragDrucken.selectedRow.data.Auftragsart + \"\\\\\" + ui.AuftragDrucken.selectedRow.data.timestampPath}},\n\t\"runMode\" : {{app.env == \"prod\" ? 'prod' : 'test'}},\n  \"jdfList\" : {{ui.getjdfsTable.filteredValue}},\n  \"printer\" : {{ui.selectPrinter.value}}\n}"
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: structuredBody
+        value: []
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: bodyType
+        value: object
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: true
+    isChanged: true
+    nameConfigured: true
+  - id: '16994418531680.6561100873323793'
+    type: showToast
+    name: notification
+    params:
+      - type: message
+        value: >-
+          Dateien aus Auftrag {{ui.AuftragDrucken.selectedRow.data.AuftragID}} -
+          {{ui.AuftragDrucken.selectedRow.data.Kunde}} an
+          {{ui.selectPrinter.value}} gesendet.
+        valueType: interpolatedValue
+      - type: type
+        value: success
+        valueType: string
+      - type: icon
+        value: checkmark-circle-2
+        valueType: string
+      - type: duration
+        value: '3000'
+        valueType: interpolatedValue
+      - type: position
+        value: top-end
+        valueType: string
+      - type: hideOnClick
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '16994582265670.22025918773280861'
+    type: customAsyncCode
+    name: CloseModal
+    params:
+      - type: asyncCode
+        value: '{{ui.send2Printer.close()}}'
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+singleStep: true
+mode: manual
+modeConfigured: true
+parentPageId: '16917934644660.913036060840761'
+folder: false
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.reqPOSTstartBatch.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.reqPOSTstartBatch.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.reqPOSTstartBatch.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: true
+selected: true
+configured: true
+index: 6
