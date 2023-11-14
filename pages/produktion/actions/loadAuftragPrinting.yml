@@ -17,7 +17,7 @@ steps:
           - column: currentStatus
             operation: in
             value:
-              value: '"PrintFileProdStarted","PrintFileProdFinished"'
+              value: '["PrintFileProdStarted","PrintFileProdFinished"]'
         valueType: custom
       - type: ordering
         value:

@@ -61,7 +61,7 @@ properties:
   resetActivePageOnNewData: true
 actions:
   init:
-    - action: '16980548847420.08599733364733075'
+    - action: '16980557427680.6516493820046634'
       paramCode: ''
       blockPageLoad: false
       index: 0
@@ -75,7 +75,7 @@ actions:
   smartTableFilterChange: []
   smartTableSortChange: []
   smartTableReload:
-    - action: '16980548847420.08599733364733075'
+    - action: '16980557427680.6516493820046634'
       paramCode: ''
       blockPageLoad: false
       index: 1
@@ -292,7 +292,7 @@ slots:
         definitionId: atomicDateTime
         styles:
           xl:
-            visible: true
+            visible: false
             fontSize:
               customValue: 12
               customUnit: px
@@ -513,7 +513,7 @@ slots:
                 }
               ]
             withData: false
-          width: '30'
+          width: '40'
           title: Status
         parentSlotId: '16980559026150.09963575831289995'
         index: 14
@@ -646,7 +646,7 @@ slots:
             - xs
           prop: Drucken
           title: Drucken
-          width: '30'
+          width: '20'
           pinColumn: right
           icon:
             value: printer
@@ -681,4 +681,36 @@ slots:
           primaryKey: false
           width: '60'
         index: 20
+        slots: []
+      - id: '16999828944560.24931720178736483'
+        definitionId: atomicButton
+        parentSlotId: '16980559026150.09963575831289995'
+        styles:
+          xl:
+            status:
+              value: info-dark
+              dataValue: primary
+              withData: false
+            iconPlacement: center
+        properties:
+          name: atomicButton11
+          text: '{{value}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          prop: MODataGotResult
+          title: Statistiken
+          pinColumn: right
+          icon:
+            value: clipboard
+            dataValue: star-outline
+            withData: false
+          width: '20'
+        actions:
+          buttonClick:
+            - action: '16932396185290.5407912308785228'
+              paramCode: ''
+              blockPageLoad: false
+              index: 0
+        index: 22
         slots: []

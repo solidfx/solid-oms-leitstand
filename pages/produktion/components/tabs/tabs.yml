@@ -21,12 +21,12 @@ properties:
     - xs
 actions:
   init:
-    - action: '16917942175960.7681327962608866'
+    - action: '16980548847420.08599733364733075'
       paramCode: ''
       blockPageLoad: false
       index: 0
   tabsChangeTab:
-    - action: '16917942175960.7681327962608866'
+    - action: '16980548847420.08599733364733075'
       paramCode: ''
       blockPageLoad: false
       index: 1

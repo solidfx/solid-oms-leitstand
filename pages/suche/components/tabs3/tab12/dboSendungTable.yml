@@ -55,7 +55,22 @@ properties:
     value: true
     dataValue: 'false'
     withData: false
-actions: {}
+actions:
+  init:
+    - action: '16929202712020.22260702972023205'
+      paramCode: ''
+      blockPageLoad: false
+      index: 0
+  smartTableCreate: []
+  smartTableEdit: []
+  smartTableBulkEdit: []
+  smartTableDelete: []
+  smartTableRowSelect: []
+  smartTableRowClick: []
+  smartTablePageSelect: []
+  smartTableFilterChange: []
+  smartTableSortChange: []
+  smartTableReload: []
 index: 0
 slots:
   - id: '16929203514970.04016125770592738'

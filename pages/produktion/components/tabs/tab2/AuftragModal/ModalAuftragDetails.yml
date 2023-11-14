@@ -25,14 +25,23 @@ properties:
         { prop: 'email', type: 'link' },
       ]
     withData: false
-  entity: '{{ui.AuftragWeiterverarbeitung.selectedRow.data}}'
+  entity: '{{ui.dboAuftragTable.selectedRow.data}}'
   name: ModalAuftragDetails
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
   title: ''
   columns: '5'
-actions: {}
+actions:
+  init:
+    - action: '16993746299860.3192843305986617'
+      paramCode: ''
+      blockPageLoad: false
+      index: 0
+  submitEvent: []
+  detailClick: []
+  changeEvent: []
+  customButtonClick: []
 index: 0
 slots:
   - id: '16932398365750.9736313438106405'
