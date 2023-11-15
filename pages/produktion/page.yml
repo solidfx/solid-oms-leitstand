@@ -27,4 +27,4 @@ slots:
             name: content
             children:
               - components/menu3.yml
-              - components/tabs/tabs.yml
+              - components/TabsProduktion/TabsProduktion.yml
