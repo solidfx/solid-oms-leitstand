@@ -4,7 +4,7 @@ nameConfigured: true
 steps:
   - id: '16929202755360.47579529803314613'
     type: LOAD_COLLECTION
-    name: load
+    name: loadSdgTable
     params:
       - type: datasourceId
         value: POM_test
@@ -46,6 +46,7 @@ steps:
     level: 0
     fallthroughError: false
     isChanged: true
+    nameConfigured: true
 singleStep: false
 mode: manual
 modeConfigured: false
