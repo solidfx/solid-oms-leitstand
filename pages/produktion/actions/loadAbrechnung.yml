@@ -55,7 +55,6 @@ mode: manual
 modeConfigured: false
 parentPageId: '16917934644660.913036060840761'
 folder: false
-parentId: null
 config:
   shouldConfirm: false
   confirmMessage: Are you sure you'd like to proceed with "{{actions.loadAbrechnung.name}}"?
@@ -73,4 +72,4 @@ config:
 assigned: true
 selected: true
 configured: true
-index: 9
+index: 4

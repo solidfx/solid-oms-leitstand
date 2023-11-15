@@ -1,0 +1,130 @@
+id: '16994427726590.4019477024320457'
+name: reqGETJDFs
+nameConfigured: true
+steps:
+  - id: '17000898315330.7152551351232712'
+    type: condition
+    name: condition
+    params:
+      - type: code
+        value: '{{ui.AuftragDrucken.selectedRow.data.Kunde.length > 0}}'
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: steps
+        value:
+          - condition: true
+            steps:
+              - id: '16994427764510.01989955381895503'
+                type: httpRequest
+                name: request
+                params:
+                  - type: datasourceId
+                    value: Scaler
+                    valueType: string
+                    mustSelectFirst: true
+                  - type: method
+                    value: GET
+                    valueType: string
+                  - type: url
+                    value: getJDFs
+                    valueType: interpolatedValue
+                    interpolationType: string
+                  - type: headers
+                    value:
+                      - name: Accept
+                        value: '*'
+                      - name: runMode
+                        value: '{{app.env == "prod" ? ''prod'' : ''test''}}'
+                    valueType: custom
+                    interpolationType: string
+                  - type: queryParams
+                    value:
+                      - name: timestamp
+                        value: '{{ui.AuftragDrucken.selectedRow.data.timestampPath}}'
+                      - name: Kunde
+                        value: '{{ui.AuftragDrucken.selectedRow.data.Kunde}}'
+                      - name: Mandant
+                        value: '{{ui.AuftragDrucken.selectedRow.data.Mandant}}'
+                      - name: Auftragsart
+                        value: '{{ui.AuftragDrucken.selectedRow.data.Auftragsart}}'
+                    valueType: custom
+                    interpolationType: string
+                  - type: body
+                    value: ''
+                    valueType: interpolatedValue
+                    interpolationType: code
+                  - type: structuredBody
+                    value: []
+                    valueType: interpolatedValue
+                    interpolationType: code
+                  - type: bodyType
+                    value: raw
+                    valueType: string
+                  - type: successMapper
+                    value: ''
+                    valueType: interpolatedValue
+                    interpolationType: code
+                  - type: failureMapper
+                    value: ''
+                    valueType: interpolatedValue
+                    interpolationType: code
+                  - type: mapperEnabled
+                    value: false
+                    valueType: custom
+                level: 0
+                fallthroughError: false
+                isChanged: true
+          - condition: false
+            steps:
+              - id: '17000905255740.5046640369254232'
+                type: showToast
+                name: notification
+                params:
+                  - type: message
+                    value: GET JDFs kann nur in Drucken/Statistik ausgeführt werden
+                    valueType: interpolatedValue
+                  - type: type
+                    value: success
+                    valueType: string
+                  - type: icon
+                    value: checkmark-circle-2
+                    valueType: string
+                  - type: duration
+                    value: '3000'
+                    valueType: interpolatedValue
+                  - type: position
+                    value: top-end
+                    valueType: string
+                  - type: hideOnClick
+                    value: false
+                    valueType: custom
+                level: 1
+                fallthroughError: false
+                isChanged: true
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '16917934644660.913036060840761'
+folder: false
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.reqGETJDFs.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.reqGETJDFs.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.reqGETJDFs.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: true
+selected: false
+configured: true
+index: 6

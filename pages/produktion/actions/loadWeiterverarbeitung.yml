@@ -1,8 +1,8 @@
-id: '16980557427680.6516493820046634'
-name: loadAuftragPrinting
+id: '16917942175960.7681327962608866'
+name: loadWeiterverarbeitung
 nameConfigured: true
 steps:
-  - id: '16980557427680.596013960988639'
+  - id: '16917942380310.6057160395182095'
     type: LOAD_COLLECTION
     name: load
     params:
@@ -17,7 +17,7 @@ steps:
           - column: currentStatus
             operation: in
             value:
-              value: '["PrintFileProdStarted","PrintFileProdFinished","Printing"]'
+              value: '["Printed","Enveloped","Printing","FulFilled",""]'
         valueType: custom
       - type: ordering
         value:
@@ -50,6 +50,7 @@ steps:
     level: 0
     fallthroughError: false
     isChanged: true
+    nameConfigured: true
 singleStep: true
 mode: manual
 modeConfigured: false
@@ -57,19 +58,21 @@ parentPageId: '16917934644660.913036060840761'
 folder: false
 config:
   shouldConfirm: false
-  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadDboAuftrag.name}}"?
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.loadWeiterverarbeitung.name}}"?
   showSuccessToast: false
-  successToast: Action "{{actions.loadDboAuftrag.name}}" successfully executed
+  successToast: Action "{{actions.loadWeiterverarbeitung.name}}" successfully executed
   successToastDuration: '3000'
   successToastHideByClick: false
   showErrorToast: true
-  errorToast: Action "{{actions.loadDboAuftrag.name}}" has failed
+  errorToast: Action "{{actions.loadWeiterverarbeitung.name}}" has failed
   errorToastDuration: '3000'
   errorToastHideByClick: false
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
 assigned: true
-selected: true
+selected: false
 configured: true
-index: 2
+index: 3

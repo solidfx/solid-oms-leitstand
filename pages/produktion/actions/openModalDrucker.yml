@@ -1,13 +1,13 @@
-id: '16932396185290.5407912308785228'
-name: openAuftragModal
+id: '16994568273570.37815584305413696'
+name: openModalDrucker
 nameConfigured: true
 steps:
-  - id: '16932396218740.5286074726099008'
+  - id: '16994568273570.03240280538175977'
     type: customAsyncCode
     name: code
     params:
       - type: asyncCode
-        value: '{{ui.AuftragModal.open()}};'
+        value: '{{ui.send2Printer.open()}};'
         valueType: interpolatedValue
         interpolationType: code
     level: 0
@@ -21,19 +21,21 @@ folder: false
 parentId: null
 config:
   shouldConfirm: false
-  confirmMessage: Are you sure you'd like to proceed with "{{actions.openAuftragModal.name}}"?
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.openModalAuftragPr.name}}"?
   showSuccessToast: false
-  successToast: Action "{{actions.openAuftragModal.name}}" successfully executed
+  successToast: Action "{{actions.openModalAuftragPr.name}}" successfully executed
   successToastDuration: '3000'
   successToastHideByClick: false
   showErrorToast: true
-  errorToast: Action "{{actions.openAuftragModal.name}}" has failed
+  errorToast: Action "{{actions.openModalAuftragPr.name}}" has failed
   errorToastDuration: '3000'
   errorToastHideByClick: false
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
 assigned: true
-selected: true
+selected: false
 configured: true
-index: 7
+index: 11

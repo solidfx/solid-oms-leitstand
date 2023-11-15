@@ -7,7 +7,7 @@ styles:
       x: 0
       y: 0
       w: 24
-      h: 125
+      h: 128
   xs:
     gridItem:
       x: 0
@@ -25,7 +25,7 @@ properties:
         { prop: 'email', type: 'link' },
       ]
     withData: false
-  data: '{{actions.loadDboDokument.data}}'
+  data: '{{actions.loadDokument.data}}'
   name: dboDokumentTable
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
@@ -52,7 +52,7 @@ properties:
     withData: false
 actions:
   init:
-    - action: '16929990651010.6500881077299856'
+    - action: '16918361139490.22574607727472307'
       paramCode: ''
       blockPageLoad: false
       index: 0
@@ -60,28 +60,16 @@ actions:
   smartTableEdit: []
   smartTableBulkEdit: []
   smartTableDelete: []
-  smartTableRowSelect:
-    - action: '16929990651010.6500881077299856'
+  smartTableRowSelect: []
+  smartTableRowClick: []
+  smartTablePageSelect: []
+  smartTableFilterChange: []
+  smartTableSortChange: []
+  smartTableReload:
+    - action: '16918361139490.22574607727472307'
       paramCode: ''
       blockPageLoad: false
       index: 1
-  smartTableRowClick: []
-  smartTablePageSelect:
-    - action: '16929990651010.6500881077299856'
-      paramCode: ''
-      blockPageLoad: false
-      index: 2
-  smartTableFilterChange: []
-  smartTableSortChange:
-    - action: '16929990651010.6500881077299856'
-      paramCode: ''
-      blockPageLoad: false
-      index: 4
-  smartTableReload:
-    - action: '16929990651010.6500881077299856'
-      paramCode: ''
-      blockPageLoad: false
-      index: 3
 index: 0
 slots:
   - id: '16918362763850.642101247142238'
@@ -107,9 +95,10 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: '60'
+          width: '30'
           filter: true
-          alignment: center
+          alignment: left
+          title: DokumentID
         parentSlotId: '16918362763850.642101247142238'
         index: 1
         slots: []
@@ -133,9 +122,10 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: '60'
+          width: '30'
           filter: true
-          alignment: center
+          alignment: left
+          title: SendungID
         parentSlotId: '16918362763850.642101247142238'
         index: 2
         slots: []
@@ -163,16 +153,17 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: '80'
+          width: '30'
           filter: true
           dateFormat:
             value: dd.MM.yyyy
             dataValue: MMM dd, yyyy
             withData: false
-          alignment: center
+          alignment: left
           textStyle:
             transform: none
             styles: []
+          title: erstellt
         parentSlotId: '16918362763850.642101247142238'
         index: 3
         slots: []
@@ -192,7 +183,7 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: '100'
+          width: '110'
           filter: true
         parentSlotId: '16918362763850.642101247142238'
         index: 4
@@ -249,6 +240,10 @@ slots:
         styles:
           xl:
             visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
         properties:
           name: atomicString50
           prop: Beilagen
@@ -256,7 +251,7 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: 120
+          width: '30'
           filter: true
         parentSlotId: '16918362763850.642101247142238'
         index: 9
@@ -265,7 +260,7 @@ slots:
         definitionId: atomicNumber
         styles:
           xl:
-            visible: true
+            visible: false
         properties:
           name: atomicNumber9
           prop: DokInSendung
@@ -371,10 +366,16 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          alignment: center
+          alignment: left
           primaryKey: false
           filter: true
-          width: '30'
+          width: '10'
+          title: AuftragID
+          textStyle:
+            transform: none
+            styles:
+              - bold
+          pinColumn: left
         index: 0
         slots: []
       - id: '16918362763850.6294634852405618'
@@ -395,7 +396,7 @@ slots:
             - xs
           primaryKey: false
           filter: true
-          width: '30'
+          width: '10'
           title: Anzahl Seiten
           alignment: center
         index: 7
@@ -419,7 +420,7 @@ slots:
           title: Anzahl Blatt
           primaryKey: false
           filter: true
-          width: '30'
+          width: '10'
           alignment: center
         index: 8
         slots: []
@@ -443,7 +444,7 @@ slots:
           title: Details
           primaryKey: false
           sortable: false
-          width: '25'
+          width: '10'
           icon:
             value: clipboard
             dataValue: star-outline

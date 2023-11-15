@@ -52,10 +52,6 @@ properties:
       }
     ]
 actions:
-  init:
-    - action: '17000486510280.7918379953322479'
-      paramCode: ''
-      blockPageLoad: false
-      index: 0
+  init: []
 index: 0
 slots: []

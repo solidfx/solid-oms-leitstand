@@ -24,7 +24,7 @@ properties:
         { prop: 'email', type: 'link' },
       ]
     withData: false
-  entity: '{{ui.AuftraegeTable.selectedRow.data}}'
+  entity: '{{ui.dboAuftragTable2.selectedRow.data}}'
   name: auftraegetableDetail2
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
