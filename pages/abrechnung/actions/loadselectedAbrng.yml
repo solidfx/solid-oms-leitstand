@@ -1,8 +1,8 @@
-id: '16970602974310.5052327758792967'
-name: loadDBSteuerung
+id: '17000659385800.1968117758249277'
+name: loadselectedAbrng
 nameConfigured: true
 steps:
-  - id: '16970603032290.031025173542602147'
+  - id: '17000659723300.023033157652900815'
     type: LOAD_COLLECTION
     name: load
     params:
@@ -10,10 +10,14 @@ steps:
         value: POM_test
         valueType: string
       - type: resourceId
-        value: dbo.Steuerung
+        value: dbo.Abrechnung
         valueType: string
       - type: filters
-        value: []
+        value:
+          - column: AuftragID
+            operation: '='
+            value:
+              value: '{{ui.AuftraegeTable.selectedRow.data.AuftragID}}'
         valueType: custom
       - type: ordering
         value:
@@ -32,7 +36,7 @@ steps:
             value: ''
         valueType: custom
       - type: customDatabaseName
-        value: '{{app.env == "prod" ? ''POM_prod'' : ''POM_test''}}'
+        value: ''
         valueType: interpolatedValue
       - type: successMapper
         value: ''
@@ -49,17 +53,20 @@ steps:
 singleStep: false
 mode: manual
 modeConfigured: false
-parentPageId: '16970600071930.3468845352422827'
+parentPageId: '16932418322570.8001022518222478'
 folder: false
+parentId: null
 config:
   shouldConfirm: false
-  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadDBSteuerung.name}}"?
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.loadselectedAbrng.name}}"?
   showSuccessToast: false
-  successToast: Action "{{actions.loadDBSteuerung.name}}" successfully executed
+  successToast: Action "{{actions.loadselectedAbrng.name}}" successfully executed
   successToastDuration: '3000'
   successToastHideByClick: false
   showErrorToast: true
-  errorToast: Action "{{actions.loadDBSteuerung.name}}" has failed
+  errorToast: Action "{{actions.loadselectedAbrng.name}}" has failed
   errorToastDuration: '3000'
   errorToastHideByClick: false
   delay: '0'
@@ -68,4 +75,4 @@ config:
 assigned: true
 selected: true
 configured: true
-index: 26
+index: 32

@@ -1,19 +1,23 @@
-id: '16970602974310.5052327758792967'
-name: loadDBSteuerung
+id: '17000597538180.3481296394976596'
+name: loadAuftraege
 nameConfigured: true
 steps:
-  - id: '16970603032290.031025173542602147'
+  - id: '17000597678420.2113781096803773'
     type: LOAD_COLLECTION
-    name: load
+    name: loadAuftrag
     params:
       - type: datasourceId
         value: POM_test
         valueType: string
       - type: resourceId
-        value: dbo.Steuerung
+        value: dbo.Auftrag
         valueType: string
       - type: filters
-        value: []
+        value:
+          - column: currentStatus
+            operation: '='
+            value:
+              value: FulFilled
         valueType: custom
       - type: ordering
         value:
@@ -46,26 +50,27 @@ steps:
     level: 0
     fallthroughError: false
     isChanged: true
-singleStep: false
+    nameConfigured: true
+singleStep: true
 mode: manual
 modeConfigured: false
-parentPageId: '16970600071930.3468845352422827'
+parentPageId: '16932418322570.8001022518222478'
 folder: false
 config:
   shouldConfirm: false
-  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadDBSteuerung.name}}"?
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadAuftraege.name}}"?
   showSuccessToast: false
-  successToast: Action "{{actions.loadDBSteuerung.name}}" successfully executed
+  successToast: Action "{{actions.loadAuftraege.name}}" successfully executed
   successToastDuration: '3000'
   successToastHideByClick: false
   showErrorToast: true
-  errorToast: Action "{{actions.loadDBSteuerung.name}}" has failed
+  errorToast: Action "{{actions.loadAuftraege.name}}" has failed
   errorToastDuration: '3000'
   errorToastHideByClick: false
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
-assigned: true
+assigned: false
 selected: true
 configured: true
-index: 26
+index: 30
