@@ -1,34 +1,30 @@
-id: '16917942175960.7681327962608866'
-name: loadDboAuftrag
+id: '16929202712020.22260702972023205'
+name: loadSendung
 nameConfigured: true
 steps:
-  - id: '16917942380310.6057160395182095'
+  - id: '16929202755360.47579529803314613'
     type: LOAD_COLLECTION
-    name: load
+    name: loadSdgTable
     params:
       - type: datasourceId
         value: POM_test
         valueType: string
       - type: resourceId
-        value: dbo.Auftrag
+        value: dbo.Sendung
         valueType: string
       - type: filters
-        value:
-          - column: currentStatus
-            operation: in
-            value:
-              value: '["Printed","Enveloped","Printing","FulFilled",""]'
+        value: []
         valueType: custom
       - type: ordering
         value:
           limit:
-            value: 1000
+            value: '{{state.sdgLimit}}'
           offset:
             value: ''
           orderBy:
-            value: AuftragID
+            value: sdgCreated
           orderDirection:
-            value: asc
+            value: desc
         valueType: custom
       - type: additionalParams
         value:
@@ -51,26 +47,27 @@ steps:
     fallthroughError: false
     isChanged: true
     nameConfigured: true
-singleStep: true
+singleStep: false
 mode: manual
 modeConfigured: false
-parentPageId: '16917934644660.913036060840761'
+parentPageId: '16917934505390.26478948391555246'
 folder: false
+parentId: null
 config:
   shouldConfirm: false
-  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadDboAuftrag.name}}"?
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadSendung.name}}"?
   showSuccessToast: false
-  successToast: Action "{{actions.loadDboAuftrag.name}}" successfully executed
+  successToast: Action "{{actions.loadSendung.name}}" successfully executed
   successToastDuration: '3000'
   successToastHideByClick: false
   showErrorToast: true
-  errorToast: Action "{{actions.loadDboAuftrag.name}}" has failed
+  errorToast: Action "{{actions.loadSendung.name}}" has failed
   errorToastDuration: '3000'
   errorToastHideByClick: false
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
 assigned: true
-selected: true
+selected: false
 configured: true
-index: 0
+index: 19

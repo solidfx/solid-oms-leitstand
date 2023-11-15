@@ -33,7 +33,7 @@ config:
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
-assigned: true
+assigned: false
 selected: true
 configured: true
-index: 21
+index: 20

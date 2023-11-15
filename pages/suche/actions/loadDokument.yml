@@ -1,16 +1,16 @@
-id: '16929202712020.22260702972023205'
-name: loadDboSendung
+id: '16918361139490.22574607727472307'
+name: loadDokument
 nameConfigured: true
 steps:
-  - id: '16929202755360.47579529803314613'
+  - id: '16918361181730.07754770209631157'
     type: LOAD_COLLECTION
-    name: loadSdgTable
+    name: load
     params:
       - type: datasourceId
         value: POM_test
         valueType: string
       - type: resourceId
-        value: dbo.Sendung
+        value: dbo.Dokument
         valueType: string
       - type: filters
         value: []
@@ -18,11 +18,11 @@ steps:
       - type: ordering
         value:
           limit:
-            value: '20000'
+            value: '{{state.docLimit}}'
           offset:
             value: ''
           orderBy:
-            value: sdgCreated
+            value: docCreated
           orderDirection:
             value: desc
         valueType: custom
@@ -46,26 +46,26 @@ steps:
     level: 0
     fallthroughError: false
     isChanged: true
-    nameConfigured: true
-singleStep: false
+singleStep: true
 mode: manual
 modeConfigured: false
 parentPageId: '16917934505390.26478948391555246'
 folder: false
-parentId: null
 config:
   shouldConfirm: false
-  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadDboSendung.name}}"?
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadDokument.name}}"?
   showSuccessToast: false
-  successToast: Action "{{actions.loadDboSendung.name}}" successfully executed
+  successToast: Action "{{actions.loadDokument.name}}" successfully executed
   successToastDuration: '3000'
   successToastHideByClick: false
   showErrorToast: true
-  errorToast: Action "{{actions.loadDboSendung.name}}" has failed
+  errorToast: Action "{{actions.loadDokument.name}}" has failed
   errorToastDuration: '3000'
   errorToastHideByClick: false
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
 assigned: true
-index: 20
+selected: true
+configured: true
+index: 17

@@ -1,8 +1,8 @@
-id: '16980548847420.08599733364733075'
-name: loadAuftragPreProd
+id: '16980557427680.6516493820046634'
+name: loadPrintStat
 nameConfigured: true
 steps:
-  - id: '16980548847410.6145526610889764'
+  - id: '16980557427680.596013960988639'
     type: LOAD_COLLECTION
     name: load
     params:
@@ -17,7 +17,7 @@ steps:
           - column: currentStatus
             operation: in
             value:
-              value: '[''InputDataCopied'',''PreProcessStarted'',''PreProcessFinished'']'
+              value: '["PrintFileProdStarted","PrintFileProdFinished","Printing"]'
         valueType: custom
       - type: ordering
         value:
@@ -57,13 +57,15 @@ parentPageId: '16917934644660.913036060840761'
 folder: false
 config:
   shouldConfirm: false
-  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadDboAuftrag.name}}"?
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.loadWeiterverarbeitung.name}}"?
   showSuccessToast: false
-  successToast: Action "{{actions.loadDboAuftrag.name}}" successfully executed
+  successToast: Action "{{actions.loadWeiterverarbeitung.name}}" successfully executed
   successToastDuration: '3000'
   successToastHideByClick: false
   showErrorToast: true
-  errorToast: Action "{{actions.loadDboAuftrag.name}}" has failed
+  errorToast: Action "{{actions.loadWeiterverarbeitung.name}}" has failed
   errorToastDuration: '3000'
   errorToastHideByClick: false
   delay: '0'
@@ -72,4 +74,4 @@ config:
 assigned: true
 selected: false
 configured: true
-index: 1
+index: 2

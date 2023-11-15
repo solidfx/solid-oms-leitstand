@@ -5,10 +5,9 @@ styles:
   xl:
     gridItem:
       x: 23
-      y: 125
+      y: 128
       w: 1
       h: 10
-      maxH: 2
     buttonIconPlacement: none
     modalSize:
       widthValue: 60

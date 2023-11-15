@@ -1,4 +1,16 @@
-storeItemList: []
+storeItemList:
+  - id: '17000889247240.5716578225636579'
+    name: docLimit
+    value: 12000
+    valueType: number
+    initialValue: 12000
+    version: 1
+  - id: '17000889612390.9624357835370032'
+    name: sdgLimit
+    value: 10000
+    valueType: number
+    initialValue: 10000
+    version: 1
 metadata:
   favicon: ''
   code: ''
