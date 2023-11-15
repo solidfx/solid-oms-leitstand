@@ -7,7 +7,7 @@ steps:
     name: condition
     params:
       - type: code
-        value: '{{ui.AuftragDrucken.selectedRow.data.Kunde.length > 0}}'
+        value: '{{ui.TabsProduktion.selectedIndex == 2}}'
         valueType: interpolatedValue
         interpolationType: code
       - type: steps
