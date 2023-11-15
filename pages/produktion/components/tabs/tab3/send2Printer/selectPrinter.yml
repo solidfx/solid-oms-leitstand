@@ -45,9 +45,9 @@ properties:
     position: horizontal
     align: left
   required: false
-  value: Drucker
+  value: KONICA Links
   errorAfterTouched: false
-  placeholder: KONICA links
+  placeholder: Select Printer
 actions: {}
 index: 0
 slots:
