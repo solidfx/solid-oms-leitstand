@@ -1,8 +1,8 @@
-id: '16970608515170.9187746898305307'
-name: loadDBUmschlag
+id: '17000718851410.9093506510198239'
+name: loadAbrechnung3
 nameConfigured: true
 steps:
-  - id: '16970608561660.2579153433345964'
+  - id: '17000718995060.4788997680465956'
     type: LOAD_COLLECTION
     name: load
     params:
@@ -10,10 +10,14 @@ steps:
         value: POM_test
         valueType: string
       - type: resourceId
-        value: dbo.Umschlag
+        value: dbo.Abrechnung
         valueType: string
       - type: filters
-        value: []
+        value:
+          - column: AuftragID
+            operation: '='
+            value:
+              value: '{{ui.dboAuftragTable2.selectedRow.data.AuftragID}}'
         valueType: custom
       - type: ordering
         value:
@@ -49,18 +53,18 @@ steps:
 singleStep: false
 mode: manual
 modeConfigured: false
-parentPageId: '16970600071930.3468845352422827'
+parentPageId: '16917934505390.26478948391555246'
 folder: false
 parentId: null
 config:
   shouldConfirm: false
-  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadDBUmschlag.name}}"?
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadAbrechnung3.name}}"?
   showSuccessToast: false
-  successToast: Action "{{actions.loadDBUmschlag.name}}" successfully executed
+  successToast: Action "{{actions.loadAbrechnung3.name}}" successfully executed
   successToastDuration: '3000'
   successToastHideByClick: false
   showErrorToast: true
-  errorToast: Action "{{actions.loadDBUmschlag.name}}" has failed
+  errorToast: Action "{{actions.loadAbrechnung3.name}}" has failed
   errorToastDuration: '3000'
   errorToastHideByClick: false
   delay: '0'
@@ -69,4 +73,4 @@ config:
 assigned: false
 selected: true
 configured: true
-index: 29
+index: 26

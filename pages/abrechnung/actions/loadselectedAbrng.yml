@@ -4,7 +4,7 @@ nameConfigured: true
 steps:
   - id: '17000659723300.023033157652900815'
     type: LOAD_COLLECTION
-    name: load
+    name: loadAbrechnung
     params:
       - type: datasourceId
         value: POM_test
@@ -26,7 +26,7 @@ steps:
           offset:
             value: ''
           orderBy:
-            value: ''
+            value: prodCharge
           orderDirection:
             value: asc
         valueType: custom
@@ -36,7 +36,7 @@ steps:
             value: ''
         valueType: custom
       - type: customDatabaseName
-        value: ''
+        value: '{{app.env == "prod" ? ''POM_prod'' : ''POM_test''}}'
         valueType: interpolatedValue
       - type: successMapper
         value: ''
@@ -50,6 +50,7 @@ steps:
     level: 0
     fallthroughError: false
     isChanged: true
+    nameConfigured: true
 singleStep: false
 mode: manual
 modeConfigured: false
@@ -75,4 +76,4 @@ config:
 assigned: true
 selected: true
 configured: true
-index: 32
+index: 33
