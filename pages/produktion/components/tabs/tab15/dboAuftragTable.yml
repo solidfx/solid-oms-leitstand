@@ -214,6 +214,18 @@ slots:
                 color: info
                 __UIBAKERY__SYSTEM_ID__: '16999839885930.0979620687055931'
                 title: Druckdatenberechnung
+              - value: Printing
+                color: info-light
+                __UIBAKERY__SYSTEM_ID__: '17000559303030.2529417665425604'
+                title: wird gedruckt
+              - value: Printed
+                color: primary-light
+                __UIBAKERY__SYSTEM_ID__: '17000560056030.3877033566868935'
+                title: gedruckt
+              - value: Enveloped
+                color: primary-dark
+                __UIBAKERY__SYSTEM_ID__: '17000578600880.10888927982618046'
+                title: kuvertiert
               - value: FulFilled
                 color: primary-dark
                 __UIBAKERY__SYSTEM_ID__: '16999839885930.05202767153346732'
@@ -249,7 +261,7 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: '30'
+          width: '50'
           filter: true
           pinColumn: right
         index: 19
@@ -280,7 +292,7 @@ slots:
         parentSlotId: '16976261564800.16912833993728893'
         styles:
           xl:
-            visible: true
+            visible: false
             fontSize:
               customValue: 12
               customUnit: px
@@ -373,7 +385,7 @@ slots:
         parentSlotId: '16976261564800.16912833993728893'
         styles:
           xl:
-            visible: true
+            visible: false
             fontSize:
               customValue: 12
               customUnit: px
@@ -558,25 +570,26 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          prop: t
-          width: '20'
+          prop: close
+          width: '1'
           title: Auftrag abschließen
           pinColumn: right
           disabled:
             value: false
-            dataValue: '{{row.currentStatus == "FulFilled"}}'
+            dataValue: '{{row.currentStatus != "Enveloped"}}'
             withData: true
           icon:
             value: checkmark-circle
             dataValue: star-outline
             withData: false
+          fieldTooltip: Auftrag abschließen
         actions:
           buttonClick:
             - action: '16980778355080.1797464334636132'
               paramCode: ''
               blockPageLoad: false
               index: 0
-        index: 20
+        index: 22
         slots: []
       - id: '16999839885940.1267250730132623'
         definitionId: atomicDateTime
@@ -605,5 +618,90 @@ slots:
             value: dd.MM.yyyy
             dataValue: MMM dd, yyyy
             withData: false
+          title: Druckdaten fertig
         index: 12
+        slots: []
+      - id: '17000472328040.6633987953200216'
+        definitionId: atomicButton
+        parentSlotId: '16976261564800.16912833993728893'
+        styles:
+          xl:
+            iconPlacement: center
+            status:
+              value: success-light
+              dataValue: primary
+              withData: false
+        properties:
+          name: atomicButton8
+          text: '{{value}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          prop: gedruckt
+          pinColumn: right
+          width: '1'
+          title: gedruckt
+          fieldTooltip: als gedruckt markieren
+          icon:
+            value: printer
+            dataValue: star-outline
+            withData: false
+          disabled:
+            value: false
+            dataValue: '{{row.currentStatus != "Printing"}}'
+            withData: true
+        index: 20
+        actions:
+          buttonClick:
+            - action: '17000520863430.13008466542026298'
+              paramCode: |-
+                {
+                  "AuftragID"     : {{ui.dboAuftragTable.selectedRow.data.AuftragID}},
+                  "AuftragStatus" : "Printed",
+                  "runMode"       : {{app.env == "prod" ? 'prod' : 'test'}}
+                }
+              blockPageLoad: false
+              index: 0
+        slots: []
+      - id: '17000473989900.025527396100338162'
+        definitionId: atomicButton
+        parentSlotId: '16976261564800.16912833993728893'
+        styles:
+          xl:
+            iconPlacement: center
+            status:
+              value: success
+              dataValue: primary
+              withData: false
+        properties:
+          name: atomicButton12
+          text: '{{value}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          prop: kuvertiert
+          pinColumn: right
+          width: '1'
+          title: kuvertiert
+          fieldTooltip: als kuvertiert markieren
+          icon:
+            value: email
+            dataValue: star-outline
+            withData: false
+          disabled:
+            value: false
+            dataValue: '{{row.currentStatus != "Printed"}}'
+            withData: true
+        index: 21
+        actions:
+          buttonClick:
+            - action: '17000520863430.13008466542026298'
+              paramCode: |-
+                {
+                  "AuftragID"     : {{ui.dboAuftragTable.selectedRow.data.AuftragID}},
+                  "AuftragStatus" : "Enveloped",
+                  "runMode"       : {{app.env == "prod" ? 'prod' : 'test'}}
+                }
+              blockPageLoad: false
+              index: 0
         slots: []

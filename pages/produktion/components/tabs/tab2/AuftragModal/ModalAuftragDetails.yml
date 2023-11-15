@@ -25,7 +25,7 @@ properties:
         { prop: 'email', type: 'link' },
       ]
     withData: false
-  entity: '{{ui.dboAuftragTable.selectedRow.data}}'
+  entity: '{{ui.AuftragDrucken.selectedRow.data}}'
   name: ModalAuftragDetails
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
@@ -171,6 +171,10 @@ slots:
                 color: primary
                 __UIBAKERY__SYSTEM_ID__: '16981710958290.6615647401027203'
                 title: abgeschlossen
+              - value: Printing
+                color: info-light
+                __UIBAKERY__SYSTEM_ID__: '17000572144300.6461404387989524'
+                title: wird gedruckt
             dataValue: |-
               [
                 {
@@ -348,7 +352,7 @@ slots:
         parentSlotId: '16932398365750.9736313438106405'
         styles:
           xl:
-            visible: true
+            visible: false
         properties:
           name: atomicDateTime10
           prop: Printed
@@ -450,7 +454,7 @@ slots:
         parentSlotId: '16932398365750.9736313438106405'
         styles:
           xl:
-            visible: true
+            visible: false
             fontSize:
               customValue: 12
               customUnit: px

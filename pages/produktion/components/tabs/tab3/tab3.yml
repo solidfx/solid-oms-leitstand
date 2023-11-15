@@ -4,7 +4,7 @@ parentSlotId: '16917936309860.003941350322131276'
 styles: {}
 properties:
   name: tab3
-  title: Drucken
+  title: Drucken / Statistiken
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs

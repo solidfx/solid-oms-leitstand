@@ -59,6 +59,7 @@ properties:
   rowVariation: dense
   rowBackgroundColor: '{{index % 2 === 0 ? ''#f9f9f9'' :''#fefefe''}}'
   resetActivePageOnNewData: true
+  limit: '10'
 actions:
   init:
     - action: '16980557427680.6516493820046634'
@@ -494,9 +495,13 @@ slots:
                 __UIBAKERY__SYSTEM_ID__: '16980566332220.3161708249454782'
                 title: Druckdaten fertig
               - value: PrintFileProdStarted
-                color: warning
+                color: success-light
                 __UIBAKERY__SYSTEM_ID__: '16980566861570.5508887638559161'
                 title: Druckdatenberechnung
+              - value: Printing
+                color: info-light
+                __UIBAKERY__SYSTEM_ID__: '17000571248840.25791301174700054'
+                title: wird gedruckt
             dataValue: |-
               [
                 {
@@ -513,7 +518,7 @@ slots:
                 }
               ]
             withData: false
-          width: '40'
+          width: '50'
           title: Status
         parentSlotId: '16980559026150.09963575831289995'
         index: 14
@@ -646,7 +651,7 @@ slots:
             - xs
           prop: Drucken
           title: Drucken
-          width: '20'
+          width: '10'
           pinColumn: right
           icon:
             value: printer
@@ -654,7 +659,9 @@ slots:
             withData: false
           disabled:
             value: false
-            dataValue: '{{row.currentStatus != ''PrintFileProdFinished''}}'
+            dataValue: >-
+              {{row.currentStatus != 'PrintFileProdFinished' &&
+              row.currentStatus != 'Printing'}}
             withData: true
           sortable: false
         index: 21
@@ -705,7 +712,7 @@ slots:
             value: clipboard
             dataValue: star-outline
             withData: false
-          width: '20'
+          width: '10'
         actions:
           buttonClick:
             - action: '16932396185290.5407912308785228'

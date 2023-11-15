@@ -25,11 +25,27 @@ actions:
       paramCode: ''
       blockPageLoad: false
       index: 0
+    - action: '16980557427680.6516493820046634'
+      paramCode: ''
+      blockPageLoad: false
+      index: 1
+    - action: '16917942175960.7681327962608866'
+      paramCode: ''
+      blockPageLoad: false
+      index: 2
   tabsChangeTab:
     - action: '16980548847420.08599733364733075'
       paramCode: ''
       blockPageLoad: false
-      index: 1
+      index: 3
+    - action: '16980557427680.6516493820046634'
+      paramCode: ''
+      blockPageLoad: false
+      index: 4
+    - action: '16917942175960.7681327962608866'
+      paramCode: ''
+      blockPageLoad: false
+      index: 5
 index: 1
 slots:
   - id: '16917936309860.003941350322131276'

@@ -44,6 +44,10 @@ properties:
     text: 'Drucker wählen:'
     position: horizontal
     align: left
+  required: false
+  value: Drucker
+  errorAfterTouched: false
+  placeholder: KONICA links
 actions: {}
 index: 0
 slots:

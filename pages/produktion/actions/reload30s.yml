@@ -1,0 +1,124 @@
+id: '17000486510280.7918379953322479'
+name: reload30s
+nameConfigured: true
+steps:
+  - id: '17000486553760.40317589504445017'
+    type: interval
+    name: interval
+    params:
+      - type: interval
+        value: '30000'
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: stopWhen
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: skipNext
+        value: true
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '17000489002790.5987682943470187'
+    type: executeAction
+    name: reloadPreprod
+    params:
+      - type: action
+        value: '16980548847420.08599733364733075'
+        valueType: string
+      - type: isActionsLibraryCall
+        value: false
+        valueType: string
+      - type: customParams
+        value: return {{data}};
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+  - id: '17000489576280.8490460474103529'
+    type: executeAction
+    name: reloadPrining
+    params:
+      - type: action
+        value: '16980557427680.6516493820046634'
+        valueType: string
+      - type: isActionsLibraryCall
+        value: false
+        valueType: string
+      - type: customParams
+        value: return {{data}};
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+  - id: '17000487279510.8204663765855271'
+    type: executeAction
+    name: reloadWeiterverarbeitung
+    params:
+      - type: action
+        value: '16917942175960.7681327962608866'
+        valueType: string
+      - type: isActionsLibraryCall
+        value: false
+        valueType: string
+      - type: customParams
+        value: return {{data}};
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '16917934644660.913036060840761'
+folder: false
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.reload30s.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.reload30s.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.reload30s.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: true
+selected: true
+configured: true
+index: 12
