@@ -13,7 +13,11 @@ steps:
         value: dbo.Auftrag
         valueType: string
       - type: filters
-        value: []
+        value:
+          - column: currentStatus
+            operation: in
+            value:
+              value: '["Printed","Enveloped","Printing","FulFilled",""]'
         valueType: custom
       - type: ordering
         value:

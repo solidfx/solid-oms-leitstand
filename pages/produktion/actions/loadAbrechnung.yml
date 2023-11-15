@@ -22,11 +22,11 @@ steps:
       - type: ordering
         value:
           limit:
-            value: '100'
+            value: ''
           offset:
             value: ''
           orderBy:
-            value: ''
+            value: prodCharge
           orderDirection:
             value: asc
         valueType: custom

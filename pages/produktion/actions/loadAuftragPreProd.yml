@@ -17,7 +17,7 @@ steps:
           - column: currentStatus
             operation: in
             value:
-              value: '"inputDataCopied","PreProcessStarted","PreProcessFinished"'
+              value: '[''InputDataCopied'',''PreProcessStarted'',''PreProcessFinished'']'
         valueType: custom
       - type: ordering
         value:

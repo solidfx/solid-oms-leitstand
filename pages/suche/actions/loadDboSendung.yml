@@ -18,7 +18,7 @@ steps:
       - type: ordering
         value:
           limit:
-            value: '1000000'
+            value: '20000'
           offset:
             value: ''
           orderBy:
@@ -66,5 +66,5 @@ config:
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
-assigned: false
-index: 18
+assigned: true
+index: 20

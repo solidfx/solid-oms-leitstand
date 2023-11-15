@@ -1,8 +1,8 @@
-id: '16994427726590.4019477024320457'
-name: reqGetJDFs
+id: '17000520863430.13008466542026298'
+name: reqPOSTSetAuftrag
 nameConfigured: true
 steps:
-  - id: '16994427764510.01989955381895503'
+  - id: '17000521053270.7939841329236641'
     type: httpRequest
     name: request
     params:
@@ -11,34 +11,26 @@ steps:
         valueType: string
         mustSelectFirst: true
       - type: method
-        value: GET
+        value: POST
         valueType: string
       - type: url
-        value: getJDFs
+        value: setAuftragStatus
         valueType: interpolatedValue
         interpolationType: string
       - type: headers
         value:
-          - name: Accept
-            value: '*'
-          - name: runMode
-            value: '{{app.env == "prod" ? ''prod'' : ''test''}}'
+          - name: Content-Type
+            value: application/json
         valueType: custom
         interpolationType: string
       - type: queryParams
         value:
-          - name: timestamp
-            value: '{{ui.AuftragDrucken.selectedRow.data.timestampPath}}'
-          - name: Kunde
-            value: '{{ui.AuftragDrucken.selectedRow.data.Kunde}}'
-          - name: Mandant
-            value: '{{ui.AuftragDrucken.selectedRow.data.Mandant}}'
-          - name: Auftragsart
-            value: '{{ui.AuftragDrucken.selectedRow.data.Auftragsart}}'
+          - name: ''
+            value: ''
         valueType: custom
         interpolationType: string
       - type: body
-        value: ''
+        value: '{{params}}'
         valueType: interpolatedValue
         interpolationType: code
       - type: structuredBody
@@ -46,7 +38,7 @@ steps:
         valueType: interpolatedValue
         interpolationType: code
       - type: bodyType
-        value: raw
+        value: object
         valueType: string
       - type: successMapper
         value: ''
@@ -62,6 +54,31 @@ steps:
     level: 0
     fallthroughError: false
     isChanged: true
+  - id: '17000546731360.03310300618019624'
+    type: executeAction
+    name: execute
+    params:
+      - type: action
+        value: '16917942175960.7681327962608866'
+        valueType: string
+      - type: isActionsLibraryCall
+        value: false
+        valueType: string
+      - type: customParams
+        value: return {{data}};
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
 singleStep: false
 mode: manual
 modeConfigured: false
@@ -70,13 +87,15 @@ folder: false
 parentId: null
 config:
   shouldConfirm: false
-  confirmMessage: Are you sure you'd like to proceed with "{{actions.reqGetJDFs.name}}"?
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.reqPOSTSetAuftrag.name}}"?
   showSuccessToast: false
-  successToast: Action "{{actions.reqGetJDFs.name}}" successfully executed
+  successToast: Action "{{actions.reqPOSTSetAuftrag.name}}" successfully executed
   successToastDuration: '3000'
   successToastHideByClick: false
   showErrorToast: true
-  errorToast: Action "{{actions.reqGetJDFs.name}}" has failed
+  errorToast: Action "{{actions.reqPOSTSetAuftrag.name}}" has failed
   errorToastDuration: '3000'
   errorToastHideByClick: false
   delay: '0'
@@ -85,4 +104,4 @@ config:
 assigned: true
 selected: true
 configured: true
-index: 10
+index: 13

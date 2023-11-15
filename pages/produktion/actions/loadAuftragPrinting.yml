@@ -17,7 +17,7 @@ steps:
           - column: currentStatus
             operation: in
             value:
-              value: '"PrintFileProdStarted","PrintFileProdFinished"'
+              value: '["PrintFileProdStarted","PrintFileProdFinished","Printing"]'
         valueType: custom
       - type: ordering
         value:
@@ -69,7 +69,7 @@ config:
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
-assigned: false
+assigned: true
 selected: true
 configured: true
 index: 2

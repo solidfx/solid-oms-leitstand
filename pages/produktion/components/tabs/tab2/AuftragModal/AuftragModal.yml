@@ -9,7 +9,7 @@ styles:
       w: 3
       h: 10
     modalSize:
-      widthValue: '50'
+      widthValue: 60
       widthUnit: '%'
       heightValue: 70
       heightUnit: '%'
@@ -43,7 +43,13 @@ properties:
     withData: false
   showHeader: true
 index: 1
-actions: {}
+actions:
+  open:
+    - action: '16993746299860.3192843305986617'
+      paramCode: ''
+      blockPageLoad: false
+      index: 0
+  close: []
 slots:
   - id: '16932394782200.1530138902907896'
     name: header

@@ -30,7 +30,7 @@ steps:
         valueType: custom
         interpolationType: string
       - type: body
-        value: "{\n\t\"AuftragID\": {{ui.AuftragWeiterverarbeitung.selectedRow.data.AuftragID}},\n  \"laufordner\": {{app.env == \"prod\" ? '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\prod\\\\customers' + '\\\\' + ui.AuftragWeiterverarbeitung.selectedRow.data.Kunde + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.Mandant + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.Auftragsart + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.timestampPath : '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\test\\\\customers'  + '\\\\' + ui.AuftragWeiterverarbeitung.selectedRow.data.Kunde + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.Mandant + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.Auftragsart + \"\\\\\" + ui.AuftragWeiterverarbeitung.selectedRow.data.timestampPath}},\n\t\"runMode\": {{app.env == \"prod\" ? 'prod' : 'test'}}\n}"
+        value: "{\n\t\"AuftragID\": {{ui.dboAuftragTable.selectedRow.data.AuftragID}},\n  \"laufordner\": {{app.env == \"prod\" ? '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\prod\\\\customers' + '\\\\' + ui.dboAuftragTable.selectedRow.data.Kunde + \"\\\\\" + ui.dboAuftragTable.selectedRow.data.Mandant + \"\\\\\" + ui.dboAuftragTable.selectedRow.data.Auftragsart + \"\\\\\" + ui.dboAuftragTable.selectedRow.data.timestampPath : '\\\\\\\\postfactory.local\\\\dfs\\\\Daten\\\\POM\\\\test\\\\customers'  + '\\\\' + ui.dboAuftragTable.selectedRow.data.Kunde + \"\\\\\" + ui.dboAuftragTable.selectedRow.data.Mandant + \"\\\\\" + ui.dboAuftragTable.selectedRow.data.Auftragsart + \"\\\\\" + ui.dboAuftragTable.selectedRow.data.timestampPath}},\n\t\"runMode\": {{app.env == \"prod\" ? 'prod' : 'test'}}\n}"
         valueType: interpolatedValue
         interpolationType: code
       - type: structuredBody
@@ -61,9 +61,8 @@ steps:
     params:
       - type: message
         value: >-
-          Auftrag {{ui.AuftragWeiterverarbeitung.selectedRow.data.AuftragID}} -
-          {{ui.AuftragWeiterverarbeitung.selectedRow.data.Kunde}} wird
-          abgeschlossen.
+          Auftrag {{ui.dboAuftragTable.selectedRow.data.AuftragID}} -
+          {{ui.dboAuftragTable.selectedRow.data.Kunde}} wird abgeschlossen.
         valueType: interpolatedValue
       - type: type
         value: success

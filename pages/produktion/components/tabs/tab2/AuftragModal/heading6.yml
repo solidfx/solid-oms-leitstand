@@ -18,11 +18,10 @@ styles:
 properties:
   name: heading6
   text: >-
-    Details - Auftrag: 
-    {{ui.AuftragWeiterverarbeitung.selectedRow.data.AuftragID}}  - 
-    {{ui.AuftragWeiterverarbeitung.selectedRow.data.Kunde}} -
-    {{ui.AuftragWeiterverarbeitung.selectedRow.data.Mandant}} -
-    {{ui.AuftragWeiterverarbeitung.selectedRow.data.Auftragsart}}
+    Details - Auftrag:  {{ui.AuftragDrucken.selectedRow.data.AuftragID}}  - 
+    {{ui.AuftragDrucken.selectedRow.data.Kunde}} -
+    {{ui.AuftragDrucken.selectedRow.data.Mandant}} -
+    {{ui.AuftragDrucken.selectedRow.data.Auftragsart}}
   verticalAlignment: middle
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl

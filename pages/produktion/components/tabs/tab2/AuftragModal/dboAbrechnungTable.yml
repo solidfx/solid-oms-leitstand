@@ -70,11 +70,7 @@ properties:
   cssClasses:
     - ''
 actions:
-  init:
-    - action: '16993746299860.3192843305986617'
-      paramCode: ''
-      blockPageLoad: false
-      index: 0
+  init: []
   smartTableCreate: []
   smartTableEdit: []
   smartTableBulkEdit: []
@@ -99,7 +95,7 @@ slots:
         properties:
           name: atomicNumber
           prop: AuftragID
-          primaryKey: false
+          primaryKey: true
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
@@ -166,7 +162,7 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          width: '180'
+          width: '160'
           filter: true
           sortable: true
           title: Charge
