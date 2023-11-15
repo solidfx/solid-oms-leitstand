@@ -1,0 +1,361 @@
+id: '17000715032370.2380283276441486'
+definitionId: smartTable
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 49
+      w: 24
+      h: 87
+  xs:
+    gridItem:
+      x: 0
+      y: 80
+      w: 24
+      h: 80
+properties:
+  dynamicColumns:
+    value: []
+    dataValue: |-
+      [
+        { prop: 'id', type: 'number', primaryKey: true },
+       'full_name',
+        { prop: 'avatar', type: 'image' },
+        { prop: 'email', type: 'link' },
+      ]
+    withData: false
+  data: '{{actions.loadAbrechnung3.data}}'
+  name: dboAbrechnungTable3
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Abrechnungsdaten
+  showLoading:
+    withData: true
+    dataValue: '{{actions.loadselectedAbrng.loading}}'
+    value: false
+  rowVariation: dense
+  showClearSelection:
+    value: false
+    dataValue: 'true'
+    withData: false
+  cssClasses:
+    - tableAbrRight
+parentSlotId: '17000715032370.5212603195941998'
+index: 0
+actions: {}
+slots:
+  - id: '17000715032370.915786690760142'
+    name: columns
+    children:
+      - id: '17000715032370.37887826584592554'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicString272
+          prop: Kostenstelle
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '80'
+          filter: true
+          textStyle:
+            transform: none
+            styles:
+              - bold
+        parentSlotId: '17000715032370.915786690760142'
+        index: 0
+        slots: []
+      - id: '17000715032370.13067910416751527'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicString273
+          prop: prodCharge
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '140'
+          filter: true
+          title: Charge
+        parentSlotId: '17000715032370.915786690760142'
+        index: 1
+        slots: []
+      - id: '17000715032370.9227554858902631'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: false
+            color:
+              value: danger-dark
+              dataValue: basic
+              withData: false
+        properties:
+          name: atomicNumber62
+          prop: AuftragID
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+          title: AuftragID
+        parentSlotId: '17000715032370.915786690760142'
+        index: 2
+        slots: []
+      - id: '17000715032370.16826475705253552'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            color:
+              value: primary-dark
+              dataValue: basic
+              withData: false
+        properties:
+          name: atomicNumber65
+          prop: Dokumente
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        parentSlotId: '17000715032370.915786690760142'
+        index: 3
+        slots: []
+      - id: '17000715032370.9585206482327062'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+            color:
+              value: warning-dark
+              dataValue: basic
+              withData: false
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicNumber66
+          prop: Sendungen
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        parentSlotId: '17000715032370.915786690760142'
+        index: 4
+        slots: []
+      - id: '17000715032370.31480931748040675'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicNumber67
+          prop: simplexSeiten
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+          title: simplex
+          locale:
+            value: de
+            dataValue: en-US
+            withData: false
+        parentSlotId: '17000715032370.915786690760142'
+        index: 5
+        slots: []
+      - id: '17000715032370.45054911592714375'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicNumber68
+          prop: duplexSeiten
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+          title: duplex
+          locale:
+            value: de
+            dataValue: en-US
+            withData: false
+        parentSlotId: '17000715032370.915786690760142'
+        index: 6
+        slots: []
+      - id: '17000715032370.13106734964792022'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicNumber69
+          prop: Beilagen
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+          locale:
+            value: de
+            dataValue: en-US
+            withData: false
+        parentSlotId: '17000715032370.915786690760142'
+        index: 7
+        slots: []
+      - id: '17000715032370.8424063498701626'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicNumber70
+          prop: DINLang
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+          title: DIN Lang
+          alignment: left
+          locale:
+            value: de
+            dataValue: en-US
+            withData: false
+        parentSlotId: '17000715032370.915786690760142'
+        index: 8
+        slots: []
+      - id: '17000715032370.9918164106928133'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicNumber71
+          prop: C4
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '20'
+          filter: true
+          locale:
+            value: de
+            dataValue: en-US
+            withData: false
+          alignment: left
+        parentSlotId: '17000715032370.915786690760142'
+        index: 9
+        slots: []
+      - id: '17000715032370.11224176431288924'
+        definitionId: atomicNumber
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+        properties:
+          name: atomicNumber72
+          prop: Paket
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '20'
+          filter: true
+          mappedValue: '{{value == null ? 0 : value}}'
+        parentSlotId: '17000715032370.915786690760142'
+        index: 10
+        slots: []
+      - id: '17000715032370.7260378115517359'
+        definitionId: atomicCurrency
+        styles:
+          xl:
+            visible: true
+            fontSize:
+              customValue: 12
+              customUnit: px
+              themeDefaultOverridePropertyKey: baseTextFontSize
+            color:
+              value: primary-dark
+              dataValue: basic
+              withData: false
+        properties:
+          name: atomicCurrency3
+          prop: Porto
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          locale:
+            value: de
+            dataValue: en-US
+            withData: false
+          primaryKey: false
+          filter: true
+          width: '60'
+          currencyCode:
+            value: EUR
+            dataValue: USD
+            withData: false
+          alignment: right
+          textStyle:
+            transform: none
+            styles:
+              - bold
+          fraction: 2
+          display: full
+        parentSlotId: '17000715032370.915786690760142'
+        index: 11
+        slots: []

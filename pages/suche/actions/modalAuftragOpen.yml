@@ -1,0 +1,40 @@
+id: '17000685609930.6144626506756992'
+name: modalAuftragOpen
+nameConfigured: true
+steps:
+  - id: '17000685948110.4286035543631084'
+    type: customAsyncCode
+    name: newStep
+    params:
+      - type: asyncCode
+        value: '{{ui.modalAuftragAbrechnung3.open()}}'
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '16917934505390.26478948391555246'
+folder: false
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.modalAuftragOpen.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.modalAuftragOpen.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.modalAuftragOpen.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: false
+selected: true
+configured: true
+index: 25

@@ -25,4 +25,5 @@ slots:
             name: content
             children:
               - components/menu6.yml
-              - components/text2.yml
+              - components/AuftraegeTable.yml
+              - components/modalAuftragAbrechnung/modalAuftragAbrechnung.yml

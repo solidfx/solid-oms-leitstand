@@ -217,7 +217,7 @@ slots:
         definitionId: atomicDateTime
         styles:
           xl:
-            visible: true
+            visible: false
             fontSize:
               customValue: 12
               customUnit: px
@@ -247,7 +247,7 @@ slots:
         definitionId: atomicDateTime
         styles:
           xl:
-            visible: true
+            visible: false
             fontSize:
               customValue: 12
               customUnit: px
@@ -278,7 +278,7 @@ slots:
         definitionId: atomicDateTime
         styles:
           xl:
-            visible: true
+            visible: false
             fontSize:
               customValue: 12
               customUnit: px
@@ -497,4 +497,31 @@ slots:
               ]
             withData: false
         index: 18
+        slots: []
+      - id: '17000712030910.20447640902168285'
+        definitionId: atomicButton
+        parentSlotId: '16918368279830.9038765067977153'
+        styles:
+          xl:
+            iconPlacement: center
+        properties:
+          name: atomicButton14
+          text: '{{value}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          prop: Details
+          title: Auftragsdetails
+          pinColumn: right
+          icon:
+            value: clipboard
+            dataValue: star-outline
+            withData: false
+        actions:
+          buttonClick:
+            - action: '17000685609930.6144626506756992'
+              paramCode: ''
+              blockPageLoad: false
+              index: 0
+        index: 19
         slots: []
