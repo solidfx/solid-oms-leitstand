@@ -652,7 +652,7 @@ slots:
             - action: '17000520863430.13008466542026298'
               paramCode: |-
                 {
-                  "AuftragID"     : {{ui.AuftraegeTable.selectedRow.data.AuftragID}},
+                  "AuftragID"     : {{ui.dboAuftragTable.selectedRow.data.AuftragID}},
                   "AuftragStatus" : "Printed",
                   "runMode"       : {{app.env == "prod" ? 'prod' : 'test'}}
                 }
@@ -694,7 +694,7 @@ slots:
             - action: '17000520863430.13008466542026298'
               paramCode: |-
                 {
-                  "AuftragID"     : {{ui.AuftraegeTable.selectedRow.data.AuftragID}},
+                  "AuftragID"     : {{ui.dboAuftragTable.selectedRow.data.AuftragID}},
                   "AuftragStatus" : "Enveloped",
                   "runMode"       : {{app.env == "prod" ? 'prod' : 'test'}}
                 }
