@@ -14,7 +14,7 @@ storeItemList:
 metadata:
   favicon: ''
   code: ''
-  title: Solid OMS
+  title: Solid OMS Demo
   description: ''
 appSettings:
   properties:
