@@ -152,7 +152,10 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
-          required: true
+          required:
+            value: true
+            withData: false
+            dataValue: 'false'
           primaryKey: false
           width: 120
           filter: true
@@ -177,6 +180,10 @@ slots:
                   color: 'danger'
                 }
               ]
+            withData: false
+          allowResetValue:
+            value: false
+            dataValue: 'false'
             withData: false
         parentSlotId: '16970600389650.4502102152658729'
         index: 3

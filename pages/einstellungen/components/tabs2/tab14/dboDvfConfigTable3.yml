@@ -56,7 +56,11 @@ properties:
 parentSlotId: '16970600389670.6296020073622597'
 index: 0
 actions:
-  init: []
+  init:
+    - action: '16970609483000.2081887314926849'
+      paramCode: ''
+      blockPageLoad: false
+      index: 0
   smartTableCreate: []
   smartTableEdit: []
   smartTableBulkEdit: []
@@ -66,7 +70,11 @@ actions:
   smartTablePageSelect: []
   smartTableFilterChange: []
   smartTableSortChange: []
-  smartTableReload: []
+  smartTableReload:
+    - action: '16970609483000.2081887314926849'
+      paramCode: ''
+      blockPageLoad: false
+      index: 1
 slots:
   - id: '16970600389670.7192284766045229'
     name: columns

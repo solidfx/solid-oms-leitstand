@@ -2,13 +2,10 @@ id: '16970609483000.2081887314926849'
 name: loadDboDvfConfig
 nameConfigured: true
 steps:
-  - id: '16970609664360.9276434014594908'
+  - id: '17002291690440.8064661385727132'
     type: LOAD_COLLECTION
-    name: load
+    name: load2
     params:
-      - type: datasourceId
-        value: POM_test
-        valueType: string
       - type: resourceId
         value: dbo.dvfConfig
         valueType: string
@@ -43,6 +40,9 @@ steps:
       - type: mapperEnabled
         value: false
         valueType: custom
+      - type: datasourceId
+        value: SFX_test
+        valueType: custom
     level: 0
     fallthroughError: false
     isChanged: true
@@ -50,7 +50,6 @@ singleStep: false
 mode: manual
 modeConfigured: false
 parentPageId: '16970600071930.3468845352422827'
-folder: false
 parentId: null
 config:
   shouldConfirm: false
@@ -67,4 +66,5 @@ config:
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
 assigned: false
+kind: workflow
 index: 29

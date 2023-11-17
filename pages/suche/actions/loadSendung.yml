@@ -2,13 +2,10 @@ id: '16929202712020.22260702972023205'
 name: loadSendung
 nameConfigured: true
 steps:
-  - id: '16929202755360.47579529803314613'
+  - id: '17002289973160.22965368219164795'
     type: LOAD_COLLECTION
     name: loadSdgTable
     params:
-      - type: datasourceId
-        value: POM_test
-        valueType: string
       - type: resourceId
         value: dbo.Sendung
         valueType: string
@@ -43,6 +40,9 @@ steps:
       - type: mapperEnabled
         value: false
         valueType: custom
+      - type: datasourceId
+        value: SFX_test
+        valueType: custom
     level: 0
     fallthroughError: false
     isChanged: true
@@ -51,7 +51,6 @@ singleStep: false
 mode: manual
 modeConfigured: false
 parentPageId: '16917934505390.26478948391555246'
-folder: false
 parentId: null
 config:
   shouldConfirm: false
@@ -70,4 +69,5 @@ config:
 assigned: true
 selected: false
 configured: true
+kind: workflow
 index: 19

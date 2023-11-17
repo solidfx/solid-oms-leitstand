@@ -1,15 +1,15 @@
 storeItemList:
   - id: '17000889247240.5716578225636579'
     name: docLimit
-    value: 12000
+    value: 6000
     valueType: number
-    initialValue: 12000
+    initialValue: 6000
     version: 1
   - id: '17000889612390.9624357835370032'
     name: sdgLimit
-    value: 10000
+    value: 5000
     valueType: number
-    initialValue: 10000
+    initialValue: 5000
     version: 1
 metadata:
   favicon: ''

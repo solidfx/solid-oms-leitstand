@@ -2,13 +2,10 @@ id: '16918357081440.8765393931814942'
 name: loadDboAuftrag2
 nameConfigured: true
 steps:
-  - id: '16918357280830.6974803411226358'
+  - id: '17002284556830.9672135691068873'
     type: LOAD_COLLECTION
-    name: load
+    name: load2
     params:
-      - type: datasourceId
-        value: POM_test
-        valueType: string
       - type: resourceId
         value: dbo.Auftrag
         valueType: string
@@ -43,6 +40,9 @@ steps:
       - type: mapperEnabled
         value: false
         valueType: custom
+      - type: datasourceId
+        value: SFX_test
+        valueType: custom
     level: 0
     fallthroughError: false
     isChanged: true
@@ -50,7 +50,6 @@ singleStep: true
 mode: manual
 modeConfigured: false
 parentPageId: '16917933992220.8299471416154705'
-folder: false
 config:
   shouldConfirm: false
   confirmMessage: Are you sure you'd like to proceed with "{{actions.loadDboAuftrag2.name}}"?
@@ -66,4 +65,5 @@ config:
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
 assigned: true
+kind: workflow
 index: 16

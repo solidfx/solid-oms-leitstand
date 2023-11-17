@@ -260,6 +260,10 @@ slots:
           width: '50'
           filter: true
           pinColumn: right
+          allowResetValue:
+            value: false
+            dataValue: 'false'
+            withData: false
         index: 19
         slots: []
       - id: '16999839885940.3200085915219537'

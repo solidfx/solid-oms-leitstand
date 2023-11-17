@@ -2,13 +2,10 @@ id: '16918807236290.6680689222533096'
 name: loadSteuerStart
 nameConfigured: true
 steps:
-  - id: '16918807287090.7030179100646676'
+  - id: '17002284897970.8683182485384453'
     type: LOAD_COLLECTION
-    name: load
+    name: load2
     params:
-      - type: datasourceId
-        value: POM_test
-        valueType: string
       - type: resourceId
         value: dbo.Steuerung
         valueType: string
@@ -43,6 +40,9 @@ steps:
       - type: mapperEnabled
         value: false
         valueType: custom
+      - type: datasourceId
+        value: SFX_test
+        valueType: custom
     level: 0
     fallthroughError: false
     isChanged: true
@@ -50,7 +50,6 @@ singleStep: false
 mode: manual
 modeConfigured: false
 parentPageId: '16917934644660.913036060840761'
-folder: false
 config:
   shouldConfirm: false
   confirmMessage: Are you sure you'd like to proceed with "{{actions.loadSteuerStart.name}}"?
@@ -68,4 +67,5 @@ config:
 assigned: true
 selected: false
 configured: true
+kind: workflow
 index: 0

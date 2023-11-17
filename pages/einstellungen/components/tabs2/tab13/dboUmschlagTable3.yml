@@ -24,7 +24,7 @@ properties:
         { prop: 'email', type: 'link' },
       ]
     withData: false
-  data: '{{actions.loadDboUmschlag2.data}}'
+  data: '{{actions.loadDBUmschlag.data}}'
   name: dboUmschlagTable3
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
@@ -63,7 +63,7 @@ parentSlotId: '16970600389660.17212674975966658'
 index: 0
 actions:
   init:
-    - action: '16970590271900.5042383067237057'
+    - action: '16970608515170.9187746898305307'
       paramCode: ''
       blockPageLoad: false
       index: 0
@@ -80,7 +80,11 @@ actions:
   smartTablePageSelect: []
   smartTableFilterChange: []
   smartTableSortChange: []
-  smartTableReload: []
+  smartTableReload:
+    - action: '16970608515170.9187746898305307'
+      paramCode: ''
+      blockPageLoad: false
+      index: 2
 slots:
   - id: '16970600389660.3371610879779252'
     name: columns

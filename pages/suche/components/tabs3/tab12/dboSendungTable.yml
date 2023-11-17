@@ -332,6 +332,10 @@ slots:
             - xs
           width: 120
           filter: true
+          allowResetValue:
+            value: false
+            dataValue: 'false'
+            withData: false
         parentSlotId: '16929203514970.04016125770592738'
         index: 20
         slots: []
@@ -543,6 +547,10 @@ slots:
                   color: 'success'
                 }
               ]
+            withData: false
+          allowResetValue:
+            value: false
+            dataValue: 'false'
             withData: false
         index: 17
         slots: []

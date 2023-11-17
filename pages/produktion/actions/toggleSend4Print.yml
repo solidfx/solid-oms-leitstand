@@ -20,7 +20,6 @@ singleStep: true
 mode: manual
 modeConfigured: true
 parentPageId: '16917934644660.913036060840761'
-folder: false
 config:
   shouldConfirm: false
   confirmMessage: Are you sure you'd like to proceed with "{{actions.toggleSend4Print.name}}"?
@@ -38,4 +37,5 @@ config:
 assigned: true
 selected: true
 configured: true
+kind: workflow
 index: 12

@@ -2,13 +2,10 @@ id: '16970602974310.5052327758792967'
 name: loadDBSteuerung
 nameConfigured: true
 steps:
-  - id: '16970603032290.031025173542602147'
+  - id: '17002291128980.2637229127793832'
     type: LOAD_COLLECTION
-    name: load
+    name: load2
     params:
-      - type: datasourceId
-        value: POM_test
-        valueType: string
       - type: resourceId
         value: dbo.Steuerung
         valueType: string
@@ -43,6 +40,9 @@ steps:
       - type: mapperEnabled
         value: false
         valueType: custom
+      - type: datasourceId
+        value: SFX_test
+        valueType: custom
     level: 0
     fallthroughError: false
     isChanged: true
@@ -50,7 +50,6 @@ singleStep: false
 mode: manual
 modeConfigured: false
 parentPageId: '16970600071930.3468845352422827'
-folder: false
 config:
   shouldConfirm: false
   confirmMessage: Are you sure you'd like to proceed with "{{actions.loadDBSteuerung.name}}"?
@@ -68,4 +67,5 @@ config:
 assigned: true
 selected: true
 configured: true
+kind: workflow
 index: 26
