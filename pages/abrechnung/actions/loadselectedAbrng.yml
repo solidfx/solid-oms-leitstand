@@ -2,13 +2,10 @@ id: '17000659385800.1968117758249277'
 name: loadselectedAbrng
 nameConfigured: true
 steps:
-  - id: '17000659723300.023033157652900815'
+  - id: '17002500405270.12847177991879621'
     type: LOAD_COLLECTION
     name: loadAbrechnung
     params:
-      - type: datasourceId
-        value: POM_test
-        valueType: string
       - type: resourceId
         value: dbo.Abrechnung
         valueType: string
@@ -46,6 +43,9 @@ steps:
         valueType: interpolatedValue
       - type: mapperEnabled
         value: false
+        valueType: custom
+      - type: datasourceId
+        value: SFX_test
         valueType: custom
     level: 0
     fallthroughError: false

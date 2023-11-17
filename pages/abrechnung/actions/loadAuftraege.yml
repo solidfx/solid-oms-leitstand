@@ -2,13 +2,10 @@ id: '17000597538180.3481296394976596'
 name: loadAuftraege
 nameConfigured: true
 steps:
-  - id: '17000597678420.2113781096803773'
+  - id: '17002430953200.1770214054612702'
     type: LOAD_COLLECTION
     name: loadAuftrag
     params:
-      - type: datasourceId
-        value: POM_test
-        valueType: string
       - type: resourceId
         value: dbo.Auftrag
         valueType: string
@@ -46,6 +43,9 @@ steps:
         valueType: interpolatedValue
       - type: mapperEnabled
         value: false
+        valueType: custom
+      - type: datasourceId
+        value: SFX_test
         valueType: custom
     level: 0
     fallthroughError: false
