@@ -6,10 +6,10 @@ styles:
     gridItem:
       x: 0
       y: 0
-      w: 3
+      w: 2
       h: 20
     src:
-      url: https://solfx.de/images/postfactory_logo2.png
+      url: https://solfx.de/images/SHFM_Logo.png
       uploadUrl: ''
       name: ''
       active: url

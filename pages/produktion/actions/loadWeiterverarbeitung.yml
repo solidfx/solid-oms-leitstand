@@ -6,6 +6,9 @@ steps:
     type: LOAD_COLLECTION
     name: load
     params:
+      - type: datasourceId
+        value: SFX_test
+        valueType: string
       - type: resourceId
         value: dbo.Auftrag
         valueType: string
@@ -14,7 +17,7 @@ steps:
           - column: currentStatus
             operation: in
             value:
-              value: '["Printed","Enveloped","Printing","FulFilled",""]'
+              value: '["Printed","Enveloped","Printing","FulFilled"]'
         valueType: custom
       - type: ordering
         value:
@@ -43,9 +46,6 @@ steps:
         valueType: interpolatedValue
       - type: mapperEnabled
         value: false
-        valueType: custom
-      - type: datasourceId
-        value: SFX_test
         valueType: custom
     level: 0
     fallthroughError: false
