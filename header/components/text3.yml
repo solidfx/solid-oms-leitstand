@@ -28,7 +28,7 @@ properties:
     - xl
     - xs
   alignment: center
-  value: 'POSTFACTORY Output Management '
+  value: 'Output Management Orchestration by Solid FX GmbH '
   verticalAlignment: top
   textStyle:
     transform: none

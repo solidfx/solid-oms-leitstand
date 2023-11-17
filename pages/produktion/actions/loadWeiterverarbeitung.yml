@@ -2,13 +2,10 @@ id: '16917942175960.7681327962608866'
 name: loadWeiterverarbeitung
 nameConfigured: true
 steps:
-  - id: '16917942380310.6057160395182095'
+  - id: '17002286000460.9572823900965617'
     type: LOAD_COLLECTION
     name: load
     params:
-      - type: datasourceId
-        value: POM_test
-        valueType: string
       - type: resourceId
         value: dbo.Auftrag
         valueType: string
@@ -47,6 +44,9 @@ steps:
       - type: mapperEnabled
         value: false
         valueType: custom
+      - type: datasourceId
+        value: SFX_test
+        valueType: custom
     level: 0
     fallthroughError: false
     isChanged: true
@@ -55,7 +55,6 @@ singleStep: true
 mode: manual
 modeConfigured: false
 parentPageId: '16917934644660.913036060840761'
-folder: false
 config:
   shouldConfirm: false
   confirmMessage: >-
@@ -75,4 +74,5 @@ config:
 assigned: true
 selected: false
 configured: true
+kind: workflow
 index: 3

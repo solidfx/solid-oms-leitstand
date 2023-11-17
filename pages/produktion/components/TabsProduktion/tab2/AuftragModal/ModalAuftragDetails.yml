@@ -193,6 +193,10 @@ slots:
             withData: false
           width: '60'
           title: Status
+          allowResetValue:
+            value: false
+            dataValue: 'false'
+            withData: false
         index: 4
         slots: []
       - id: '16932400096930.32734227332626853'

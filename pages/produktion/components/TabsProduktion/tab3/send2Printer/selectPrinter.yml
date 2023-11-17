@@ -44,10 +44,21 @@ properties:
     text: 'Drucker wählen:'
     position: horizontal
     align: left
-  required: false
+  required:
+    value: false
+    withData: false
+    dataValue: 'false'
   value: KONICA Links
   errorAfterTouched: false
   placeholder: Select Printer
+  allowSelectAll:
+    value: false
+    dataValue: 'false'
+    withData: false
+  allowResetValue:
+    value: false
+    dataValue: 'false'
+    withData: false
 actions: {}
 index: 0
 slots:

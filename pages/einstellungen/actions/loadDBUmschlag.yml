@@ -2,13 +2,10 @@ id: '16970608515170.9187746898305307'
 name: loadDBUmschlag
 nameConfigured: true
 steps:
-  - id: '16970608561660.2579153433345964'
+  - id: '17002291532070.4967909911854249'
     type: LOAD_COLLECTION
-    name: load
+    name: load2
     params:
-      - type: datasourceId
-        value: POM_test
-        valueType: string
       - type: resourceId
         value: dbo.Umschlag
         valueType: string
@@ -43,6 +40,9 @@ steps:
       - type: mapperEnabled
         value: false
         valueType: custom
+      - type: datasourceId
+        value: SFX_test
+        valueType: custom
     level: 0
     fallthroughError: false
     isChanged: true
@@ -50,7 +50,6 @@ singleStep: false
 mode: manual
 modeConfigured: false
 parentPageId: '16970600071930.3468845352422827'
-folder: false
 parentId: null
 config:
   shouldConfirm: false
@@ -69,4 +68,5 @@ config:
 assigned: false
 selected: true
 configured: true
+kind: workflow
 index: 28

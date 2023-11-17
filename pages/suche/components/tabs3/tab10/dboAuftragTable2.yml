@@ -519,6 +519,10 @@ slots:
                 }
               ]
             withData: false
+          allowResetValue:
+            value: false
+            dataValue: 'false'
+            withData: false
         index: 18
         slots: []
       - id: '17000712030910.20447640902168285'

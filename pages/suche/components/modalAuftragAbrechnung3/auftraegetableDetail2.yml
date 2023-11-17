@@ -522,6 +522,10 @@ slots:
           width: 120
           filter: true
           title: Status
+          allowResetValue:
+            value: false
+            dataValue: 'false'
+            withData: false
         parentSlotId: '17000715032370.20330577423977214'
         index: 19
         slots: []

@@ -2,13 +2,10 @@ id: '16918361139490.22574607727472307'
 name: loadDokument
 nameConfigured: true
 steps:
-  - id: '16918361181730.07754770209631157'
+  - id: '17002289729330.2068235437864956'
     type: LOAD_COLLECTION
-    name: load
+    name: load2
     params:
-      - type: datasourceId
-        value: POM_test
-        valueType: string
       - type: resourceId
         value: dbo.Dokument
         valueType: string
@@ -43,6 +40,9 @@ steps:
       - type: mapperEnabled
         value: false
         valueType: custom
+      - type: datasourceId
+        value: SFX_test
+        valueType: custom
     level: 0
     fallthroughError: false
     isChanged: true
@@ -50,7 +50,6 @@ singleStep: true
 mode: manual
 modeConfigured: false
 parentPageId: '16917934505390.26478948391555246'
-folder: false
 config:
   shouldConfirm: false
   confirmMessage: Are you sure you'd like to proceed with "{{actions.loadDokument.name}}"?
@@ -68,4 +67,5 @@ config:
 assigned: true
 selected: true
 configured: true
+kind: workflow
 index: 17

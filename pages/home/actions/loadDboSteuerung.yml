@@ -2,13 +2,10 @@ id: '16917932490760.3009319584251897'
 name: loadDboSteuerung
 nameConfigured: true
 steps:
-  - id: '16917932570400.22400511795665823'
+  - id: '17002187867180.8105695225458291'
     type: LOAD_COLLECTION
-    name: load
+    name: load2
     params:
-      - type: datasourceId
-        value: POM_test
-        valueType: string
       - type: resourceId
         value: dbo.Steuerung
         valueType: string
@@ -43,6 +40,9 @@ steps:
       - type: mapperEnabled
         value: false
         valueType: custom
+      - type: datasourceId
+        value: SFX_test
+        valueType: custom
     level: 0
     fallthroughError: false
     isChanged: true
@@ -50,7 +50,6 @@ singleStep: false
 mode: manual
 modeConfigured: false
 parentPageId: '1'
-folder: false
 parentId: null
 config:
   shouldConfirm: false
@@ -67,4 +66,5 @@ config:
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
 assigned: false
+kind: workflow
 index: 13

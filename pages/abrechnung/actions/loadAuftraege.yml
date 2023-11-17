@@ -55,7 +55,6 @@ singleStep: true
 mode: manual
 modeConfigured: false
 parentPageId: '16932418322570.8001022518222478'
-folder: false
 config:
   shouldConfirm: false
   confirmMessage: Are you sure you'd like to proceed with "{{actions.loadAuftraege.name}}"?
@@ -73,4 +72,5 @@ config:
 assigned: true
 selected: true
 configured: true
+kind: workflow
 index: 30

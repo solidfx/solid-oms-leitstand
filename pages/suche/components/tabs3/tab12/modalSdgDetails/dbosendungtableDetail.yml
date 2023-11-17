@@ -432,6 +432,10 @@ slots:
           __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
             - xl
             - xs
+          allowResetValue:
+            value: false
+            dataValue: 'false'
+            withData: false
         index: 18
         slots: []
       - id: '16930025585640.03813193927559144'

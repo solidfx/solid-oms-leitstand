@@ -214,6 +214,10 @@ slots:
           width: 120
           filter: true
           title: Status
+          allowResetValue:
+            value: false
+            dataValue: 'false'
+            withData: false
         index: 19
         slots: []
       - id: '17000665834290.09969279607387094'
