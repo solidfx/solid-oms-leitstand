@@ -25,7 +25,4 @@ slots:
             bindings: {}
             children:
               - components/MainMenu.yml
-              - components/dboSteuerungMetric.yml
               - components/image3.yml
-              - components/dboBeilageMetric.yml
-              - components/metric.yml

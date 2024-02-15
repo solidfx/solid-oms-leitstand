@@ -1,6 +1,6 @@
-id: '16932418559630.7583259183221756'
+id: '16917935136230.9775502534738931'
 definitionId: menu
-parentSlotId: '16932418322570.571470719486701'
+parentSlotId: '16917933992220.6039430218794417'
 styles:
   xl:
     gridItem:
@@ -17,10 +17,10 @@ styles:
       x: 0
       y: 0
       w: 24
-      h: 180
+      h: 130
 properties:
   autoSyncItems: true
-  name: menu6
+  name: Hauptmenu
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
@@ -31,8 +31,8 @@ properties:
         link: '/home'
       },
       {
-        title: 'Dashboard',
-        link: '/dashboard'
+        title: 'Jobvorschau',
+        link: '/scheduler'
       },
       {
         title: 'Produktion',
@@ -45,10 +45,6 @@ properties:
       {
         title: 'Einstellungen',
         link: '/einstellungen'
-      },
-      {
-        title: 'Abrechnung',
-        link: '/abrechnung'
       }
     ]
 actions: {}

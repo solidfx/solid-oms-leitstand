@@ -1,6 +1,6 @@
 id: '16917933992220.8299471416154705'
-name: Dashboard
-url: dashboard
+name: Jobvorschau
+url: scheduler
 roleIds: []
 disableInMenu: false
 parentPageId: ''
@@ -24,7 +24,7 @@ slots:
           - id: '16917933992220.6039430218794417'
             name: content
             children:
-              - components/menu2.yml
+              - components/Hauptmenu.yml
               - components/dboAuftragMetric.yml
               - components/card/card.yml
               - components/dboAuftragMetric2.yml

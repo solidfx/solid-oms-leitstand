@@ -3,7 +3,7 @@ definitionId: tab
 styles: {}
 properties:
   name: tab8
-  title: Steuerung
+  title: Scheduler
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs

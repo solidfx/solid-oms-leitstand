@@ -4,10 +4,10 @@ parentSlotId: '2'
 styles:
   xl:
     gridItem:
-      x: 10
+      x: 11
       y: 0
-      w: 4
-      h: 70
+      w: 2
+      h: 51
     src:
       url: https://solfx.de/images/solid_oms.png
       uploadUrl: ''
@@ -29,5 +29,5 @@ properties:
     - xl
     - xs
 actions: {}
-index: 2
+index: 1
 slots: []
